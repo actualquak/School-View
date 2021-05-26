@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
   <script data-ad-client="ca-pub-5139825387374199" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript" src="tour.js"></script>
 </head>
 
 <body>
   <div id="panoramaPage">
-    <div id="panorama">
-      <p id="p-debug">PANNELLUM GOES HERE</p>
-    </div>
+    <div id="panorama"></div>
+    <script>
+      console.log(data);
+      pannellum.viewer('panorama', JSON.parse(data));
+    </script>
     <div class="bottomButton">
       <button class="informationButton" onclick="informationComesUp()"><i class="fa fa-arrow-up"></i></button>
     </div>
