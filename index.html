@@ -8,15 +8,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <script data-ad-client="ca-pub-5139825387374199" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript" src="tour.js"></script>
 </head>
 
 <body>
-  <div class="bottomButton">
+  <div id="panoramaPage">
+    <div id="panorama"></div>
+    <script>
+      console.log(data);
+      pannellum.viewer('panorama', JSON.parse(data));
+    </script>
+    <div class="bottomButton">
       <button class="informationButton" onclick="informationComesUp()"><i class="fa fa-arrow-up"></i></button>
     </div>
-
+  </div>
+  
     <div id="information">
-      <h1>What are eshays?</h1>
+      <h1>What are ESHAYS?</h1>
+      <p>ESHAYS ARE... <br> pog </p>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-5139825387374199"
+          data-ad-slot="5022411484"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
       <div class="bottomButton">
         <button class="informationButton" onclick="informationGoesDown()"><i class="fa fa-arrow-down"></i></button>
       </div>
@@ -37,4 +58,4 @@
 
 <script src="main.js"></script>
 
-</html> 
+</html>
