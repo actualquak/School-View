@@ -43,4 +43,14 @@ data = `{
     }
 }`;
 
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+}
+
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw"
+
+console.log(getUrlParam("start", "room1"))
