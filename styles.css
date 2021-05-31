@@ -1,3 +1,13 @@
+#panorama {
+	height: 100vh;
+	width: 100vw;
+	color: #3BFF00;
+}
+
+#p-debug {
+	color: #3BFF00;
+}
+
 #startPage {
 	height: 100vh;
 	position: absolute;
