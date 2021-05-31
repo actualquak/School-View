@@ -4,7 +4,6 @@ data = `{
         "sceneFadeDuration": 1000,
 		"autoLoad" : true
     },
-
     "scenes": {
         "room1": {
             "hfov": 110,
@@ -22,7 +21,6 @@ data = `{
                 }
             ]
         },
-
         "room2": {
             "hfov": 110,
             "yaw": 5,
@@ -39,7 +37,7 @@ data = `{
                     "targetPitch": 2
                 }
             ]
-        },
+        }
     }
 }`;
 
