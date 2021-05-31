@@ -19,5 +19,3 @@ function startPageUp() {
     var targetElement = document.getElementById("information");
     targetElement.className = "goDown";
   }
-
-console.log(document.cookie);
