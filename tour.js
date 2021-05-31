@@ -40,24 +40,6 @@ data = `{
                 }
             ]
         },
-	
-	"sadness": {
-	    "hfov": 110,
-            "yaw": 20,
-            "type": "equirectangular",
-            "panorama": "https://actualquak.github.io/nths-server/360_1.jpg",
-            "hotSpots": [
-                {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
-                    "type": "scene",
-                    "text": "Depression",
-                    "sceneId": "room2",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-            ]
-	}
     }
 }`;
 
