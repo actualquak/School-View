@@ -49,7 +49,7 @@ function getUrlVars() {
         vars[key] = value;
     });
     return vars;
-}
+};
 
 function getUrlParam(parameter, defaultvalue){
     var urlparameter = defaultvalue;
@@ -57,6 +57,12 @@ function getUrlParam(parameter, defaultvalue){
         urlparameter = getUrlVars()[parameter];
         }
     return urlparameter;
-}
+};
 
-link = "https://www.youtube.com/watch?v=HIcSWuKMwOw"
+link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
+json = JSON.parse(data);
+json.default.firstScene = getUrlParam("room", "room1");
+console.log(json.default.firstScene);
+
+startPage = getUrlParam("startPage", 1)
+console.log(startPage)
