@@ -7,7 +7,7 @@ function startPageUp() {
 
 console.log(startPage);
 
-  if (startPage = 0) {
+  if (startPage == 0) {
       console.log("startPage = 0");
       noStartPage();
   }
