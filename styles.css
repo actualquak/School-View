@@ -50,14 +50,6 @@
 	}
   }
 
-.startPageInstantComeUp {
-	animation-name: start-come-up;
-	animation-duration: 0s;
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
-  }
-
   #startButton {
 	border-radius: 50px;
 	padding: 20px;
