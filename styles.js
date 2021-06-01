@@ -4,6 +4,10 @@ function startPageUp() {
   }
   
   startDown();
+
+  if (startPage = 0) {
+      noStartPage();
+  }
   
   function startDown() {
     var targetElement = document.getElementById("information");
@@ -18,4 +22,9 @@ function startPageUp() {
   function informationGoesDown() {
     var targetElement = document.getElementById("information");
     targetElement.className = "goDown";
+  }
+
+function noStartPage() {
+    var targetElement = document.getElementById("startPage");
+    targetElement.className = "startPageInstantComeUp";
   }
