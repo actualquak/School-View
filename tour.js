@@ -65,3 +65,4 @@ json.default.firstScene = getUrlParam("room", "room1");
 console.log(json.default.firstScene);
 
 startPage = getUrlParam("startPage", 1)
+console.log("hi")
