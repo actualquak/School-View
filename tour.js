@@ -65,3 +65,8 @@ json.default.firstScene = getUrlParam("room", "room1");
 console.log(json.default.firstScene);
 
 startPage = getUrlParam("startPage", 1)
+
+function startDown() {
+    var targetElement = document.getElementById("startPage");
+    targetElement.className = "startPageInstantComeUp";
+  }
