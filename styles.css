@@ -39,6 +39,14 @@
 	animation-fill-mode: forwards;
   }
 
+  .instantComeUp {
+	animation-name: start-come-up;
+	animation-duration: 2s;
+
+	/* Preserve the effect of the animation at ending */
+	animation-fill-mode: forwards;
+  }
+
   @keyframes start-come-up {
 
 	from {
