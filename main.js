@@ -31,3 +31,4 @@ function noStartPage() {
     var targetElement = document.getElementById("startPage");
     targetElement.className = "startPageComeUp";
   }
+
