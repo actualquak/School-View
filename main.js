@@ -26,5 +26,5 @@ function startPageUp() {
 
 function noStartPage() {
     var targetElement = document.getElementById("startPage");
-    targetElement.className = "startPageInstantComeUp";
+    targetElement.className = "startPageComeUp";
   }
