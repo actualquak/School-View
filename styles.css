@@ -9,7 +9,10 @@
 }
 
 video {
-	margin: 20px, 0px
+	margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 #startPage {
