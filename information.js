@@ -1,4 +1,4 @@
-informationDisplay = getUrlParam("information", 1);
+informationDisplay = getUrlParam("information");
 informationElement = document.getElementById("information");
 console.log(informationDisplay);
 console.log(informationElement);
