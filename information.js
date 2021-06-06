@@ -20,5 +20,3 @@ if (informationDisplay == 0) {
 } else {
   informationElement.innerHTML = 'this the library of information';
 }
-
-
