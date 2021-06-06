@@ -64,5 +64,4 @@ json = JSON.parse(data);
 json.default.firstScene = getUrlParam("room", "room1");
 console.log(json.default.firstScene);
 
-startPage = getUrlParam("startPage", 1)
-console.log("hi")
+startPage = getUrlParam("startPage", 1);
