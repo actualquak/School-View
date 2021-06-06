@@ -1,5 +1,7 @@
 informationDisplay = getUrlParam("information", 1);
 informationElement = document.getElementById("information");
+console.log(informationDisplay);
+console.log(informationElement);
 
 if (informationDisplay == 0) {
   informationElement.innerHTML = 'this is an article';
