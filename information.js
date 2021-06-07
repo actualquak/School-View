@@ -28,19 +28,18 @@ function generateArticle(i) {
 
 function createVideoElement(i) {
   url = videoURLs[i];
-  return '<video width="320" height="240" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
+  if (window.innerHeight < window.innerWidth) {
+    change = window.innerHeight;
+    returnString = '<video height="'+change+'" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
+  } else {
+    change = window.innerWidth;
+    returnString = '<video width="'+change+'" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
+  }  
+  return returnString;
 }  
 
 function generateVideo(i) {
   informationElement.innerHTML = createVideoElement(i);
-  video = document.getElementById("video");
-  if (window.innerHeight < window.innerWidth) {
-    video.height = window.innerHeight;
-    video.width = "100%";
-  } else {
-    video.width = window.innerWidth;
-    video.height = "100%";
-  }  
   informationElement.backgroundColor = "black";
 }  
   
