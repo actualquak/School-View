@@ -158,6 +158,7 @@ video {
 	left: 0;
 	right: 0;
 	background-color: rgb(51, 94, 187);
+	text-align: center;
   }
 
   .fa-arrow-down {
