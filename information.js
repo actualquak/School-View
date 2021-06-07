@@ -40,7 +40,7 @@ function createVideoElement(i) {
 
 function generateVideo(i) {
   informationElement.innerHTML = createVideoElement(i);
-  informationElement.backgroundColor = "black";
+  informationElement.style.backgroundColor = "black";
 }  
   
 if (informationDisplay == 0) {
