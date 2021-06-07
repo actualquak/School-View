@@ -1,7 +1,5 @@
 informationDisplay = getUrlParam("information");
 informationElement = document.getElementById("information");
-var videoChangeHeight;
-var videoChange;
 
 articleParagraphs = [
   "The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line",
@@ -37,14 +35,10 @@ function generateVideo(i) {
   informationElement.innerHTML = createVideoElement(i);
   video = document.getElementById("video");
   if (window.innerHeight < window.innerWidth) {
-    videoChangeHeight = true;
-    videoChange = window.innerHeight;
-  }
-  if (videoChangeHeight == true) {
-    video.height = videoChange;
+    video.height = window.innerHeight;
     video.width = "100%";
   } else {
-    video.width = videoChange;
+    video.width = window.innerWidth;
     video.height = "100%";
   }  
   informationElement.backgroundColor = "black";
