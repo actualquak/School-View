@@ -16,7 +16,7 @@ console.log(generateArticle);
 function generateArticle(i) {
   heading = articleTitles[i];
   paragraphText = articleParagraphs[i];
-  return "<h1>"+heading+"</h1><p>"+"paragraphText;
+  return "<h1>"+heading+"</h1><p>"+paragraphText;
 }  
 
 if (window.innerHeight < window.innerWidth) {
