@@ -15,7 +15,7 @@ articleTitles = [
 
 videoURLs = [
   "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
-  "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
+  "https://static-content-hosting-de818.web.app/School-View/00088.MTS.mp4",
   "https://static-content-hosting-de818.web.app/School-View/rick-roll.mp4",
   "https://static-content-hosting-de818.web.app/School-View/ussr.mp4",
 ];
