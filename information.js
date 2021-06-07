@@ -1,7 +1,23 @@
 informationDisplay = getUrlParam("information");
 informationElement = document.getElementById("information");
+
+articleParagraphs = [
+  "The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line
+];
+
+articleTitles = [
+  "What is the single biggest influencing group of people at New Town High School?"
+];
+
 console.log(informationDisplay);
 console.log(informationElement);
+console.log(generateArticle);
+
+var generateArticle(i) {
+  heading = articleTitles[i];
+  paragraphText = articleParagraphs[i];
+  return "<h1>"+heading+"</h1><p>"+"paragraphText;
+}  
 
 if (window.innerHeight < window.innerWidth) {
   videoChangeHeight = true;
@@ -9,13 +25,7 @@ if (window.innerHeight < window.innerWidth) {
 }
   
 if (informationDisplay == 0) {
-  informationElement.innerHTML = `
-  <h1>What is the single biggest influencing group of people at New Town High School?</h1>
-  <p>The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem
-  <br><br>
-  I can use brs effectively, otherwise this text wouldn't be on a new line
-  <p>
-  `;
+  informationElement.innerHTML = generateArticle(0);
 } else if (informationDisplay == 1) {
   informationElement.innerHTML = '<video id="video" width="320" height="240" controls> <source src="https://r5---sn-hufvjvgx-hxae.googlevideo.com/videoplayback?expire=1622972615&ei=Z0S8YLf9Lcjr8wSUmpqoCA&ip=64.20.39.202&id=o-AF02pHc5KP4CBjqAQDMZjR3Gz3vrcZY4VLq4tw5jdJYC&itag=22&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&ns=4CFtQYqZF5QARbPDj_vffdoF&ratebypass=yes&dur=194.977&lmt=1608167546029316&fexp=24001373%2C24007246&c=WEB&txp=6216222&n=Ywu3P70ycwXZRu8J7&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgT6C4mXXW1ld4G5hEFD8FkRW41V5wAR2WLLsXxQNqxHcCIQCJJGBPGGS-21Qysp2T-IrQkIJX-Z6biqYgCj3RgoPhYA%3D%3D&cms_redirect=yes&mh=rg&mip=116.240.154.35&mm=31&mn=sn-hufvjvgx-hxae&ms=au&mt=1622950602&mv=m&mvi=5&pcm2cms=yes&pl=19&lsparams=mh,mip,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRgIhAO3ndexZoxF_s0zYCZaCeAcYElS82cb3ncpyi_ZDZP_RAiEAzG2WF9SN5e41VWQ4UvY9yNJePmyQp1pf2f1K-2gnTO4%3D" type="video/mp4"</source> Your browser cannot play this video</video>';
   video = document.getElementById("video");
