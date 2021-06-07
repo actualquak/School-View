@@ -14,8 +14,8 @@ articleTitles = [
 ];
 
 videoURLs = [
-  "Ms. Woods' interview",
-  "Mr. Pratap' interview",
+  "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
+  "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
   "Rick-roll",
   "USSR Anthem",
 ];
