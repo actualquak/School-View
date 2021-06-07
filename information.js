@@ -13,7 +13,7 @@ console.log(informationDisplay);
 console.log(informationElement);
 console.log(generateArticle);
 
-var generateArticle(i) {
+function generateArticle(i) {
   heading = articleTitles[i];
   paragraphText = articleParagraphs[i];
   return "<h1>"+heading+"</h1><p>"+"paragraphText;
