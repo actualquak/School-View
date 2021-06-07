@@ -1,0 +1,11 @@
+{
+	"first-name": "Franklin",
+	"last-name": "Legg",
+	"phone-number": "0450 185 948",
+	"home adress": "1 Chisholm Pl Glenorchy",
+	"religous-beliefs": "Christian",
+	"political-beliefs": {
+		"economic": "left - moderate socialism",
+		"progress": "left - left Christian democrat",
+	}
+}
