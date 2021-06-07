@@ -16,8 +16,8 @@ articleTitles = [
 videoURLs = [
   "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
   "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
-  "Rick-roll",
-  "USSR Anthem",
+  "https://static-content-hosting-de818.web.app/School-View/rick-roll.mp4",
+  "https://static-content-hosting-de818.web.app/School-View/ussr.mp4",
 ];
 
 console.log(informationDisplay);
@@ -32,12 +32,16 @@ function generateArticle(i) {
 
 function createVideoElement(i) {
   url = videoURLs[i];
-  return '<video id="video" width="320" height="240" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
+  return '<video width="320" height="240" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
 }  
 
 function generateVideo(i) {
   informationElement.innerHTML = createVideoElement(i);
   video = document.getElementById("video");
+  if (window.innerHeight < window.innerWidth) {
+    videoChangeHeight = true;
+    videoChange = window.innerHeight;
+  }
   if (videoChangeHeight == true) {
     video.height = videoChange;
     video.width = "100%";
@@ -47,11 +51,6 @@ function generateVideo(i) {
   }  
   informationElement.backgroundColor = "black";
 }  
-
-if (window.innerHeight < window.innerWidth) {
-  videoChangeHeight = true;
-  videoChange = window.innerHeight;
-}
   
 if (informationDisplay == 0) {
   informationElement.innerHTML = generateArticle(0);
