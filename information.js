@@ -1,5 +1,7 @@
 informationDisplay = getUrlParam("information");
 informationElement = document.getElementById("information");
+var videoChangeHeight;
+var videoChange;
 
 articleParagraphs = [
   "The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line",
@@ -19,10 +21,6 @@ videoURLs = [
   "https://static-content-hosting-de818.web.app/School-View/rick-roll.mp4",
   "https://static-content-hosting-de818.web.app/School-View/ussr.mp4",
 ];
-
-console.log(informationDisplay);
-console.log(informationElement);
-console.log(generateArticle);
 
 function generateArticle(i) {
   heading = articleTitles[i];
