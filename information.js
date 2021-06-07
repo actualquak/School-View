@@ -45,7 +45,7 @@ function generateVideo(i) {
     video.width = videoChange;
     video.height = "100%";
   }  
-  informationElement.backgroundColor = black;
+  informationElement.backgroundColor = "black";
 }  
 
 if (window.innerHeight < window.innerWidth) {
