@@ -133,6 +133,14 @@ video {
 	}
   }
 
+  .instantComeUp {
+	animation-name: come-up;
+	animation-duration: 0s;
+
+	/* Preserve the effect of the animation at ending */
+	animation-fill-mode: forwards;
+  }
+
   .startDown {
 	animation-name: start-down;
 	animation-duration: 0s;
