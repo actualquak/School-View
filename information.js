@@ -55,19 +55,27 @@ function generateVideo(i) {
 }  
   
 if (informationDisplay == 0) {
+  document.getElementId("body").style.overflow = "visible";
   informationElement.innerHTML = generateArticle(0);
 } else if (informationDisplay == 1) {
+  document.getElementId("body").style.overflow = "visible";
   generateVideo(0);
 } else if (informationDisplay == 2) {
+  document.getElementId("body").style.overflow = "visible";
   informationElement.innerHTML = generateArticle(1);
 } else if (informationDisplay == 3) {
+  document.getElementId("body").style.overflow = "visible";
   generateVideo(1);
 } else if (informationDisplay == 4) {
+  document.getElementId("body").style.overflow = "visible";
   informationElement.innerHTML = generateArticle(2);
 } else if (informationDisplay == 5) {
+  document.getElementId("body").style.overflow = "visible";
   generateVideo(2);
 } else if (informationDisplay == 6) {
+  document.getElementId("body").style.overflow = "visible";
   generateVideo(3);
 } else {
+  document.getElementId("body").style.overflow = "visible";
   informationElement.innerHTML = 'this the library of information'+additionalContent;
 }
