@@ -14,10 +14,10 @@ articleTitles = [
 ];
 
 videoURLs = [
-  "https://static-content-hosting-de818.web.app/School-View/00087.MTS.mp4",
-  "https://static-content-hosting-de818.web.app/School-View/00088.MTS.mp4",
-  "https://static-content-hosting-de818.web.app/School-View/rick-roll.mp4",
-  "https://static-content-hosting-de818.web.app/School-View/ussr.mp4",
+  "https://static-content-hosting-de818.firebaseapp.com/School-View/00087.MTS.mp4",
+  "https://static-content-hosting-de818.firebaseapp.com/School-View/00088.MTS.mp4",
+  "https://static-content-hosting-de818.firebaseapp.com/School-View/rick-roll.mp4",
+  "https://static-content-hosting-de818.firebaseapp.com/School-View/ussr.mp4",
 ];
 
 function generateArticle(i) {
