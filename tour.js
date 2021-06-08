@@ -1,6 +1,6 @@
 data = `{   
     "default": {
-    	"hotSpotDebug" : "True",
+    	"hotSpotDebug" : True,
         "firstScene": "room1",
         "sceneFadeDuration": 1000,
 		"autoLoad" : true
