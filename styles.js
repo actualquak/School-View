@@ -5,8 +5,6 @@ function startPageUp() {
   
   startDown();
 
-console.log(startPage);
-
   if (startPage == 0) {
       console.log("startPage = 0");
       noStartPage();
