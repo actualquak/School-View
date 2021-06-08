@@ -25,7 +25,7 @@ if (informationDisplay != null) {
 }
 
 function no3DImage() {
-    var targetElement = document.getElementById("startPage");
+    var targetElement = document.getElementById("information");
     targetElement.className = "instantInfoComeUp";
   }
 
