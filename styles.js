@@ -11,6 +11,10 @@ console.log(startPage);
       console.log("startPage = 0");
       noStartPage();
   }
+
+  if (informationDisplay != null) {
+    no3DImage();
+  }
   
   function startDown() {
     var targetElement = document.getElementById("information");
@@ -31,4 +35,10 @@ function noStartPage() {
     var targetElement = document.getElementById("startPage");
     targetElement.className = "instantComeUp";
   }
+
+function no3DImage() {
+    var targetElement = document.getElementById("startPage");
+    targetElement.className = "instantInfoComeUp";
+  }
+
 
