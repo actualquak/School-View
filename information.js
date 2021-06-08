@@ -1,5 +1,6 @@
 informationDisplay = getUrlParam("information");
 informationElement = document.getElementById("information");
+additionalContent = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle"style="display:block; text-align:center;"data-ad-layout="in-article"data-ad-format="fluid"data-ad-client="ca-pub-5139825387374199"data-ad-slot="5022411484"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script><div class="bottomButton"><button class="informationButton" onclick="informationGoesDown()"><i class="fa fa-arrow-down"></i></button></div>`;
 
 articleParagraphs = [
   "The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line",
@@ -68,5 +69,5 @@ if (informationDisplay == 0) {
 } else if (informationDisplay == 6) {
   generateVideo(3);
 } else {
-  informationElement.innerHTML = 'this the library of information';
+  informationElement.innerHTML = 'this the library of information'+additionalContent;
 }
