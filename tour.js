@@ -17,6 +17,7 @@ function getUrlParam(parameter, defaultvalue){
 };
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
+data = base;
 json = JSON.parse(data);
 json.default.firstScene = getUrlParam("room", "room1");
 console.log(json.default.firstScene);
