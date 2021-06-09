@@ -1,9 +1,4 @@
-$.ajax({
-	url: 'https://actualquak.github.io/json/base.json',
-	success: function (jsonData) {
-		data = jsonData;
-	}
-});
+
 
 function getUrlVars() {
     var vars = {};
