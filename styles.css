@@ -1,3 +1,4 @@
+
 .chip {
   display: inline-block;
   padding: 0 25px;
@@ -64,6 +65,7 @@ video {
   .instantComeUp {
 	animation-name: start-come-up;
 	animation-duration: -2s;
+
 
 	/* Preserve the effect of the animation at ending */
 	animation-fill-mode: forwards;
@@ -151,7 +153,7 @@ video {
 	}
   }
 
-  .instantInfoComeUp {
+.instantInfoComeUp {
 	animation-name: come-up;
 	animation-duration: 0s;
 
