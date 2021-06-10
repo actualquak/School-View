@@ -9,26 +9,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
   <script data-ad-client="ca-pub-5139825387374199" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script type="text/javascript" src="json/base.js"></script>
+  <script type="text/javascript" src="json/Down-CenNE.js"></script>
+  <script type="text/javascript" src="json/scene2.js"></script>
   <script type="text/javascript" src="tour.js"></script>
 </head>
 
-<body>
-  <div id="panoramaPage">
+<body id="body">
+	<div id="panoramaPage">
     <div id="panorama"></div>
     <script>
-      console.log(data);
-      pannellum.viewer('panorama', JSON.parse(data));
-	  console.log(link)
-	  console.log(getUrlParam("room", "room1"))
+      pannellum.viewer('panorama', json);
+	  console.log(link);
     </script>
-    <div class="bottomButton">
-      <button class="informationButton" onclick="informationComesUp()"><i class="fa fa-arrow-up"></i></button>
-    </div>
-  </div>
-  
-    <div id="information">
-      <h1>What are ESHAYS?</h1>
-      <p>ESHAYS ARE... <br> pog </p>
+  </div>	
+	
+  <div id="information">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
           style="display:block; text-align:center;"
@@ -39,11 +35,6 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
-
-      <div class="bottomButton">
-        <button class="informationButton" onclick="informationGoesDown()"><i class="fa fa-arrow-down"></i></button>
-      </div>
-
     </div>
 
     <div id="startPage">
@@ -58,6 +49,7 @@
     </div>
 </body>
 
-<script src="main.js"></script>
+<script src="styles.js"></script>
+<script src="information.js"></script>
 
 </html>

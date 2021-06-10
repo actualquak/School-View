@@ -1,3 +1,22 @@
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
 #panorama {
 	height: 100vh;
 	width: 100vw;
@@ -6,6 +25,10 @@
 
 #p-debug {
 	color: #3BFF00;
+}
+
+video {
+	font-size: 0
 }
 
 #startPage {
@@ -39,6 +62,15 @@
 	animation-fill-mode: forwards;
   }
 
+  .instantComeUp {
+	animation-name: start-come-up;
+	animation-duration: -2s;
+
+
+	/* Preserve the effect of the animation at ending */
+	animation-fill-mode: forwards;
+  }
+
   @keyframes start-come-up {
 
 	from {
@@ -63,7 +95,10 @@
   }
 
   h1 {
-	padding: 10px;
+	padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: white;
 	user-select: none;
@@ -118,6 +153,14 @@
 	}
   }
 
+.instantInfoComeUp {
+	animation-name: come-up;
+	animation-duration: 0s;
+
+	/* Preserve the effect of the animation at ending */
+	animation-fill-mode: forwards;
+  }
+
   .startDown {
 	animation-name: start-down;
 	animation-duration: 0s;
@@ -143,6 +186,7 @@
 	left: 0;
 	right: 0;
 	background-color: rgb(51, 94, 187);
+	text-align: center;
   }
 
   .fa-arrow-down {
