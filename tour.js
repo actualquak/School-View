@@ -18,8 +18,8 @@ function getUrlParam(parameter, defaultvalue){
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
 json.default.firstScene = getUrlParam("room", "room1");
-json.room1 = scene1json;
-json.room2 = scene2json;
+json.scenes.room1 = scene1json;
+json.scenes.room2 = scene2json;
 console.log(json.default.firstScene);
 
 startPage = getUrlParam("startPage", 1);
