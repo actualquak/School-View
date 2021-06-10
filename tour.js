@@ -15,8 +15,8 @@ function getUrlParam(parameter, defaultvalue){
 };
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
-json.default.firstScene = getUrlParam("room", "room1");
-json.scenes.DownCenNE = Down-CenNEjson;
+json.default.firstScene = getUrlParam("room", "DownCenNE");
+json.scenes.DownCenNE = DownCenNEjson;
 json.scenes.room2 = scene2json;
 console.log(json.default.firstScene);
 

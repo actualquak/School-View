@@ -1,4 +1,4 @@
-Down-CenNE = `{
+DownCenNE = `{
     "hfov": 110,
     "pitch": -3,
     "yaw": 117,
@@ -12,4 +12,4 @@ Down-CenNE = `{
         "sceneId": "room2"
     }]
 }`;
-Down-CenNEjson = JSON.parse(Down-CenNE)
+DownCenNEjson = JSON.parse(DownCenNE)
