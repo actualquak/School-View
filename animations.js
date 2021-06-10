@@ -4,8 +4,7 @@ function startPageUp() {
   }
 
   if (startPage == 0) {
-      console.log("startPage = 0");
-      var targetElement = document.getElementById("startPage");
+    var targetElement = document.getElementById("startPage");
     targetElement.className = "instantComeUp";
   }
 
@@ -17,3 +16,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+function pannelumActivate() {
+    var targetElement = document.getElementById("information");
+    targetElement.className = "instantGoDown";
+    closeNav();
+}
