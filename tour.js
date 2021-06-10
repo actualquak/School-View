@@ -1,5 +1,3 @@
-
-
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -18,7 +16,7 @@ function getUrlParam(parameter, defaultvalue){
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
 json.default.firstScene = getUrlParam("room", "room1");
-json.scenes.room1 = scene1json;
+json.scenes.DownCenNE = Down-CenNEjson;
 json.scenes.room2 = scene2json;
 console.log(json.default.firstScene);
 

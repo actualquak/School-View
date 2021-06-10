@@ -7,8 +7,7 @@ base = `{
     },
 
     "scenes": {
-        "room1": {},
-
+        "Down-CenNE": {},
         "room2": {}
     }
 }`;
