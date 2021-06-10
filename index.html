@@ -16,6 +16,14 @@
 </head>
 
 <body id="body">
+	<div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" onclick="closeNav()"><p>About</p></a>
+      <a href="#" onclick="closeNav()"><p>Services</p></a>
+      <a href="#" onclick="closeNav()"><p>Clients</p></a>
+      <a href="#" onclick="closeNav()"><p>Contact</p></a>
+    </div>
+	
 	<div id="panoramaPage">
     <div id="panorama"></div>
     <script>
@@ -25,16 +33,51 @@
   </div>	
 	
   <div id="information">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-          style="display:block; text-align:center;"
-          data-ad-layout="in-article"
-          data-ad-format="fluid"
-          data-ad-client="ca-pub-5139825387374199"
-          data-ad-slot="5022411484"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      <table>
+      <tr>
+        <th>
+          <button id="navButton" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+          </button>
+        </th>
+        <th>
+          <div class="chip">
+            <p>Teachers</p>
+          </div>
+          <div class="chip">
+            <p>Students</p>
+          </div>
+          <div class="chip">
+            <p>School Life</p>
+          </div>
+          <div class="chip">
+            <p>Susus Amogus</p>
+          </div>
+          <div class="chip">
+            <p>The Devil</p>
+          </div>
+          <div class="chip">
+            <p>Bullying</p>
+          </div>
+          <div class="chip">
+            <p>Free V-Bucks</p>
+          </div>
+          <div class="chip">
+            <p>Wrinkle-free skin</p>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th>
+        </th>
+        <th>
+          <div id="featuredContent">
+            <div id="demo"></div>
+            <p class="title">FEATURED <br> CONTENT</p>
+          </div>
+        </th>
+      </tr>
+    </table>
     </div>
 
     <div id="startPage">
