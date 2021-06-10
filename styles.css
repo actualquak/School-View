@@ -154,6 +154,26 @@ video {
 	  transform: translateY(calc(-100vh));
 	}
   }
+  
+  .instantGoDown {
+	animation-name: information-go-down;
+	animation-duration: -2s;
+
+
+	/* Preserve the effect of the animation at ending */
+	animation-fill-mode: forwards;
+  }
+  
+  @keyframes information-go-down {
+
+	from {
+	  transform: translateY(0);
+	}
+
+	to {
+	  transform: translateY(calc(100vh));
+	}
+  }
 
   #startButton {
 	border-radius: 50px;
@@ -208,50 +228,6 @@ video {
 	overflow: hidden;
   }
 
-  .comeUp {
-	animation-name: come-up;
-	animation-duration: 2s;
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
-  }
-
-  @keyframes come-up {
-	from {
-	  transform: translateY(calc(100vh));
-	}
-
-	to {
-	  transform: translateY(0);
-	}
-  }
-
-.instantInfoComeUp {
-	animation-name: come-up;
-	animation-duration: 0s;
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
-  }
-
-  .startDown {
-	animation-name: start-down;
-	animation-duration: 0s;
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
-  }
-
-  @keyframes start-down {
-	from {
-	  transform: translateY(0);
-	}
-
-	to {
-	  transform: translateY(calc(100vh));
-	}
-  }
-
   #information {
 	height: 100vh;
 	position: absolute;
@@ -264,24 +240,6 @@ video {
 
   .fa-arrow-down {
 	color: white;
-  }
-
-  .goDown {
-	animation-name: start-down;
-	animation-duration: 2s;
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
-  }
-
-  @keyframes go-down {
-	from {
-	  transform: translateY(calc(100vh));
-	}
-
-	to {
-	  transform: translateY(0);
-	}
   }
 
   @media (max-width: 599px) {
