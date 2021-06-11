@@ -3,7 +3,7 @@ function startPageUp() {
     targetElement.className = "startPageComeUp";
   }
 
-  if (startPage == 0) {
+if (getUrlParam("startPage") == 0) {
     var targetElement = document.getElementById("startPage");
     targetElement.className = "instantComeUp";
   }
