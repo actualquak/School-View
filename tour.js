@@ -19,6 +19,3 @@ json.default.firstScene = getUrlParam("room", "DownCenNE");
 json.scenes.DownCenNE = DownCenNEjson;
 json.scenes.room2 = scene2json;
 console.log(json.default.firstScene);
-
-startPage = getUrlParam("startPage", 1);
-
