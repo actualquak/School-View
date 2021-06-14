@@ -25,7 +25,14 @@
       <a href="#" onclick="closeNav()"><p>Video</p></a>
       <a href="#" onclick="closeNav()"><p>Contact</p></a>
     </div>
-	<script type="text/javascript" src="navigation.js"></script>
+	<script type="text/javascript">
+		function pannelumActivate() {
+    var targetElement = document.getElementById("information");
+    targetElement.className = "instantGoDown";
+    closeNav();
+}
+		function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+	</script>
 	
 	  <script type="text/javascript" src="tour.js"></script>
 	<div id="panoramaPage">
@@ -44,6 +51,7 @@
           <button id="navButton" onclick="openNav()">
             <i class="fa fa-bars"></i>
           </button>
+	<script type="text/javascript">function openNav() { document.getElementById("mySidenav").style.width = "100vw"; }</script>
         </th>
         <th>
           <div class="chip">
