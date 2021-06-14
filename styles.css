@@ -111,10 +111,6 @@ video {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-image: url("https://raw.githubusercontent.com/actualquak/test-typescript-nths/master/assets/nths.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
   }
 	
   #alignStart {
@@ -126,6 +122,11 @@ video {
 	text-align: center;
 
 	line-height: 100vh;
+	  
+	background-image: url("https://raw.githubusercontent.com/actualquak/test-typescript-nths/master/assets/nths.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
   }
 
   .startPageComeUp {
