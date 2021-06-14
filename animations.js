@@ -1,3 +1,11 @@
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+};
+
 startPage = getUrlParam("startPage", 1);
 startPageElement = `<div id="alignStart"><div id="verticalAlign"><h1>Explore New Town High</h1><div id="padding"><button id="startButton" onclick="startPageUp();">Start Exploring</button></div> </div></div>`;
 
@@ -12,18 +20,4 @@ function generateStartPage() {
   if (startPage != 0) {
     $("#startPage").html(startPageElement);
   }   
-}    
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100vw";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
-function pannelumActivate() {
-    var targetElement = document.getElementById("information");
-    targetElement.className = "instantGoDown";
-    closeNav();
 }
