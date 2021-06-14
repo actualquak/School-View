@@ -14,6 +14,16 @@ if (startPage == 0) {
     console.log(targetElement.className);
   }
 
+  function informationComesUp() {
+    var targetElement = document.getElementById("information");
+    targetElement.className = "comeUp";
+  }
+
+  function informationGoesDown() {
+    var targetElement = document.getElementById("information");
+    targetElement.className = "goDown";
+  }
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "100vw";
 }
