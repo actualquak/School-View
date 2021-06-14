@@ -3,24 +3,10 @@ function startPageUp() {
     targetElement.className = "startPageComeUp";
   }
 
-startPage = getUrlParam("startPage");
-console.log(startPage);
-instantComeUp = "instantComeUp";
-console.log(instantComeUp);
+startPage = getUrlParam("startPage", 0);
 
 if (startPage == 0) {
-    console.log(startPage);
     startPageUp();
-  }
-
-  function informationComesUp() {
-    var targetElement = document.getElementById("information");
-    targetElement.className = "comeUp";
-  }
-
-  function informationGoesDown() {
-    var targetElement = document.getElementById("information");
-    targetElement.className = "goDown";
   }
 
 function openNav() {
