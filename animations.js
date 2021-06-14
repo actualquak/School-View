@@ -10,8 +10,7 @@ console.log(instantComeUp);
 
 if (startPage == 0) {
     console.log(startPage);
-    var targetElement = document.getElementById("startPage");
-    targetElement.className = "startPageComeUp";
+    startPageUp();
   }
 
   function informationComesUp() {
