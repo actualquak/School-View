@@ -12,8 +12,7 @@ startPageElement = `<div id="alignStart"><div id="verticalAlign"><h1>Explore New
 generateStartPage();
 
 function startPageUp() {
-    var targetElement = document.getElementById("startPage");
-    targetElement.className = "startPageComeUp";
+    $("#startPage").addClass("startPageComeUp");
   }
 
 function generateStartPage() {
