@@ -1,7 +1,7 @@
 base = `{   
     "default": {
     	"hotSpotDebug" : true,
-        "firstScene": "room1",
+        "firstScene": "DownCenNE",
         "sceneFadeDuration": 1000,
 	"autoLoad" : true
     },
