@@ -1,5 +1,12 @@
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+};
+
 informationDisplay = getUrlParam("information");
-informationElement = document.getElementById("information");
 
 articleParagraphs = [
   "The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line",
@@ -49,20 +56,20 @@ function createVideoElement(i) {
 }  
 
 function generateVideo(i) {
-  informationElement.innerHTML = createVideoElement(i);
-  informationElement.style.backgroundColor = "black";
+  $("#information").html(createVideoElement(i));
+  $("#information").css("background-color", "black");
 }  
   
 if (informationDisplay == 0) {
-  informationElement.innerHTML = generateArticle(0);
+  $("#information").html(generateArticle(0));
 } else if (informationDisplay == 1) {
   generateVideo(0);
 } else if (informationDisplay == 2) {
-  informationElement.innerHTML = generateArticle(1);
+  $("#information").html(generateArticle(1));
 } else if (informationDisplay == 3) {
   generateVideo(1);
 } else if (informationDisplay == 4) {
-  informationElement.innerHTML = generateArticle(2);
+  $("#information").html(generateArticle(2));
 } else if (informationDisplay == 5) {
   generateVideo(2);
 } else if (informationDisplay == 6) {
