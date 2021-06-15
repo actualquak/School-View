@@ -23,3 +23,6 @@ DownCenNE = $.getJSON("https://actualquak.github.io/School-View/json/Down-CenNE.
 	json.scenes.DownCenNE = data;
 	}, async = false
 );
+
+pannellum.viewer('panorama', json);
+console.log(link);
