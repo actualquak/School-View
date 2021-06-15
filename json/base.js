@@ -18,4 +18,6 @@ base = `{
 		"Down-QuadSW" : {}
     }
 }`;
-json = JSON.parse(base)
+json = JSON.parse(base);
+DownCenNE = $.getJSON("https://actualquak.github.io/School-View/json/Down-CenNE.json");
+base.scenes.Down-CenNE = Down-CenNE.responseJSON;
