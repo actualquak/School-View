@@ -84,11 +84,6 @@ table {
   margin-left: 50px;
 }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -144,7 +139,7 @@ video {
 
   .instantComeUp {
 	animation-name: start-come-up;
-	animation-duration: 0s;
+	animation-duration: -2s;
 
 
 	/* Preserve the effect of the animation at ending */
@@ -164,7 +159,7 @@ video {
   
   .instantGoDown {
 	animation-name: information-go-down;
-	animation-duration: 0s;
+	animation-duration: -2s;
 
 
 	/* Preserve the effect of the animation at ending */
@@ -233,7 +228,6 @@ video {
   body {
 	margin: 0;
 	overflow: hidden;
-	transition: background-color .5s;
   }
 
   #information {

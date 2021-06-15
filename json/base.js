@@ -21,5 +21,5 @@ base = `{
 json = JSON.parse(base);
 DownCenNE = $.getJSON("https://actualquak.github.io/School-View/json/Down-CenNE.json", function(data) {
 	json.scenes.DownCenNE = data;
-	}
+	}, async = False
 );
