@@ -233,6 +233,7 @@ video {
   body {
 	margin: 0;
 	overflow: hidden;
+	transition: background-color .5s;
   }
 
   #information {
