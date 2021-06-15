@@ -8,11 +8,7 @@ function getUrlParam(parameter, defaultvalue){
 
 startPage = getUrlParam("startPage", 1);
 
-if (startPage == 0) { 
-    $("#startPage").addClass("instantComeUp"); 
-} else {
-    $("#startPage").removeClass("instantComeUp"); 
-}
+if (startPage == 0) { $("#startPage").hide(); }
 
 function startPageUp() {
     $("#startPage").addClass("startPageComeUp");
