@@ -7,19 +7,19 @@ base = `{
     },
 
     "scenes": {
-        "Down-CenNE": {},
-        "Down-Foyer" : {},
-		"Down-NE" : {},
-		"Down-NW" : {},
-		"Down-QuadCen" : {},
-		"Down-QuadNE" : {},
-		"Down-QuadNW" : {},
-		"Down-QuadSE" :  {},
-		"Down-QuadSW" : {}
+        "DownCenNE": {},
+        "DownFoyer" : {},
+		"DownNE" : {},
+		"DownNW" : {},
+		"DownQuadCen" : {},
+		"DownQuadNE" : {},
+		"DownQuadNW" : {},
+		"DownQuadSE" :  {},
+		"DownQuadSW" : {}
     }
 }`;
 json = JSON.parse(base);
 DownCenNE = $.getJSON("https://actualquak.github.io/School-View/json/Down-CenNE.json", function(data) {
-	json.scenes.Down-CenNE = data;
+	json.scenes.DownCenNE = data;
 	}
 );
