@@ -8,7 +8,14 @@ base = `{
 
     "scenes": {
         "Down-CenNE": {},
-        "room2": {}
+        "Down-Foyer" : {},
+		"Down-NE" : {},
+		"Down-NW" : {},
+		"Down-QuadCen" : {},
+		"Down-QuadNE" : {},
+		"Down-QuadNW" : {},
+		"Down-QuadSE" :  {},
+		"Down-QuadSW" : {}
     }
 }`;
 json = JSON.parse(base)
