@@ -19,6 +19,7 @@ base = `{
     }
 }`;
 json = JSON.parse(base);
+console.log(base);
 
 DownCenNE = $.ajax({
   dataType: "json",
