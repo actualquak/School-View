@@ -1,4 +1,4 @@
-base = `{   
+base = `{
     "default": {
     	"hotSpotDebug" : true,
         "firstScene": "DownCenNE",
@@ -19,6 +19,12 @@ base = `{
     }
 }`;
 json = JSON.parse(base);
+
+DownCenNE = $.ajax({
+  dataType: "json",
+  url: "https://actualquak.github.io/School-View/json/Down-CenNE.json",
+  success: fuction(data) {json.scenes.DownCenNE = data;}
+});
 DownCenNE = $.getJSON("https://actualquak.github.io/School-View/json/Down-CenNE.json", function(data) {
 	json.scenes.DownCenNE = data;
 	}, async = false
