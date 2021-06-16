@@ -27,16 +27,6 @@ videoURLs = [
   "https://static-content-hosting-de818.firebaseapp.com/School-View/ussr.mp4",
 ];
 
-if (informationDisplay != null) {
-  no3DImage();
-}
-
-function no3DImage() {
-    var targetElement = document.getElementById("information");
-    targetElement.className = "instantInfoComeUp";
-    noStartPage();
-  }
-
 function generateArticle(i) {
   heading = articleTitles[i];
   paragraphText = articleParagraphs[i];
