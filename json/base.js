@@ -30,4 +30,4 @@ $.when(
 	})
 ).then(function() {
 	pannellum.viewer('panorama', json); console.log(link);
-}
+});
