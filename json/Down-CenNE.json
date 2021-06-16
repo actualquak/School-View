@@ -1,7 +1,7 @@
 {
     "hfov": 110,
-    "pitch": -3,
-    "yaw": 117,
+    "pitch": 0.0,
+    "yaw": 0.0,
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Down-CenNE.jpg",
     "hotSpots": [{
