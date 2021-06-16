@@ -23,7 +23,7 @@ console.log(base);
 
 
 $.when(
-	DownCenNE = $.ajax({
+	$.ajax({
 		dataType: "json",
 		url: "https://actualquak.github.io/School-View/json/Down-CenNE.json",
 		success: function(data) {json.scenes.DownCenNE = data;}
