@@ -8,7 +8,7 @@ function getUrlParam(parameter, defaultvalue){
 
 var articleParagraphs, articleTitles, videoURLs;
 
-$.getJSON("/json/information.json", function(data){
+$.getJSON("/School-View/json/information.json", function(data){
         articleParagraphs = data.articleParagraphs;
         articleTitles = data.articleTitles;
         videoURLs = data.videoURLs;
