@@ -27,7 +27,7 @@ $.when(
 		dataType: "json",
 		url: "https://actualquak.github.io/School-View/json/Down-CenNE.json",
 		success: function(data) {json.scenes.DownCenNE = data;}
-	});
+	})
 ).then(function() {
 	pannellum.viewer('panorama', json); console.log(link);
 }
