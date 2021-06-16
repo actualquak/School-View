@@ -24,10 +24,5 @@ console.log(base);
 DownCenNE = $.ajax({
   dataType: "json",
   url: "https://actualquak.github.io/School-View/json/Down-CenNE.json",
-  success: function(data) {json.scenes.DownCenNE = data;},
-  async: false
+  success: function(data) {json.scenes.DownCenNE = data; pannellum.viewer('panorama', json); console.log(link);},
 });
-
-
-pannellum.viewer('panorama', json);
-console.log(link);
