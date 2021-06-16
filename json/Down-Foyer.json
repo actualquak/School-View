@@ -3,7 +3,7 @@
     "pitch": -3,
     "yaw": 117,
     "type": "equirectangular",
-    "panorama": "https://actualquak.github.io/School-View/images/Down-CenFoyer.jpg",
+    "panorama": "https://actualquak.github.io/School-View/images/Down-Foyer.jpg",
     "hotSpots": [{
 		"pitch": -2.1,
         "yaw": 132.9,
