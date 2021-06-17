@@ -16,7 +16,7 @@ function getUrlParam(parameter, defaultvalue){
 
 startPage = getUrlParam("startPage", 1);
 
-if (startPage == 0) { $("#startPage").hide(); }
+if (startPage == 0) { $("#startPage").hide(); openNav() }
 
 function startPageUp() {
     $("#startPage").addClass("startPageComeUp");
