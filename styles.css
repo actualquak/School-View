@@ -224,6 +224,7 @@ video {
 	right: 0;
 	background-color: white;
 	text-align: center;
+	  float: left;
   }
 
   .fa-arrow-down {
