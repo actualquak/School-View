@@ -1,0 +1,20 @@
+{
+    "default": {
+    	"hotSpotDebug" : true,
+        "firstScene": "DownCenNE",
+        "sceneFadeDuration": 1000,
+	"autoLoad" : true
+    },
+
+    "scenes": {
+        "DownCenNE": {},
+        "DownFoyer" : {},
+		"DownNE" : {},
+		"DownNW" : {},
+		"DownQuadCen" : {},
+		"DownQuadNE" : {},
+		"DownQuadNW" : {},
+		"DownQuadSE" :  {},
+		"DownQuadSW" : {}
+    }
+}
