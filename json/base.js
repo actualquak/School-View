@@ -114,7 +114,7 @@ $.when(
 	}),
 	$.ajax({
 		dataType: "json",
-		url: "https://actualquak.github.io/School-View/json/UP-NCenE.json",
+		url: "https://actualquak.github.io/School-View/json/Up-NCenE.json",
 		success: function(data) {json.scenes.UpNCenE = data;}
 	}),
 	$.ajax({
