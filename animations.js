@@ -1,3 +1,5 @@
+var informationDisplay;
+
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -16,7 +18,7 @@ function getUrlParam(parameter, defaultvalue){
 
 startPage = getUrlParam("startPage", 1);
 
-if (startPage == 0) { $("#startPage").hide(); openNav() }
+if (startPage == 0) { $("#startPage").hide(); openNav(); informationDisplay = true; }
 
 function startPageUp() {
     $("#startPage").addClass("startPageComeUp");
