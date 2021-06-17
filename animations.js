@@ -21,15 +21,10 @@ if (startPage == 0) { $("#startPage").hide(); openNav(); }
 function startPageUp() {
     $("#startPage").addClass("startPageComeUp");
     var informationDisplay = true;
-    window.setTimeout(function(){ openNav() }, 2000);
+    window.setTimeout(function(){ openNav("#main") }, 2000);
   }
 
-function openNav() {
+function openNav(element) {
   $("#mySidenav").css("width", "250px");
-  $("#main").css("marginLeft", "250px");
-}
-
-function closeNav() {
-  $("#mySidenav").css("width", "0px");
-  $("#main").css("marginLeft", "0px");
+  $(element).css("marginLeft", "250px");
 }
