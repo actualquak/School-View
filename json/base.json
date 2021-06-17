@@ -3,7 +3,7 @@
     	"hotSpotDebug" : true,
         "firstScene": "DownCenNE",
         "sceneFadeDuration": 1000,
-	"autoLoad" : true
+		"autoLoad" : true
     },
 
     "scenes": {
@@ -15,6 +15,21 @@
 		"DownQuadNE" : {},
 		"DownQuadNW" : {},
 		"DownQuadSE" :  {},
-		"DownQuadSW" : {}
+		"DownQuadSW" : {},
+		"DownSE" : {},
+		"DownSW" : {},
+		"MidNE" : {},
+		"MidNW" : {},
+		"MidSE" : {},
+		"MidSW" : {},
+		"UpClassroom" : {},
+		"UpFoyer" : {},
+		"UpNCenE" : {},
+		"UpNCenW" : {},
+		"UpNE" : {},
+		"UpNW" : {},
+		"UpSCen" : {},
+		"UpSE" : {},
+		"UpSW" : {}
     }
 }
