@@ -28,6 +28,11 @@ p {
   font-size: 36pt;
 }
 
+#main {
+  transition: margin-left .0s;
+  padding: 16px;
+}
+
 table {
   display: block;
   overflow: hidden;
