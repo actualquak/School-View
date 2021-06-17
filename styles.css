@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 
+.spacer {
+	height: 20px;
+}
+
 #navButton {
   font-size: 40pt;
   background-color: transparent;
