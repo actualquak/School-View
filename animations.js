@@ -19,8 +19,6 @@ startPage = getUrlParam("startPage", 1);
 if (startPage == 0) { $("#startPage").hide(); openNav(); }
 
 function startPageUp() {
-    width = window.innerWidth - 250; 
-    $("#information").css("width", width+"px");
     $("#startPage").addClass("startPageComeUp");
     informationDisplay = true;
     window.setTimeout(function(){ openNav("#main") }, 2000);
