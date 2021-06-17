@@ -20,6 +20,7 @@ if (startPage == 0) { $("#startPage").hide(); }
 
 function startPageUp() {
     $("#startPage").addClass("startPageComeUp");
+    openNav()
   }
 
 function openNav() {
