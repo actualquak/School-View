@@ -33,6 +33,7 @@ table {
   overflow: hidden;
   white-space: nowrap;
   text-align: left;
+  margin: 20px;
 }
 
 #demo {
@@ -219,7 +220,6 @@ video {
   }
 
   body {
-	margin: 20px;
 	overflow: hidden;
   }
 
