@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 
+#sideSpacer {
+	width: 250px;	
+}	
+
 .spacer {
 	height: 20px;
 }
@@ -220,7 +224,7 @@ video {
 	height: 100vh;
 	position: absolute;
 	top: 0;
-	left: 250px;
+	left: 0;
 	right: 0;
 	background-color: white;
 	text-align: center;
