@@ -137,8 +137,8 @@ video {
   }
 
   @keyframes go-down {
-	from { transform: translateY(0); }
-	to { transform: translateY(calc(-100vh)); }
+	from { transform: translateY(calc(-100vh));}
+	to { transform: translateY(0); }
   }
 
   #startButton {
