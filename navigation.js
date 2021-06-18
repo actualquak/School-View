@@ -1,13 +1,14 @@
 function togglePannellum() {
   if (informationDisplay == true) { 
+    $("#information").removeClass("comeUp");
     $("#information").addClass("comeUp");
-    window.setTimeout(function(){ $("#information").removeClass("comeUp"); }, 2000);
     informationDisplay = false; 
     width = window.innerWidth - 250; 
     $("#panorama").css("width", width+"px");
   } else { 
+    $("#information").removeClass("goDown");
     $("#information").addClass("goDown"); 
-    window.setTimeout(function(){ $("#information").removeClass("comeUp"); }, 2000);
+    window.setTimeout(function(){  }, 2000);
     informationDisplay = true; 
   } 
 }
