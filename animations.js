@@ -19,7 +19,7 @@ startPage = getUrlParam("startPage", 1);
 if (startPage == 0) { $("#startPage").hide(); openNav(); }
 
 function startPageUp() {
-    $("#startPage").addClass("startPageComeUp");
+    $("#startPage").addClass("comeUp");
     informationDisplay = true;
     window.setTimeout(function(){ openNav("#main") }, 2000);
   }
