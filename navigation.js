@@ -11,3 +11,5 @@ function togglePannellum() {
     informationDisplay = true; 
   } 
 }
+
+
