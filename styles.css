@@ -119,52 +119,26 @@ video {
 	background-attachment: fixed;
   }
 
-  .startPageComeUp {
-	animation-name: start-come-up;
+  .comeUp {
+	animation-name: come-up;
 	animation-duration: 2s;
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
+	animation-fill-mode: forwards; //This will preserve the animation
   }
 
-  .instantComeUp {
-	animation-name: start-come-up;
-	animation-duration: -2s;
-
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
+  @keyframes come-up {
+	from { transform: translateY(0); }
+	to { transform: translateY(calc(-100vh)); }
   }
 
-  @keyframes start-come-up {
-
-	from {
-	  transform: translateY(0);
-	}
-
-	to {
-	  transform: translateY(calc(-100vh));
-	}
+  .goDown {
+	animation-name: go-down;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; //This will preserve the animation
   }
-  
-  .instantGoDown {
-	animation-name: information-go-down;
-	animation-duration: -2s;
 
-
-	/* Preserve the effect of the animation at ending */
-	animation-fill-mode: forwards;
-  }
-  
-  @keyframes information-go-down {
-
-	from {
-	  transform: translateY(0);
-	}
-
-	to {
-	  transform: translateY(calc(100vh));
-	}
+  @keyframes go-down {
+	from { transform: translateY(0); }
+	to { transform: translateY(calc(-100vh)); }
   }
 
   #startButton {
