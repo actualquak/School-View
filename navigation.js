@@ -8,7 +8,6 @@ function togglePannellum() {
   } else { 
     $("#information").removeClass("comeUpFromMiddle");
     $("#information").addClass("goDownFromTop"); 
-    window.setTimeout(function(){  }, 2000);
     informationDisplay = true; 
   } 
 }
