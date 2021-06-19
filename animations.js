@@ -17,14 +17,14 @@ function getUrlParam(parameter, defaultvalue){
 startPage = getUrlParam("startPage", 1);
 
 if (startPage == 0) { 
-    currentSection = "information";
+    currentSection = "#information";
     $("#startPage").hide(); 
     openNav(); 
 }
 
 function startPageUp() {
     $("#startPage").addClass("comeUpFromMiddle");
-    currentSection = "information";
+    currentSection = "#information";
     window.setTimeout(function(){ openNav("#main") }, 2000);
   }
 
