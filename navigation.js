@@ -1,11 +1,11 @@
 function changeSection(to) {
   // working out positions
   if (currentSection == "#information") { currentPosition = 0; }
-  else if (currentSection == "#panorama") { currentPosition = 1; }
+  else if (currentSection == "#panoramaPage") { currentPosition = 1; }
   else { currentPosition = 2; }
   
   if (to == "#information") { newPosition = 0; }
-  else if (to == "#panorama") { newPosition = 1; }
+  else if (to == "#panoramaPage") { newPosition = 1; }
   else { newPosition = 2; }
   
   // moving sections around
