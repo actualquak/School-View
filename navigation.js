@@ -8,8 +8,6 @@ function changeSection(to) {
   else if (to == "#panorama") { newPosition = 1; }
   else { newPosition = 2; }
   
-  layering(to);
-  
   // moving sections around
   if (currentSection != to ) { // Don't move section if already selected
     if (currentPosition < newPosition) { 
@@ -36,13 +34,4 @@ function removeAllClasses(element) {
   $(element).removeClass("comeUpFromBottom");
   $(element).removeClass("goDownFromTop");
   $(element).removeClass("goDownFromMiddle");
-}
-
-function layering(newSection) {
-  if (newSection == "#panorama" && currentSection == "#information") { otherSection = "#about" } 
-  else if (newSection == "#panorama" && currentSection == "#about") { otherSection = "#information" }
-  else { otherSection = "#panorama" }
-  
-  $(newSection).show();
-  $(otherSection).hide();
 }
