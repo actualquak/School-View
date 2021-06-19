@@ -8,27 +8,41 @@ function changeSection(to) {
   else if (to == "#panorama") { newPosition = 1; }
   else { newPosition = 2; }
   
+  layering(to);
+  
   // moving sections around
   if (currentSection != to ) { // Don't move section if already selected
     if (currentPosition < newPosition) { 
       // Removing current section from view
-      removeAllClasses()
+      removeAllClasses(currentSection)
       $(currentSection).addClass("comeUpFromMiddle");
       // Moving new section into view
-      removeAllClasses()
+      removeAllClasses(to)
       $(to).addClass("comeUpFromBottom");
     } else {
       // Removing current section from view
-      removeAllClasses()
+      removeAllClasses(currentSection)
       $(currentSection).addClass("goDownFromMiddle");
       // Moving new section into view
-      removeAllClasses()
+      removeAllClasses(to)
       $(to).addClass("goDownFromTop");
     }  
     currentSection = to;
   }
 }
 
-function removeAllClasses() {
+function removeAllClasses(element) {
+  $(element).removeClass("comeUpFromMiddle");
+  $(element).removeClass("comeUpFromBottom");
+  $(element).removeClass("goDownFromTop");
+  $(element).removeClass("goDownFromMiddle");
+}
+
+function layering(newSection) {
+  if (newSection == "#panorama" && currentSection == "#information") { otherSection = "#about" } 
+  else if (newSection == "#panorama" && currentSection == "#about") { otherSection = "#information" }
+  else { otherSection = "#panorama" }
   
+  $(newSection).show();
+  $(otherSection).hide();
 }
