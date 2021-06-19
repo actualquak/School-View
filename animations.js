@@ -23,7 +23,7 @@ if (startPage == 0) {
 }
 
 function startPageUp() {
-    $("#startPage").addClass("comeUp");
+    $("#startPage").addClass("comeUpFromMiddle");
     informationDisplay = true;
     window.setTimeout(function(){ openNav("#main") }, 2000);
   }
