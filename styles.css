@@ -119,26 +119,48 @@ video {
 	background-attachment: fixed;
   }
 
-  .comeUp {
-	animation-name: come-up;
+  .comeUpFromMiddle {
+	animation-name: come-up-from-middle;
 	animation-duration: 2s;
 	animation-fill-mode: forwards; //This will preserve the animation
   }
 
-  @keyframes come-up {
+  @keyframes come-up-from-middle {
 	from { transform: translateY(0); }
 	to { transform: translateY(calc(-100vh)); }
   }
 
-  .goDown {
-	animation-name: go-down;
+  .goDownFromTop {
+	animation-name: go-down-from-top;
 	animation-duration: 2s;
 	animation-fill-mode: forwards; //This will preserve the animation
   }
 
-  @keyframes go-down {
+  @keyframes go-down-from-top {
 	from { transform: translateY(calc(-100vh));}
 	to { transform: translateY(0); }
+  }
+
+  .comeUpFromBottom {
+	animation-name: come-up-from-bottom;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; //This will preserve the animation
+  }
+
+  @keyframes come-up-from-bottom {
+	from { transform: translateY(calc(100vh)); }
+	to { transform: translateY(0); }
+  }
+
+  .goDownFromMiddle {
+	animation-name: go-down-from-middle;
+	animation-duration: 2s;
+	animation-fill-mode: forwards; //This will preserve the animation
+  }
+
+  @keyframes go-down-from-middle {
+	from { transform: translateY(0);}
+	to { transform: translateY(calc(100vh)); }
   }
 
   #startButton {
@@ -148,7 +170,8 @@ video {
 	background-color: rgb(51, 94, 187);
 	color: white;
 	border: none;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Open Sans';
+  	font-weight: 300;
 	font-weight: bold;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -158,7 +181,8 @@ video {
   padding-right: 20px;
   padding-bottom: 0px;
   padding-left: 20px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Open Sans';
+  	font-weight: 800;
 	color: white;
 	user-select: none;
 	margin: 0;
