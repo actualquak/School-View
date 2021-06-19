@@ -12,15 +12,23 @@ function changeSection(to) {
   if (currentSection != to ) { // Don't move section if already selected
     if (currentPosition < newPosition) { 
       // Removing current section from view
+      removeAllClasses()
       $(currentSection).addClass("comeUpFromMiddle");
       // Moving new section into view
+      removeAllClasses()
       $(to).addClass("comeUpFromBottom");
     } else {
       // Removing current section from view
+      removeAllClasses()
       $(currentSection).addClass("goDownFromMiddle");
       // Moving new section into view
+      removeAllClasses()
       $(to).addClass("goDownFromTop");
     }  
     currentSection = to;
   }
+}
+
+function removeAllClasses() {
+  
 }
