@@ -2,13 +2,8 @@ function changeSection(element) {
   oldPos = getElementPosition(currentSection);
   newPos = getElementPosition(element);
   
-  if (oldPos < newPos) {
-    $(currentSection).addClass("comeUpFromMiddle")
-    $(element).addClass("comeUpFromBottom")
-  } else {
-    $(currentSection).addClass("goDownFromMiddle")
-    $(element).addClass("goDownFromTop")
-  }  
+  console.log(oldPos);
+  console.log(newPos);
 }
 
 function getElementPosition(element) {
