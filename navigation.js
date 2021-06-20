@@ -1,3 +1,31 @@
+function switchSections(to) {
+  if (to == "#information") {
+    move("#information", "down", "top");
+    if (currentSection == "#about") {
+      move("#panoramaPage", "down", "middle");
+      move("#about", "down", "middle");
+    } else {
+      move("#panoramaPage", "down", "middle");
+    }  
+  } else if (to == "#panoramaPage") {
+    if (currentSection == "#about") {
+      move("#panoramaPage", "down", "top");
+      move("#about", "down", "middle");
+    } else {
+      move("#panoramaPage", "up", "bottom");
+      move("#information", "up", "middle");
+    }  
+  } else {
+    move("#about", "up", "bottom");
+    if (currentSection == "#information") {
+      move("#panoramaPage", "up", "middle");
+      move("#information", "up", "middle");
+    } else {
+      move("#panoramaPage", "up", "middle");
+    }  
+  }  
+}  
+
 function move(element, direction, from) {
   removeAllClasses(element);
   if (direction == "up") {
