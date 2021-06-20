@@ -8,6 +8,7 @@ function switchSections(to) {
       move("#panoramaPage", "down", "middle");
     }  
   } else if (to == "#panoramaPage") {
+    $("#panoramaPage").show();
     if (currentSection == "#about") {
       move("#panoramaPage", "down", "top");
       move("#about", "down", "middle");
@@ -18,7 +19,7 @@ function switchSections(to) {
   } else {
     move("#about", "up", "bottom");
     if (currentSection == "#information") {
-      move("#panoramaPage", "up", "middle");
+      $("#panoramaPage").hide();
       move("#information", "up", "middle");
     } else {
       move("#panoramaPage", "up", "middle");
