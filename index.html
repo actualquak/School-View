@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>NTHS School View</title>
+  <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="json/base.js"></script>
+</head>
+
+	
+<body id="body">
+	
+	<div id="mySidenav" class="sidenav">
+    <a onClick="changeSection('#information')" href="javascript:void(0);">Information</a>
+    <a onClick="changeSection('#panoramaPage')" href="javascript:void(0);">3D Tour</a>
+    <a onClick="changeSection('#about')" href="javascript:void(0);">About</a>
+  </div>
+	<script type="text/javascript" src="navigation.js"></script>
+	
+	<div id="about"></div>
+	
+	<div id="panoramaPage"></div>	
+	
+  <div id="information"></div>
+
+	<div id="startPage">
+    <div id="alignStart">
+      <div id="verticalAlign">
+        <h1>Explore New Town High</h1>
+        <div id="padding">
+          <button id="startButton" onclick="startPageUp();">Start Exploring</button>
+        </div> 
+      </div>
+    </div>
+  </div>
+	
+  <script type="text/javascript" src="animations.js"></script>
+	
+</body>
+
+</html>
