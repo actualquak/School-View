@@ -3,10 +3,14 @@ function changeSection(element) {
   newPos = getElementPosition(element);
 
   if (oldPos < newPos) {
+    removeAllClasses(currentSection)
     $(currentSection).addClass("comeUpFromMiddle")
+    removeAllClasses(element)
     $(element).addClass("comeUpFromBottom")
   } else {
+    removeAllClasses(currentSection)
     $(currentSection).addClass("goDownFromMiddle")
+    removeAllClasses(element)
     $(element).addClass("goDownFromTop")
   }  
   
@@ -19,3 +23,10 @@ function getElementPosition(element) {
   else { pos = 2 }
   return pos;
 }   
+
+function removeAllClasses(element) {
+  $(element).removeClass("comeUpFromMiddle");
+  $(element).removeClass("comeUpFromBottom");
+  $(element).removeClass("goDownFromTop");
+  $(element).removeClass("goDownFromMiddle");
+}
