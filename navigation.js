@@ -1,4 +1,14 @@
 function changeSection(to) {
+  // changing size to fit in space
+  if (to == "#panoramaPage") {
+    $("#panorama").css("width", (window.innerHeight - 250)+"px");
+    $("#panorama").css("float", "left");
+  } else if (to == "#about") {
+    $("#panorama").css("width", (window.innerHeight - 250)+"px");
+    $("#panorama").css("float", "left");
+    $(".featuredDevs").css("width, ((window.innerHeight - 300) / 3)+"px");
+  }  
+  
   // working out positions
   if (currentSection == "#information") { currentPosition = 0; }
   else if (currentSection == "#panoramaPage") { currentPosition = 1; }
