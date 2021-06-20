@@ -6,7 +6,7 @@ function changeSection(to) {
   } else {
     $("#panorama").css("width", (window.innerHeight - 250)+"px");
     $("#panorama").css("float", "left");
-    $(".featuredDevs").css("width, ((window.innerHeight - 300) / 3)+"px");
+    $(".featuredDevs").css("width", ((window.innerHeight - 300) / 3)+"px");
   }
   
   // working out positions
