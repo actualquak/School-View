@@ -9,9 +9,9 @@ function changeSection(element) {
     $(element).addClass("comeUpFromBottom")
   } else {
     removeAllClasses(currentSection)
-    $(currentSection).addClass("goDownFromMiddle")
+    $(currentSection).addClass("goDownFromTop")
     removeAllClasses(element)
-    $(element).addClass("goDownFromTop")
+    $(element).addClass("goDownFromMiddle")
   }  
   
   currentSection = element
