@@ -28,7 +28,6 @@ function startPageUp() {
     window.setTimeout(function(){ openNav("#main") }, 2000);
   }
 
-function openNav(element) {
+function openNav() {
   $("#mySidenav").css("width", "250px");
-  $(element).css("marginLeft", "250px");
 }
