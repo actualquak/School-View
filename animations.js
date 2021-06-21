@@ -29,5 +29,5 @@ function startPageUp() {
   }
 
 function openNav() {
-  $("#mySidenav").css("width", "250px");
+  $("#navigation").css("width", "250px");
 }
