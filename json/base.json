@@ -30,6 +30,7 @@
 		"UpNW" : {},
 		"UpSCen" : {},
 		"UpSE" : {},
-		"UpSW" : {}
+		"UpSW" : {},
+    "Debug" : {}
     }
 }
