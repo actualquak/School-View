@@ -5,13 +5,6 @@
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Down-QuadNE.jpg",
     "hotSpots": [{
-		"pitch": -0.1,
-        "yaw": 132.9,
-        "type": "scene",
-        "text": "Airport",
-        "sceneId": "DownCenNE"
-    },
-	{
 		"pitch": -10.1,
         "yaw": 132.9,
         "type": "scene",
