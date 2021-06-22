@@ -11,6 +11,10 @@ body {
     width: 220px;
 }  
 
+table {
+    margin: 0;
+}    
+
 /* Button ripple effect */
 
 span.ripple {
