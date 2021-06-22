@@ -33,7 +33,7 @@ function startPageUp() {
 function openNav() { $("#nav").addClass("comeOut") }
 
 function resizeSections() {
-    $("#information").css("width", (window.innerWidth - 200)+"px")
-    $("#panoramaPage").css("width", (window.innerWidth - 200)+"px")
-    $("#about").css("width", (window.innerWidth - 200)+"px")
+    $("#information").css("width", (window.innerWidth - 175)+"px")
+    $("#panoramaPage").css("width", (window.innerWidth - 175)+"px")
+    $("#about").css("width", (window.innerWidth - 175)+"px")
 }
