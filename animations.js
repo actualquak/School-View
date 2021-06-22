@@ -24,18 +24,25 @@ if (startPage == 0) {
     currentSection = "#information";
     $("#startPage").hide(); 
     openNav(); 
+    initiatePages();
 }
 
 function startPageUp() {
     $("#startPage").addClass("comeUpFromMiddle");
     currentSection = "#information";
     window.setTimeout(function(){ openNav() }, 2000);
+    initiatePages();
   }
 
 function openNav() { 
     $("#nav").show();
     $("#nav").addClass("comeOut"); 
 }
+
+function initiatePages() {
+    width = (window.innerWidth - 310) / 3;
+    $(".featuredDevs").css("width", width + "px");
+}   
 
 // Button Ripple Effect
 
