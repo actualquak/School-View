@@ -20,15 +20,22 @@ if (startPage == 0) {
     currentSection = "#information";
     $("#startPage").hide(); 
     openNav(); 
+    initiatePages()
 }
 
 function startPageUp() {
     $("#startPage").addClass("comeUpFromMiddle");
     currentSection = "#information";
     window.setTimeout(function(){ openNav("#main") }, 2000);
+    initiatePages();
   }
 
 function openNav(element) {
   $("#mySidenav").css("width", "250px");
   $(element).css("marginLeft", "250px");
 }
+
+function initiatePages() {
+    width = (window.innerWidth - 310) / 3;
+    $(".featuredDevs").css("width", width + "px");
+}    
