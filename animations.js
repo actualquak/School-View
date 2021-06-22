@@ -34,9 +34,3 @@ function openNav() {
     $("#nav").show();
     $("#nav").addClass("comeOut"); 
 }
-
-function resizeSections() {
-    $("#information").css("width", (window.innerWidth - 175)+"px")
-    $("#panoramaPage").css("width", (window.innerWidth - 175)+"px")
-    $("#about").css("width", (window.innerWidth - 175)+"px")
-}
