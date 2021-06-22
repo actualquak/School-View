@@ -25,6 +25,7 @@ function switchSections(to) {
       move("#panoramaPage", "up", "middle");
     }  
   }  
+  currentSection = to;
 }  
 
 function move(element, direction, from) {
