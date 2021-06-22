@@ -17,17 +17,23 @@ function getUrlParam(parameter, defaultvalue){
 startPage = getUrlParam("startPage", 1);
 
 if (startPage == 0) { 
-    $(".whatever").css("width", (window.innerWidth - 200)+"px")
+    resizeSections();
     currentSection = "#information";
     $("#startPage").hide(); 
     openNav(); 
 }
 
 function startPageUp() {
-    $(".whatever").css("width", (window.innerWidth - 200)+"px")
+    resizeSections();
     $("#startPage").addClass("comeUpFromMiddle");
     currentSection = "#information";
     window.setTimeout(function(){ openNav() }, 2000);
   }
 
 function openNav() { $("#nav").addClass("comeOut") }
+
+function resizeSections() {
+    $("#information").css("width", (window.innerWidth - 200)+"px")
+    $("#panoramaPage").css("width", (window.innerWidth - 200)+"px")
+    $("#about").css("width", (window.innerWidth - 200)+"px")
+}
