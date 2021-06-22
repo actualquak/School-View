@@ -2,8 +2,8 @@ function switchSections(to) {
   if (to == "#information") {
     move("#information", "down", "top");
     if (currentSection == "#about") {
+      $("#panoramaPage").hide();
       move("#about", "down", "middle");
-      move("#panoramaPage", "down", "middle");
     } else {
       move("#panoramaPage", "down", "middle");
     }  
