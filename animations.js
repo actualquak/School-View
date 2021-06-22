@@ -16,15 +16,13 @@ function getUrlParam(parameter, defaultvalue){
 
 startPage = getUrlParam("startPage", 1);
 
-if (startPage == 0) { 
-    resizeSections();
+if (startPage == 0) {
     currentSection = "#information";
     $("#startPage").hide(); 
     openNav(); 
 }
 
 function startPageUp() {
-    resizeSections();
     $("#startPage").addClass("comeUpFromMiddle");
     currentSection = "#information";
     window.setTimeout(function(){ openNav() }, 2000);
