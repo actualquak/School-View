@@ -108,7 +108,6 @@ h1 {
 
 #about {
     position: absolute;
-    float: right;
     background-color: red;
     height: 100vh;
     width: 100vw;
@@ -118,7 +117,6 @@ h1 {
 
 #panoramaPage {
     position: absolute;
-    float: right;
     background-color: green;
     height: 100vh;
     width: 100vw;
@@ -127,7 +125,6 @@ h1 {
 /* Information Page */
 
 #information {
-    float: right;
     position: absolute;
     background-color: blue;
     height: 100vh;
