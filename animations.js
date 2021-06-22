@@ -30,7 +30,10 @@ function startPageUp() {
     window.setTimeout(function(){ openNav() }, 2000);
   }
 
-function openNav() { $("#nav").addClass("comeOut") }
+function openNav() { 
+    $("#nav").show();
+    $("#nav").addClass("comeOut"); 
+}
 
 function resizeSections() {
     $("#information").css("width", (window.innerWidth - 175)+"px")
