@@ -17,17 +17,17 @@ function getUrlParam(parameter, defaultvalue){
 startPage = getUrlParam("startPage", 1);
 
 if (startPage == 0) { 
+    $(".whatever").css("width", (window.innerWidth - 200)+"px")
     currentSection = "#information";
     $("#startPage").hide(); 
     openNav(); 
 }
 
 function startPageUp() {
+    $(".whatever").css("width", (window.innerWidth - 200)+"px")
     $("#startPage").addClass("comeUpFromMiddle");
     currentSection = "#information";
-    window.setTimeout(function(){ openNav("#main") }, 2000);
+    window.setTimeout(function(){ openNav() }, 2000);
   }
 
-function openNav() {
-  $("#navigation").css("width", "250px");
-}
+function openNav() { $("#nav").addClass("comeOut") }
