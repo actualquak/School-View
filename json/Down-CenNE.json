@@ -10,5 +10,12 @@
         "type": "scene",
         "text": "DownNE",
         "sceneId": "DownNE"
-    }]
+    },
+	{
+		"pitch": -10.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "DownSE",
+        "sceneId": "DownSE"
+	}]
 }
