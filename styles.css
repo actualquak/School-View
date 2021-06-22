@@ -19,6 +19,8 @@ body {
 .navItem {
   background-color: transparent;
   font-size: 20pt;
+  font-family: 'Open Sans';
+  font-weight: 800;
   border: none;
 }
 
