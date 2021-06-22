@@ -5,7 +5,7 @@
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Down-QuadCen.jpg",
     "hotSpots": [{
-		"pitch": -2.1,
+		    "pitch": -10.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "DownQuadNE",
