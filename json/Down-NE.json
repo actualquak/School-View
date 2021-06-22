@@ -5,7 +5,7 @@
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Down-NE.jpg",
     "hotSpots": [{
-		"pitch": -10.1,
+		"pitch": -0.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "DownCenNE",
