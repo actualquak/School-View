@@ -13,7 +13,12 @@ body {
 
 table {
     margin: 0;
-}    
+} 
+
+p {
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
 
 /* Button ripple effect */
 
