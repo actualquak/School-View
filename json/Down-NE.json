@@ -9,6 +9,13 @@
         "yaw": 132.9,
         "type": "scene",
         "text": "DownCenNE",
-        "sceneId": "DownCenNE"
+        "sceneId": "DownCenNE",
+    },
+	{
+		"pitch": -10.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "DownSE",
+        "sceneId": "DownSE",
     }]
 }
