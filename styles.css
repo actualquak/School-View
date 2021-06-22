@@ -161,7 +161,9 @@ h1 {
   margin-left: 20px;
 }
 
-#0leftAboutp { 
+.commentAboutp { 
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 0px; 
 }
 
