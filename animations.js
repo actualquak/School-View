@@ -40,8 +40,8 @@ function openNav() {
 }
 
 function initiatePages() {
-    width = (window.innerWidth - 310) / 3;
-    $(".featuredDevs").css("width", width + "px");
+    $(".featuredDevs").css("width", ((window.innerWidth - 310) / 3) + "px");
+    $("#panorama").css("width", (window.innerWidth - 310) + "px");
 }   
 
 // Button Ripple Effect
