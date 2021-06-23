@@ -17,5 +17,12 @@
         "type": "scene",
         "text": "UpSE",
         "sceneId": "UpSE"
+    },
+	{
+		"pitch": -20.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "UpNCenE",
+        "sceneId": "UpNCenE"
     }]
 }
