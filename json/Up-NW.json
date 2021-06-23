@@ -10,5 +10,12 @@
         "type": "scene",
         "text": "UpNCenW",
         "sceneId": "UpNCenW"
+    },
+	{
+		"pitch": -10.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "MidNW",
+        "sceneId": "MidNW"
     }]
 }
