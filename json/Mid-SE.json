@@ -5,10 +5,17 @@
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Mid-SE.jpg",
     "hotSpots": [{
-		"pitch": -2.1,
+		"pitch": -0.1,
         "yaw": 132.9,
         "type": "scene",
-        "text": "Airport",
-        "sceneId": "DownCenNE"
+        "text": "DownSE",
+        "sceneId": "DownSE"
+    },
+	{
+		"pitch": -10.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "UpSE",
+        "sceneId": "UpSE"
     }]
 }
