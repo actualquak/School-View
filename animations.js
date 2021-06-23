@@ -41,8 +41,8 @@ function openNav() {
 
 function initiatePages() {
     $(".featuredDevs").css("width", ((window.innerWidth - 310) / 3) + "px");
-    $("#panorama").css("width", (window.innerWidth - 310) + "px");
-}   
+    $("#panorama").css("width", (window.innerWidth - 240) + "px");
+}     
 
 // Button Ripple Effect
 
