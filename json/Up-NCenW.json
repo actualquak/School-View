@@ -5,10 +5,17 @@
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Up-NCenW.jpg",
     "hotSpots": [{
-		"pitch": -2.1,
+		"pitch": -0.1,
         "yaw": 132.9,
         "type": "scene",
-        "text": "Airport",
-        "sceneId": "DownCenNE"
+        "text": "UpNCenE",
+        "sceneId": "UpNCenE"
+    },
+	{
+		"pitch": -10.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "UpNW",
+        "sceneId": "UpNW"
     }]
 }
