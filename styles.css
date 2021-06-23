@@ -196,10 +196,14 @@ h1 {
 
 #panoramaPage {
     position: absolute;
-    background-color: green;
+    background-color: white;
     height: 100vh;
     width: 100vw;
 }
+
+#panorama {
+    float: right;
+}    
 
 /* Information Page */
 
