@@ -213,6 +213,36 @@ h1 {
     width: 100vw;
 }
 
+.spacer {
+  height: 20px;
+}
+
+.chip {
+  display: inline-block;
+  margin: 2.5px;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 8px;
+  border-radius: 25px;
+  background-color: #38B6FF;
+}
+
+#featuredContent {
+  width: 475px;
+  height: 500px;
+  background-color: #38B6FF;
+  line-height: 50px;
+}
+
+#demo {
+  width: 475px;
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('https://picsum.photos/475/300');
+}
+
 /* Animations */
 
 .comeUpFromMiddle {
