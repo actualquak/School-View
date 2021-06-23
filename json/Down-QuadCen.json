@@ -5,10 +5,31 @@
     "type": "equirectangular",
     "panorama": "https://actualquak.github.io/School-View/images/Down-QuadCen.jpg",
     "hotSpots": [{
-		    "pitch": -10.1,
+		"pitch": -0.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "DownQuadNE",
         "sceneId": "DownQuadNE"
+    },
+	{
+		"pitch": -10.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "DownQuadSE",
+        "sceneId": "DownQuadSE"
+    },
+	{
+		"pitch": -20.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "DownQuadSW",
+        "sceneId": "DownQuadSW"
+    },
+	{
+		"pitch": -30.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "DownQuadNW",
+        "sceneId": "DownQuadNW"
     }]
 }
