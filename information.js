@@ -1,5 +1,5 @@
-width = window.innerWidth;
-height = window.innerHeight;
+width = window.innerWidth - 260;
+height = window.innerHeight - 260;
 
 featuredContent = `
 					<div id="featuredContent">
