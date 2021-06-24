@@ -145,6 +145,6 @@ $.when(
 		success: function(data) {json.scenes.UpSW = data;}
 	})
 ).then(function() {
-	pannellum.viewer('panorama', json); 
+	viewer = pannellum.viewer('panorama', json); 
 	viewer.loadScene(getUrlParam("room", "DownCenNE"), 0, 0);
 });});
