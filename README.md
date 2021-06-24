@@ -5,3 +5,4 @@ It is combining old technologies to make a new technology: we are combining stre
 Really, it's nothing fancy: it's a school assignment, and we're developing slowly - no one on the project has created a web app with HTML, CSS and JavaScript before.
 We're deploying this on GitHub Pages, so have a look: https://actualquak.github.io/School-View/
 
+Someone else is deciding to use our idea, but without the animations and js. His repository is here: https://github.com/epikgamer696969/school-website 
