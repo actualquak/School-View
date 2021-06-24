@@ -58,7 +58,7 @@ button {
   background-color: transparent;
   font-size: 20pt;
   font-family: 'Open Sans';
-  font-weight: 800;
+  font-weight: 600;
   color: white;
   border: none;
 }
@@ -120,7 +120,7 @@ button {
 
 h1 {
     font-family: 'Open Sans';
-    font-weight: 800;
+    font-weight: 700;
     color: white;
     user-select: none;
     margin: 0;
