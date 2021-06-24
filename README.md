@@ -11,7 +11,7 @@ Someone else is deciding to use our idea, but without the animations and with PH
 - About page - only contains developer socials currently
 - Panorama - room navigation difficult, not all images uploaded
 - Information page - purely for looks right now
-## Tasks
+## Coming soon
 - Merge with actualquak/School-View to provide functionality to panorama
 - Expand about page
 - Make information page better
