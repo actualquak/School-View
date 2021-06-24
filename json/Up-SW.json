@@ -9,6 +9,9 @@
         "yaw": 132.9,
         "type": "scene",
         "text": "Airport",
-        "sceneId": "DownCenNE"
+        "sceneId": "DownCenNE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     }]
 }

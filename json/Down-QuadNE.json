@@ -9,13 +9,19 @@
         "yaw": 132.9,
         "type": "scene",
         "text": "DownCenNE",
-        "sceneId": "DownCenNE"
+        "sceneId": "DownCenNE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
 	  },
     {
       "pitch": -20.1,
       "yaw": 132.9,
       "type": "scene",
       "text": "DownQuadCen",
-      "sceneId": "DownQuadCen"
+      "sceneId": "DownQuadCen",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
   }]
 }

@@ -9,20 +9,29 @@
         "yaw": 132.9,
         "type": "scene",
         "text": "DownNE",
-        "sceneId": "DownNE"
+        "sceneId": "DownNE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     },
 	{
 		"pitch": -10.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "DownSE",
-        "sceneId": "DownSE"
+        "sceneId": "DownSE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
 	},
 	{
 		"pitch": -20.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "DownQuadNE",
-        "sceneId": "DownQuadNE"
+        "sceneId": "DownQuadNE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
 	}]
 }

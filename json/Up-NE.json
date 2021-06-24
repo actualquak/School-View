@@ -9,20 +9,29 @@
         "yaw": 132.9,
         "type": "scene",
         "text": "MidNE",
-        "sceneId": "MidNE"
+        "sceneId": "MidNE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     },
 	{
 		"pitch": -10.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "UpSE",
-        "sceneId": "UpSE"
+        "sceneId": "UpSE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     },
 	{
 		"pitch": -20.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "UpNCenE",
-        "sceneId": "UpNCenE"
+        "sceneId": "UpNCenE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     }]
 }

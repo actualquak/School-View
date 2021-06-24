@@ -9,13 +9,19 @@
         "yaw": 132.9,
         "type": "scene",
         "text": "UpNW",
-        "sceneId": "UpNW"
+        "sceneId": "UpNW",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     },
 	{
 	    "pitch": -10.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "DownNW",
-        "sceneId": "DownNW"
+        "sceneId": "DownNW",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     }]
 }
