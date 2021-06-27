@@ -277,8 +277,8 @@ th {
 
 .textVerticallyCentered {
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .textVerticallyCentered2Lines {
