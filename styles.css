@@ -275,13 +275,13 @@ th {
   border: none;
 }
 
-.verticallyCentered {
+.textVerticallyCentered {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.verticallyCentered2Lines {
+.textVerticallyCentered2Lines {
   top: 50%;
   -ms-transform: translateY(30%);
   transform: translateY(30%);
