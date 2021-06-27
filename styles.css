@@ -273,6 +273,7 @@ th {
   background-color: transparent;
   font-size: 50pt;
   border: none;
+  border-radius: 50px;
 }
 
 .textVerticallyCentered {
