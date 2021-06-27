@@ -1,5 +1,5 @@
-width = window.innerWidth - 260;
-height = window.innerHeight - 260;
+width = window.innerWidth;
+height = window.innerHeight;
 
 featuredContent = `
 					<div id="featuredContent">
@@ -10,17 +10,17 @@ featuredContent = `
 
 sideArticleColumn1 = `
 				<div id="sideArticleColumn1">
-  				<div class="sideArticle">
-    				<p class="title">NTHS BE SUS MY GUY</p>
+  				<div class="sideArticle" id="studentLeaders">
+    				<p class="title">STUDENT LEADERS: THE LOW DOWN</p>
+  				</div>
+          <div class="sideArticle" id="mathematics">
+    				<p class="title">FROM THE HEAD OF MATHEMATICS</p>
+  				</div>
+          <div class="sideArticle" id="blendedLearning">
+    				<p class="title">THE FUTURE OF LEARNING</p>
   				</div>
           <div class="sideArticle">
-    				<p class="title">NTHS BE SUS MY GUY</p>
-  				</div>
-          <div class="sideArticle">
-    				<p class="title">NTHS BE SUS MY GUY</p>
-  				</div>
-          <div class="sideArticle">
-    				<p class="title">NTHS BE SUS MY GUY</p>
+    				<p class="title">VALUES EDUCATION</p>
   				</div>
 				</div>	
 `;
@@ -28,13 +28,16 @@ sideArticleColumn1 = `
 sideArticleColumn2 = `
 				<div id="sideArticleColumn1">
   				<div class="sideArticle">
-    				<p class="title">OGILVIE BE SUSUS AMOGUS MY GUY</p>
+            `+buildVideo("MS. GEALE")+`
+  				</div>
+          <div class="sideArticle" id="sport">
+    				`+buildVideo("SPORT")+`
   				</div>
           <div class="sideArticle">
-    				<p class="title">OGILVIE BE SUSUS AMOGUS MY GUY</p>
+    				`+buildVideo("OLIVER WOOLLEY")+`
   				</div>
-          <div class="sideArticle">
-    				<p class="title">OGILVIE BE SUSUS AMOGUS MY GUY</p>
+          <div class="sideArticle" id="mrHarrison">
+    				`+buildVideo("THAT TEACHER")+`
   				</div>
 				</div>	
 `;
@@ -49,8 +52,8 @@ if (width < 700) {
 
 function buildPhoneUI() {
   $("#content").html(featuredContent);
-  $("#featuredContent").css("width", (width-50)+"px");
-  $("#demo").css("width", (width-50)+"px");
+  $("#featuredContent").css("width", (width - 50) + "px");
+  $("#demo").css("width", (width - 50) + "px");
 }
 
 function buildTabletUI() {
@@ -63,4 +66,29 @@ function buildDesktopUI() {
   $("#content").html("<th>" + featuredContent + "</th><th>" + sideArticleColumn1 + "</th><th>" + sideArticleColumn2 + "</th>");
   $("#featuredContent").css("width", (width - 600) + "px");
   $("#demo").css("width", (width - 600) + "px");
+}
+
+function buildVideo(title) {
+	if (title.length > 11) {
+  	centered = "verticallyCentered2Lines";
+  } else {
+  	centered = "verticallyCentered";
+  }
+
+	videoElement = `<table>
+              <tr>
+               	<th>
+                 	<button class="playButton">
+            				<i class="fa fa-play-circle"></i>
+                  </button>
+                </th>
+                <th>
+                	<div class="`+centered+`">
+                  	<p class="playTitle">`+title+`</p>
+                  </div>
+                </th>
+              </tr>
+            </table>`;
+       
+	return videoElement;
 }
