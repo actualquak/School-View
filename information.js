@@ -70,9 +70,9 @@ function buildDesktopUI() {
 
 function buildVideo(title) {
 	if (title.length > 11) {
-  	centered = "verticallyCentered2Lines";
+  	centered = "textVerticallyCentered2Lines";
   } else {
-  	centered = "verticallyCentered";
+  	centered = "textVerticallyCentered";
   }
 
 	videoElement = `<table>
