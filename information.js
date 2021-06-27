@@ -67,3 +67,28 @@ function buildDesktopUI() {
   $("#featuredContent").css("width", (width - 600) + "px");
   $("#demo").css("width", (width - 600) + "px");
 }
+
+function buildVideo(title) {
+	if (title.length > 11) {
+  	centered = "verticallyCentered2Lines";
+  } else {
+  	centered = "verticallyCentered";
+  }
+
+	videoElement = `<table>
+              <tr>
+               	<th>
+                 	<button class="playButton">
+            				<i class="fa fa-play-circle"></i>
+                  </button>
+                </th>
+                <th>
+                	<div class="`+centered+`">
+                  	<p class="playTitle">`+title+`</p>
+                  </div>
+                </th>
+              </tr>
+            </table>`;
+
+	return videoElement;
+}
