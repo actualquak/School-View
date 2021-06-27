@@ -39,6 +39,7 @@ span.ripple {
 }
 
 button {
+  outline: none;
   position: relative;
   overflow: hidden;
   transition: background 400ms;
@@ -248,13 +249,6 @@ th {
   line-height: 50px;
 }
 
-#demo {
-  height: 300px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url('https://picsum.photos/2000/300');
-}
-
 .sideArticle {
   margin: 0px 15px 20px 0px;
   padding: 5px;
@@ -267,6 +261,66 @@ th {
   font-size: 18pt;
   font-weight: 400;
   line-height: 18pt;
+}
+
+.fa-play-circle {
+  color: white;
+}
+
+.playButton {
+  background-color: transparent;
+  font-size: 50pt;
+  border: none;
+}
+
+.verticallyCentered {
+  top: 50%;
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.verticallyCentered2Lines {
+  top: 50%;
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+}
+
+.playTitle {
+  margin: 0px 0px 0px 4px;
+}
+
+/* Images */
+
+#demo {
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('https://picsum.photos/2000/300');
+}
+
+#studentLeaders {
+  background-position: top center;
+  background-image: url('https://static-content-hosting-de818.web.app/School-View/dark-oscar.png');
+}
+
+#mathematics {
+  background-position: center;
+  background-image: url('https://static-content-hosting-de818.web.app/School-View/maths-dark.jpg');
+}
+
+#blendedLearning {
+  background-position: center;
+  background-image: url('https://static-content-hosting-de818.web.app/School-View/blended-learning-dark.jpg');
+}
+
+#mrHarrison {
+  background-position: center 40%;
+  background-image: url('https://i1.wp.com/newtownhigh.tas.edu.au/wp-content/uploads/2020/06/Harrison-Andrew.jpg?resize=214%2C300&ssl=1');
+}
+
+#sport {
+  background-position: center;
+  background-image: url('https://i1.wp.com/newtownhigh.tas.edu.au/wp-content/uploads/2018/09/City-to-Casino-calendar-photo.jpg?fit=1170%2C658&ssl=1');
 }
 
 /* Animations */
