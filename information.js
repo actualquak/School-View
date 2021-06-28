@@ -27,16 +27,16 @@ sideArticleColumn1 = `
 
 sideArticleColumn2 = `
 				<div id="sideArticleColumn1">
-  				<div class="sideArticle" id="geale">
+  				<div class="sideArticle" id="geale" onclick="play('geale')">
             `+buildVideo("MS. GEALE")+`
   				</div>
-          <div class="sideArticle" id="sport">
+          <div class="sideArticle" id="sport" onclick="play('sport')">
     				`+buildVideo("SPORT")+`
   				</div>
-          <div class="sideArticle" id="woolley>
+          <div class="sideArticle" id="woolley" onclick="play('woolley')">
     				`+buildVideo("OLIVER WOOLLEY")+`
   				</div>
-          <div class="sideArticle" id="mrHarrison">
+          <div class="sideArticle" id="mrHarrison" onclick="play('mrHarrison')">
     				`+buildVideo("THAT TEACHER")+`
   				</div>
 				</div>	
