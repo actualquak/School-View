@@ -92,3 +92,8 @@ function buildVideo(title) {
 
 	return videoElement;
 }
+
+$('.playButton').on('click', function() {
+    $(this).toggleClass('videoExpand');
+    $("video").toggleClass('videoExpand');
+});
