@@ -94,5 +94,6 @@ function buildVideo(title) {
 }
 
 function play(id) {
+	$('.sideArticle').css('background-size', '270px auto');
 	$('#'+id).toggleClass('videoExpand');
 }	
