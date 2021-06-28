@@ -27,13 +27,13 @@ sideArticleColumn1 = `
 
 sideArticleColumn2 = `
 				<div id="sideArticleColumn1">
-  				<div class="sideArticle">
+  				<div class="sideArticle" id="geale">
             `+buildVideo("MS. GEALE")+`
   				</div>
           <div class="sideArticle" id="sport">
     				`+buildVideo("SPORT")+`
   				</div>
-          <div class="sideArticle">
+          <div class="sideArticle" id="woolley>
     				`+buildVideo("OLIVER WOOLLEY")+`
   				</div>
           <div class="sideArticle" id="mrHarrison">
@@ -93,7 +93,6 @@ function buildVideo(title) {
 	return videoElement;
 }
 
-$('.playButton').on('click', function() {
-    $(this).toggleClass('videoExpand');
-    $("video").toggleClass('videoExpand');
-});
+function play(id) {
+	$('#'+id).toggleClass('videoExpand');
+}	
