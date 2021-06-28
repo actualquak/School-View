@@ -256,7 +256,7 @@ th {
   padding: 5px;
   width: 250px;
   background-color: black;
-  transition: height 1s, width 1s;
+  transition: height 1s;
 }
 
 .sideArticle p {
@@ -294,7 +294,6 @@ th {
 }
 
 .videoExpand {
-  width: 500px;
   height: 250px;
 }
 
