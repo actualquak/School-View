@@ -14,5 +14,5 @@ Someone else is deciding to use our idea, but without the animations and with PH
 ## Coming soon
 - Merge with actualquak/School-View to provide functionality to panorama
 - Expand about page
-- Make information page better (https://jsfiddle.net/cfvh875a/
+- Make information page better (https://jsfiddle.net/qvpf4wr8/1/)
 - Actually make information
