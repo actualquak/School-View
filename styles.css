@@ -292,6 +292,11 @@ th {
   margin: 0px 0px 0px 4px;
 }
 
+.videoExpand {
+  width: 500px;
+  height: 250px;
+}
+
 /* Images */
 
 #demo {
