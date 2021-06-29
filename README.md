@@ -22,6 +22,7 @@ You might find it weird that we're using a md file to present our project, but i
 
 ## Tools used to accomplish task
 ### Pannellum
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
 Pannellum is a lightweight, free, and open source panorama viewer for the web. Built using HTML5, CSS3, JavaScript, and WebGL, it is plug-in free. The reasons why we used it may be foreign to you, but they are important to us.
 - Open Source. Spyware and trackers are an ever present threat that many services use to make money, and making the software open source means that everyone can see it. This means that people can see trackers and report them, making it less likely, if the software is open source, to have them.
 - Free. One of the many problems that the rest of the class has had is that they cannot use the service after the free trial has expired. Pannellum does not have that problem.
