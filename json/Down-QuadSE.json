@@ -14,7 +14,7 @@
 		"targetYaw" : "same",
 		"targetHfov" : "same"
     },
-	"hotSpots": {
+	{
 		"pitch": -10.1,
         "yaw": 132.9,
         "type": "scene",
