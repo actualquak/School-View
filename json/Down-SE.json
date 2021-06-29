@@ -23,5 +23,15 @@
 		"targetPitch" : "same",
 		"targetYaw" : "same",
 		"targetHfov" : "same"
+    },
+	"hotSpots": [{
+		"pitch": -20.1,
+        "yaw": 132.9,
+        "type": "scene",
+        "text": "DownQuadSE",
+        "sceneId": "DownQuadSE",
+		"targetPitch" : "same",
+		"targetYaw" : "same",
+		"targetHfov" : "same"
     }]
 }
