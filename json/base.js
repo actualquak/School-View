@@ -23,6 +23,7 @@ function getUrlParam(parameter, defaultvalue){
 };
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
+var viewer;
 $.when(
 	$.ajax({
 		dataType: "json",
