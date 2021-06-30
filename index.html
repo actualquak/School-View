@@ -2,9 +2,6 @@
 
 <html>
 <head>
-  <script>
-	var viewer;
-  </script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>NTHS School View</title>
   <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
@@ -16,15 +13,113 @@
 	<script type="text/javascript" src="json/base.js"></script>
 </head>
 
+<body id="body">	
+	<div id="about"><table><tr><th><div class="sideSpacer"></div></th>
+		<th>
+			<h1 class="abouth1">ABOUT</h1>
+    <p class="commentAboutp">This website was created by 3 developers</p>
+    <table>
+      <tr>
+        <th>
+          <div class="featuredDevs">
+            <p class="title"><br>FRANKLIN <br> LEGG 	</p>
+            <p class="aboutp">Designer and Front-end</p>
+            <button class="socialsWithSpacer" onclick="window.open('http://github.com/frlegg')">
+              <i class="fa fa-github"></i>
+            </button>
+            <button class="socials" onclick="window.open('mailto:frlegg586@gmail.com')">
+              <i class="fa fa-google"></i>
+            </button>
+            <button class="socials" onclick="window.open('mailto:franklin.legg.00@education.tas.edu.au')">
+              <i class="fa fa-envelope"></i>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="featuredDevs">
+            <p class="title"><br>STANLEY <br> FOSTER </p>
+            <p class="aboutp">3D Tour, Data and Back-end</p>
+            <button class="socialsWithSpacer" onclick="window.open('http://github.com/actualquak')">
+              <i class="fa fa-github"></i>
+            </button>
+            <button class="socials" onclick="window.open('mailto:stanley.g.foster@gmail.com')">
+              <i class="fa fa-google"></i>
+            </button>
+            <button class="socials" onclick="window.open('mailto:stanley.foster.00@education.tas.edu.au')">
+              <i class="fa fa-envelope"></i>
+            </button>
+          </div>
+        </th>
+        <th>
+          <div class="featuredDevs">
+            <p class="title"><br>KASHYAP <br> BHANDARI</p>
+            <p class="aboutp">Designer and Video Editor</p>
+            <button class="socialsWithSpacer" onclick="window.open('mailto:ikashyapbhandari@gmail.com')">
+              <i class="fa fa-google"></i>
+            </button>
+            <button class="socials" onclick="window.open('mailto:kashyap.bhandari.00@education.tas.edu.au')">
+              <i class="fa fa-envelope"></i>
+            </button>
+          </div>
+
+        </th>
+      </tr>
+    </table>
+		</th>
+	</tr></table></div>
 	
-<body id="body">
+	<div id="panoramaPage"><div id="panorama"></div></div>	
+	
+	<div id="information"><table><tr><th><div class="sideSpacer"></div></th><th>
+		<table id="chips">
+  <tr>
+    <th>
+      <button class="chip">
+        <p>All Categories</p>
+      </button>
+      <button class="chip">
+        <p>Teacher Interviews</p>
+      </button>
+      <button class="chip">
+        <p>Student Interviews</p>
+      </button>
+      <button class="chip">
+        <p>School Life</p>
+      </button>
+      <button class="chip">
+        <p>Subjects</p>
+      </button>
+    </th>
+  </tr>
+</table>
+<table>
+  <tr id="content"></tr>
+</table>
+	</th></tr></table></div>
+	
+	<script type="text/javascript" src="information.js"></script>
+	
+	<div id="nav">
+    		<div class="verticallyCentered">
+      			<button onclick="switchSections('#information')" class="navItem">Information</button><br><br>
+      			<button onclick="switchSections('#panoramaPage')" class="navItem">3D Tour</button><br><br>
+      			<button onclick="switchSections('#about')" class="navItem">About</button><br><br>
+    		</div>
+  	</div>
+	<script type="text/javascript" src="navigation.js"></script>
 
-	<div id="panoramaPage">
-    <div id="panorama"></div>
+	<div id="startPage">
+    <div id="alignStart">
+      <div id="verticalAlign">
+        <h1>Explore New Town High</h1>
+        <div id="padding">
+          <button id="startButton" onclick="startPageUp();">Start Exploring</button>
+        </div> 
+      </div>
+    </div>
   </div>
-
-	<div id="startPage"><div id="alignStart"><div id="verticalAlign"><h1>Explore New Town High</h1><div id="padding"><button id="startButton" onclick="startPageUp();">Start Exploring</button></div> </div></div></div>
-	<script type="text/javascript" src="animations.js"></script>
+	
+  <script type="text/javascript" src="animations.js"></script>
 	
 </body>
 

@@ -23,7 +23,11 @@ function getUrlParam(parameter, defaultvalue){
 };
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
+<<<<<<< HEAD
 var viewer;
+=======
+json.default.firstScene = getUrlParam("room", "DownCenNE");
+>>>>>>> 543a9f03ebc4864ab26fc8e74b9c9d370044ff5b
 $.when(
 	$.ajax({
 		dataType: "json",
@@ -146,6 +150,10 @@ $.when(
 		success: function(data) {json.scenes.UpSW = data;}
 	})
 ).then(function() {
+<<<<<<< HEAD
 	viewer = pannellum.viewer('panorama', json); 
 	viewer.loadScene(getUrlParam("room", "DownCenNE"), 0, 0);
+=======
+	pannellum.viewer('panorama', json); 
+>>>>>>> 543a9f03ebc4864ab26fc8e74b9c9d370044ff5b
 });});

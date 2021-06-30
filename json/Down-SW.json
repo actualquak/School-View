@@ -3,15 +3,25 @@
     "pitch": 0.0,
     "yaw": 0.0,
     "type": "equirectangular",
+<<<<<<< HEAD
     "panorama": "https://actualquak.github.io/School-View/images/Down-SW.jpg",
+=======
+    "panorama": "https://actualquak.github.io/School-View/images/Down-Foyer.jpg",
+>>>>>>> 543a9f03ebc4864ab26fc8e74b9c9d370044ff5b
     "hotSpots": [{
 		"pitch": -2.1,
         "yaw": 132.9,
         "type": "scene",
         "text": "Airport",
+<<<<<<< HEAD
         "sceneId": "DownCenNE",
 		"targetPitch" : "same",
 		"targetYaw" : "same",
 		"targetHfov" : "same"
     }]
 }
+=======
+        "sceneId": "DownCenNE"
+    }]
+}
+>>>>>>> 543a9f03ebc4864ab26fc8e74b9c9d370044ff5b

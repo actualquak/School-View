@@ -1,74 +1,99 @@
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-};
+width = window.innerWidth - 260;
+height = window.innerHeight - 260;
 
-function getUrlParam(parameter, defaultvalue){
-    var urlparameter = defaultvalue;
-    if(window.location.href.indexOf(parameter) > -1){
-        urlparameter = getUrlVars()[parameter];
-        }
-    return urlparameter;
-};
+featuredContent = `
+					<div id="featuredContent">
+            <div id="demo"></div>
+            <p class="title">FEATURED <br> CONTENT</p>
+          </div>
+`;
 
-var articleParagraphs, articleTitles, videoURLs;
-articleParagraphs = [
-    "The answer to that my friend is eshays. They are what makes school a true experience. Without eshays there would be less appointments made to the psychologist, more learning time die to less telling off time. Every aspect of school is interesting and unpredictable thanks to this group of people. The best thing is, they'll never go away. It's an intergenerational problem<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line",
-    "It's going to become co-educational soon. If you can afford it, you should send you boy to Hutchins. If they're a girl then you should send her to Collegiate. Girls do better when boys aren't in their class.<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line",
-    "<p> Yes. And we better see no bragging br tag!<br><br>I can use brs effectively, otherwise this text wouldn't be on a new line 😜",
-  ];
-articleTitles = [
-    "What is the single biggest influencing group of people at New Town High School?",
-    "What is a good reason not to send my child to New Town High School?",
-    "Do I have to write an article?",
-  ];
-videoURLs = [
-    "https://static-content-hosting-de818.firebaseapp.com/School-View/00087.MTS.mp4",
-    "https://static-content-hosting-de818.firebaseapp.com/School-View/00088.MTS.mp4",
-    "https://static-content-hosting-de818.firebaseapp.com/School-View/rick-roll.mp4",
-    "https://static-content-hosting-de818.firebaseapp.com/School-View/ussr.mp4",
-  ];
+sideArticleColumn1 = `
+				<div id="sideArticleColumn1">
+  				<div class="sideArticle" id="studentLeaders">
+    				<p class="title">STUDENT LEADERS: THE LOW DOWN</p>
+  				</div>
+          <div class="sideArticle" id="mathematics">
+    				<p class="title">FROM THE HEAD OF MATHEMATICS</p>
+  				</div>
+          <div class="sideArticle" id="blendedLearning">
+    				<p class="title">THE FUTURE OF LEARNING</p>
+  				</div>
+          <div class="sideArticle">
+    				<p class="title">VALUES EDUCATION</p>
+  				</div>
+				</div>	
+`;
 
-informationDisplay = getUrlParam("information");
+sideArticleColumn2 = `
+				<div id="sideArticleColumn1">
+  				<div class="sideArticle" id="geale" onclick="play('geale')">
+            `+buildVideo("MS. GEALE")+`
+  				</div>
+          <div class="sideArticle" id="sport" onclick="play('sport')">
+    				`+buildVideo("SPORT")+`
+  				</div>
+          <div class="sideArticle" id="woolley" onclick="play('woolley')">
+    				`+buildVideo("OLIVER WOOLLEY")+`
+  				</div>
+          <div class="sideArticle" id="mrHarrison" onclick="play('mrHarrison')">
+    				`+buildVideo("THAT TEACHER")+`
+  				</div>
+				</div>	
+`;
 
-function generateArticle(i) {
-  heading = articleTitles[i];
-  paragraphText = articleParagraphs[i];
-  return "<h1>"+heading+"</h1><p>"+paragraphText;
-}  
-
-function createVideoElement(i) {
-  url = videoURLs[i];
-  if (window.innerHeight < window.innerWidth) {
-    change = window.innerHeight;
-    returnString = '<video height="'+change+'" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
-  } else {
-    change = window.innerWidth;
-    returnString = '<video width="'+change+'" controls> <source src="'+url+'" type="video/mp4"</source> Your browser cannot play this video</video>';
-  }  
-  return returnString;
-}  
-
-function generateVideo(i) {
-  $("#information").html(createVideoElement(i));
-  $("#information").css("background-color", "black");
-}  
-  
-if (informationDisplay == 0) {
-  $("#information").html(generateArticle(0));
-} else if (informationDisplay == 1) {
-  generateVideo(0);
-} else if (informationDisplay == 2) {
-  $("#information").html(generateArticle(1));
-} else if (informationDisplay == 3) {
-  generateVideo(1);
-} else if (informationDisplay == 4) {
-  $("#information").html(generateArticle(2));
-} else if (informationDisplay == 5) {
-  generateVideo(2);
-} else if (informationDisplay == 6) {
-  generateVideo(3);
+if (width < 700) {
+  buildPhoneUI();
+} else if (width < 1000) {
+  buildTabletUI();
+} else {
+  buildDesktopUI();
 }
+
+function buildPhoneUI() {
+  $("#content").html(featuredContent);
+  $("#featuredContent").css("width", (width - 50) + "px");
+  $("#demo").css("width", (width - 50) + "px");
+}
+
+function buildTabletUI() {
+  $("#content").html("<th>" + featuredContent + "</th><th>" + sideArticleColumn1 + "</th>");
+  $("#featuredContent").css("width", (width - 330) + "px");
+  $("#demo").css("width", (width - 330) + "px");
+}
+
+function buildDesktopUI() {
+  $("#content").html("<th>" + featuredContent + "</th><th>" + sideArticleColumn1 + "</th><th>" + sideArticleColumn2 + "</th>");
+  $("#featuredContent").css("width", (width - 600) + "px");
+  $("#demo").css("width", (width - 600) + "px");
+}
+
+function buildVideo(title) {
+	if (title.length > 11) {
+  	centered = "textVerticallyCentered2Lines";
+  } else {
+  	centered = "textVerticallyCentered";
+  }
+
+	videoElement = `<table>
+              <tr>
+               	<th>
+                 	<button class="playButton">
+            				<i class="fa fa-play-circle"></i>
+                  </button>
+                </th>
+                <th>
+                	<div class="`+centered+`">
+                  	<p class="playTitle">`+title+`</p>
+                  </div>
+                </th>
+              </tr>
+            </table>`;
+
+	return videoElement;
+}
+
+function play(id) {
+	$('.sideArticle').css('background-size', '270px auto');
+	$('#'+id).toggleClass('videoExpand');
+}	

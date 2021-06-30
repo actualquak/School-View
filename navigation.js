@@ -1,43 +1,43 @@
-function changeSection(to) {
-  // changing size to fit in space
-  if (to == "#panoramaPage") {
-    $("#panorama").css("width", (window.innerHeight - 250)+"px");
-    $("#panorama").css("float", "left");
-  } else {
-    $("#panorama").css("width", (window.innerHeight - 250)+"px");
-    $("#panorama").css("float", "left");
-    $(".featuredDevs").css("width", ((window.innerHeight - 300) / 3)+"px");
-  }
-  
-  // working out positions
-  if (currentSection == "#information") { currentPosition = 0; }
-  else if (currentSection == "#panoramaPage") { currentPosition = 1; }
-  else { currentPosition = 2; }
-  
-  if (to == "#information") { newPosition = 0; }
-  else if (to == "#panoramaPage") { newPosition = 1; }
-  else { newPosition = 2; }
-  
-  // moving sections around
-  if (currentSection != to ) { // Don't move section if already selected
-    if (currentPosition < newPosition) { 
-      // Removing current section from view
-      removeAllClasses(currentSection)
-      $(currentSection).addClass("comeUpFromMiddle");
-      // Moving new section into view
-      removeAllClasses(to)
-      $(to).addClass("comeUpFromBottom");
+function switchSections(to) {
+  if (to == "#information") {
+    move("#information", "down", "top");
+    if (currentSection == "#about") {
+      $("#panoramaPage").hide();
+      move("#about", "down", "middle");
     } else {
-      // Removing current section from view
-      removeAllClasses(currentSection)
-      $(currentSection).addClass("goDownFromMiddle");
-      // Moving new section into view
-      removeAllClasses(to)
-      $(to).addClass("goDownFromTop");
+      move("#panoramaPage", "down", "middle");
     }  
-    currentSection = to;
-  }
-}
+  } else if (to == "#panoramaPage") {
+    $("#panoramaPage").show();
+    if (currentSection == "#about") {
+      move("#panoramaPage", "down", "top");
+      move("#about", "down", "middle");
+    } else {
+      move("#panoramaPage", "up", "bottom");
+      move("#information", "up", "middle");
+    }  
+  } else {
+    move("#about", "up", "bottom");
+    if (currentSection == "#information") {
+      $("#panoramaPage").hide();
+      move("#information", "up", "middle");
+    } else {
+      move("#panoramaPage", "up", "middle");
+    }  
+  }  
+  currentSection = to;
+}  
+
+function move(element, direction, from) {
+  removeAllClasses(element);
+  if (direction == "up") {
+    if (from == "middle") { $(element).addClass("comeUpFromMiddle"); } 
+    else { $(element).addClass("comeUpFromBottom"); }
+  } else {
+    if (from == "middle") { $(element).addClass("goDownFromMiddle"); } 
+    else { $(element).addClass("goDownFromTop"); }
+  }  
+}  
 
 function removeAllClasses(element) {
   $(element).removeClass("comeUpFromMiddle");
