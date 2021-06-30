@@ -22,26 +22,35 @@ You might find it weird that we're using a md file to present our project, but i
 
 ## Tools used to accomplish task
 ### Pannellum
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
 Pannellum is a lightweight, free, and open source panorama viewer for the web. Built using HTML5, CSS3, JavaScript, and WebGL, it is plug-in free. The reasons why we used it may be foreign to you, but they are important to us.
 - Open Source. Spyware and trackers are an ever present threat that many services use to make money, and making the software open source means that everyone can see it. This means that people can see trackers and report them, making it less likely, if the software is open source, to have them.
 - Free. One of the many problems that the rest of the class has had is that they cannot use the service after the free trial has expired. Pannellum does not have that problem.
 - Customisable. Pannellum can be customised easily, and is thus a perfect choice for our project.
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
 
 ### Traditional web languages
 This was a mistake. The web is a horrible place to develop, from CSS bugs to JS stuffups to HTML syntax issues. We should've used a framework such as Ruby on Rails. Here's what we did with each of these languages
 - HTML5 (Skeleton)
   + The video element
   + The iframe - this is needed to display the pannellum widget
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+
 - CSS3 (Styles)
   + Animations
   + Fonts
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+
 - JavaScript (Logic)
   + Syncing the animations with button clicks
   + Advanced animations and styling - button ripple
   + Loading in images efficiently
   + Navigation
   + URL Params
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
 
 ### JQuery
 JQuery is awesome. There are 2 main ways that it makes developing more efficient.
@@ -50,13 +59,26 @@ instead of `$("#about")` or `$(".sideArticle")`
 - Asynchronous Loading
 Stanley insert explenation here
 
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+
 ## Features
 As you know, we didn't use a crappy website builder for this, we used the real deal. Here's the features we accomplished:
 ### Navigation
 The front-end loves to have cool animations, and why not use cool animations to provide smooth naviagtion across the different pages. We did this through linking in registering a button click in JavaScript, which would initiate a CSS animation and move everything into place. 
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+
 ### Information
-Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing. 
+Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing.
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+
 ### Panorama 
 Insert Stanley here
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+
 ### About
 The about page was the eastist thing to accomplish about the entire website. All was needed was to link the socials with each developer. This wasn't hard: import Font Awesome icons, open a URL on click, make the URLs right. 
+
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
