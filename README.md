@@ -20,6 +20,10 @@ Someone else is deciding to use our idea, but without the animations and with PH
 # School View (The Presentation)
 You might find it weird that we're using a md file to present our project, but in the programming world, if you want to be introduced with the context of the product, you will always read an md file. This is ours.
 
+## Target Audiance and Design Features
+
+### What is our target audiance?
+
 ## Tools used to accomplish task
 ### Pannellum
 Pannellum is a lightweight, free, and open source panorama viewer for the web. Built using HTML5, CSS3, JavaScript, and WebGL, it is plug-in free. The reasons why we used it may be foreign to you, but they are important to us.
