@@ -44,7 +44,7 @@ This was a mistake. The web is a horrible place to develop, from CSS bugs to JS 
   + Navigation
   + URL Params
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+![coding index.html](https://raw.githubusercontent.com/frlegg/School-View/main/developing.png "index.html")
 
 ### JQuery
 JQuery is awesome. There are 2 main ways that it makes developing more efficient.
@@ -63,10 +63,10 @@ The front-end loves to have cool animations, and why not use cool animations to 
 ### Information
 Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing.
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/information-section.png "Pannellum Demo")
 
 ### Panorama 
-Insert Stanley here
+Stanley explain here
 
 ### About
 The about page was the eastist thing to accomplish about the entire website. All was needed was to link the socials with each developer. This wasn't hard: import Font Awesome icons, open a URL on click, make the URLs right. 
