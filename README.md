@@ -34,15 +34,9 @@ This was a mistake. The web is a horrible place to develop, from CSS bugs to JS 
 - HTML5 (Skeleton)
   + The video element
   + The iframe - this is needed to display the pannellum widget
-
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
-
 - CSS3 (Styles)
   + Animations
   + Fonts
-
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
-
 - JavaScript (Logic)
   + Syncing the animations with button clicks
   + Advanced animations and styling - button ripple
@@ -66,8 +60,6 @@ As you know, we didn't use a crappy website builder for this, we used the real d
 ### Navigation
 The front-end loves to have cool animations, and why not use cool animations to provide smooth naviagtion across the different pages. We did this through linking in registering a button click in JavaScript, which would initiate a CSS animation and move everything into place. 
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
-
 ### Information
 Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing.
 
@@ -76,9 +68,5 @@ Making videos and articles display on websites is easy: just use basic HTML. Wha
 ### Panorama 
 Insert Stanley here
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
-
 ### About
 The about page was the eastist thing to accomplish about the entire website. All was needed was to link the socials with each developer. This wasn't hard: import Font Awesome icons, open a URL on click, make the URLs right. 
-
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
