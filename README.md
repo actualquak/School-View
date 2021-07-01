@@ -24,6 +24,8 @@ You might find it weird that we're using a md file to present our project, but i
 
 ### What is our target audiance?
 
+### How are we accomodating for our target audiance
+
 ## Tools used to accomplish task
 ### Pannellum
 Pannellum is a lightweight, free, and open source panorama viewer for the web. Built using HTML5, CSS3, JavaScript, and WebGL, it is plug-in free. The reasons why we used it may be foreign to you, but they are important to us.
