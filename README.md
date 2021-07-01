@@ -48,7 +48,7 @@ This was a mistake. The web is a horrible place to develop, from CSS bugs to JS 
   + Navigation
   + URL Params
 
-![coding index.html](https://raw.githubusercontent.com/frlegg/School-View/main/developing.png "index.html")
+![coding index.html](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/developing.png "index.html")
 
 ### JQuery
 JQuery is awesome. There are 2 main ways that it makes developing more efficient.
