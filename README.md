@@ -57,7 +57,7 @@ instead of `$("#about")` or `$(".sideArticle")`
 - Asynchronous Loading
 Basically, I can actually load json, something that is missing from js and that we sorely need.
 
-![JQuery](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "JQuery")
+![JQuery](about:blank "JQuery")
 
 ## Features
 As you know, we didn't use a crappy website builder for this, we used the real deal. Here's the features we accomplished:
