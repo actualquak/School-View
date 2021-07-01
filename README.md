@@ -12,10 +12,10 @@ Someone else is deciding to use our idea, but without the animations and with PH
 - Panorama - room navigation difficult, not all images uploaded
 - Information page - purely for looks right now
 ## Coming soon
-- Merge with actualquak/School-View to provide functionality to panorama
 - Expand about page
 - Make information page better (https://jsfiddle.net/qvpf4wr8/1/)
 - Actually make information
+- School Map (copying Oliver again)
 
 # School View (The Presentation)
 You might find it weird that we're using a md file to present our project, but in the programming world, if you want to be introduced with the context of the product, you will always read an md file. This is ours.
@@ -55,7 +55,7 @@ JQuery is awesome. There are 2 main ways that it makes developing more efficient
 - Code Abbreviations. As a lazy dev, before using JQuery, it hurt to have to write: `docuemnt.getElementById("about")` or `document.getElementsByClass("sideArticle")`
 instead of `$("#about")` or `$(".sideArticle")`
 - Asynchronous Loading
-Stanley insert explenation here
+Basically, I can actually load json, something that is missing from js and that we sorely need.
 
 ![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
 
