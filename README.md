@@ -31,7 +31,7 @@ Pannellum is a lightweight, free, and open source panorama viewer for the web. B
 - Free. One of the many problems that the rest of the class has had is that they cannot use the service after the free trial has expired. Pannellum does not have that problem.
 - Customisable. Pannellum can be customised easily, and is thus a perfect choice for our project.
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+![Pannellum Demo](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/pannellum.png "Pannellum Demo")
 
 ### Traditional web languages
 This was a mistake. The web is a horrible place to develop, from CSS bugs to JS stuffups to HTML syntax issues. We should've used a framework such as Ruby on Rails. Here's what we did with each of these languages
