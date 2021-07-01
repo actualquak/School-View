@@ -57,7 +57,7 @@ instead of `$("#about")` or `$(".sideArticle")`
 - Asynchronous Loading
 Basically, I can actually load json, something that is missing from js and that we sorely need.
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "Pannellum Demo")
+![JQuery](https://raw.githubusercontent.com/frlegg/School-View/main/pannellum.png "JQuery")
 
 ## Features
 As you know, we didn't use a crappy website builder for this, we used the real deal. Here's the features we accomplished:
@@ -67,7 +67,7 @@ The front-end loves to have cool animations, and why not use cool animations to 
 ### Information
 Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing.
 
-![Pannellum Demo](https://raw.githubusercontent.com/frlegg/School-View/main/information-section.png "Pannellum Demo")
+![Information Section](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/information-section.png "Information Section")
 
 ### Panorama 
 Stanley explain here
