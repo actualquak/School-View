@@ -13,7 +13,7 @@ Someone else is deciding to use our idea, but without the animations and with PH
 - Information page - purely for looks right now
 ## Coming soon
 - Expand about page
-- Make information page better (https://jsfiddle.net/urox0t5e/1/)
+- Make information page better (https://jsfiddle.net/3f5sxrag/4/)
 - Actually make information
 - School Map (copying Oliver again)
 
