@@ -26,7 +26,6 @@ if (startPage == 0) {
     openNav(); 
     initiatePages();
 }
-
 function startPageUp() {
     $("#startPage").addClass("comeUpFromMiddle");
     currentSection = "#information";
@@ -42,6 +41,13 @@ function openNav() {
 function initiatePages() {
     $(".featuredDevs").css("width", ((window.innerWidth - 310) / 3) + "px");
     $("#panorama").css("width", (window.innerWidth - 240) + "px");
+    if (page == "information") {
+        switchSections('#information')
+    } else if (page == "tour") {
+        switchSections('#tour')
+    } else {
+        switchSections('#about')
+    }
 }     
 
 // Button Ripple Effect
