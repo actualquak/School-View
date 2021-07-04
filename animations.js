@@ -52,17 +52,17 @@ function initiatePages() {
 }
 
 function immediateChange(section) {
-    $(section).css("z-index", "1");
-     if (section == "#about") {
-        $("#information").css("z-index", "1");
-        $("#panoramaPage").css("z-index", "1");
+    if (section == "#about") {
+        $("#information").css("z-index", "0");
+        $("#panoramaPage").css("z-index", "0");
      } else if (section == "#information") {
-        $("#about").css("z-index", "1");
-        $("#panoramaPage").css("z-index", "1");
+        $("#about").css("z-index", "0");
+        $("#panoramaPage").css("z-index", "0");
      } else {
-        $("#about").css("z-index", "1");
-        $("#information").css("z-index", "1");
-     }  
+        $("#about").css("z-index", "0");
+        $("#information").css("z-index", "0");
+     } 
+    $(section).css("z-index", "1"); 
 }
 
 // Button Ripple Effect
