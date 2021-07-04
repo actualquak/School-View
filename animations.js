@@ -17,6 +17,7 @@ function getUrlParam(parameter, defaultvalue){
 };
 
 startPage = getUrlParam("startPage", 1);
+page = getUrlParam("page", 1);
 
 // Act on URL parameters
 
