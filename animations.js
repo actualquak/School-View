@@ -42,14 +42,18 @@ function openNav() {
 function initiatePages() {
     $(".featuredDevs").css("width", ((window.innerWidth - 310) / 3) + "px");
     $("#panorama").css("width", (window.innerWidth - 240) + "px");
+    page();
+}     
+
+function page() {
     if (page == "information") {
         switchSections('#information')
     } else if (page == "tour") {
-        switchSections('#tour')
+        switchSections('#panoramaPage')
     } else {
         switchSections('#about')
     }
-}     
+}
 
 // Button Ripple Effect
 
