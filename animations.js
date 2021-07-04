@@ -42,16 +42,12 @@ function openNav() {
 function initiatePages() {
     $(".featuredDevs").css("width", ((window.innerWidth - 310) / 3) + "px");
     $("#panorama").css("width", (window.innerWidth - 240) + "px");
-    page();
-}     
-
-function page() {
     if (page == "information") {
-        switchSections('#information')
+        switchSections('#information', 0)
     } else if (page == "tour") {
-        switchSections('#panoramaPage')
+        switchSections('#panoramaPage', 0)
     } else {
-        switchSections('#about')
+        switchSections('#about', 0)
     }
 }
 
