@@ -207,6 +207,12 @@ h1 {
     float: right;
 }    
 
+#schoolMap {
+    width: 100px;
+    height: 50px;
+    background-color: #f4f4f4;
+}
+
 /* Information Page */
 
 #information {
