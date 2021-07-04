@@ -43,12 +43,26 @@ function initiatePages() {
     $(".featuredDevs").css("width", ((window.innerWidth - 310) / 3) + "px");
     $("#panorama").css("width", (window.innerWidth - 240) + "px");
     if (page == "information") {
-        switchSections('#information', 0)
+        immediateChange('#information')
     } else if (page == "tour") {
-        switchSections('#panoramaPage', 0)
+        immediateChange('#panoramaPage')
     } else {
-        switchSections('#about', 0)
+        immediateChange('#about')
     }
+}
+
+function immediateChange(section) {
+    $(section).css("z-index", "1");
+     if (section == "#about") {
+        $("#information").css("z-index", "1");
+        $("#panoramaPage").css("z-index", "1");
+     } else if (section == "#information") {
+        $("#about").css("z-index", "1");
+        $("#panoramaPage").css("z-index", "1");
+     } else {
+        $("#about").css("z-index", "1");
+        $("#information").css("z-index", "1");
+     }  
 }
 
 // Button Ripple Effect
