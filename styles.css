@@ -305,10 +305,6 @@ th {
   margin: 0px 0px 0px 4px;
 }
 
-.videoExpand {
-  height: 250px;
-}
-
 .modal {
   opacity: 0;
   visibility: hidden;
