@@ -292,6 +292,13 @@ th {
   border-radius: 50px;
 }
 
+.linkButton {
+  background-color: transparent;
+  font-size: 50pt;
+  border: none;
+  border-radius: 50px;
+}
+
 .textVerticallyCentered {
   top: 50%;
   -ms-transform: translateY(100%);
