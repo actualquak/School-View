@@ -13,16 +13,16 @@ featuredContent = `
 sideArticleColumn1 = `
 				<div id="sideArticleColumn1">
   				<div class="sideArticle" id="studentLeaders">
-    				<p class="title">STUDENT LEADERS: THE LOW DOWN</p>
+    				<p class="title">`+buildContent("STUDENT LEADERS: THE LOW DOWN", "link")+`</p>
   				</div>
           <div class="sideArticle" id="mathematics">
-    				<p class="title">FROM THE HEAD OF MATHEMATICS</p>
+    				<p class="title">`+buildContent("FROM THE HEAD OF MATHEMATICS", "link")+`</p>
   				</div>
           <div class="sideArticle" id="blendedLearning">
-    				<p class="title">THE FUTURE OF LEARNING</p>
+    				<p class="title">`+buildContent("THE FUTURE OF LEARNING", "link")+`</p>
   				</div>
           <div class="sideArticle">
-    				<p class="title">VALUES EDUCATION</p>
+    				<p class="title">`+buildContent("VALUES EDUCATION", "link")+`</p>
   				</div>
 				</div>	
 `;
@@ -30,16 +30,16 @@ sideArticleColumn1 = `
 sideArticleColumn2 = `
 				<div id="sideArticleColumn1">
   				<div class="sideArticle" id="geale">
-            `+buildVideo("MS. GEALE")+`
+            `+buildContent("MS. GEALE", "play")+`
   				</div>
           <div class="sideArticle" id="ussr-anthem-open">
-    				`+buildVideo("SPORT")+`
+    				`+buildContent("SPORT", "play")+`
   				</div>
           <div class="sideArticle" id="woolley">
-    				`+buildVideo("OLIVER WOOLLEY")+`
+    				`+buildContent("OLIVER WOOLLEY", "play")+`
   				</div>
           <div class="sideArticle" id="rick-roll-open">
-    				`+buildVideo("THAT TEACHER")+`
+    				`+buildContent("THAT TEACHER", "play")+`
   				</div>
 				</div>	
 `;
@@ -70,18 +70,20 @@ function buildDesktopUI() {
   $("#demo").css("width", (width - 600) + "px");
 }
 
-function buildVideo(title) {
+function buildContent(title, icon) {
 	if (title.length > 11) {
   	centered = "textVerticallyCentered2Lines";
   } else {
   	centered = "textVerticallyCentered";
   }
+	
+	if (icon == "play") { iconDisplayed = "fa fa-play-circle"; } else { iconDisplayed = "fa fa-external-link-square"; }
 
-	videoElement = `<table>
+	content = `<table>
               <tr>
                	<th>
-                 	<button class="playButton">
-            				<i class="fa fa-play-circle"></i>
+                 	<button class="`+icon+`Button">
+            				<i class="`+iconDisplayed+`"></i>
                   </button>
                 </th>
                 <th>
@@ -92,7 +94,7 @@ function buildVideo(title) {
               </tr>
             </table>`;
 
-	return videoElement;
+	return content;
 }	
 
 // Content display
