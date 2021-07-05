@@ -1,3 +1,5 @@
+// Generate page
+
 width = window.innerWidth - 260;
 height = window.innerHeight - 260;
 
@@ -97,3 +99,55 @@ function play(id) {
 	$('.sideArticle').css('background-size', '270px auto');
 	$('#'+id).toggleClass('videoExpand');
 }	
+
+// Content display
+
+const rickRollModal = $("#rick-roll-modal");
+const ussrAnthemModal = $("#ussr-anthem-modal");
+const rrClose = $("#rick-roll-close");
+const uaClose = $("#ussr-anthem-close");
+const videos = $("video");
+
+if (window.innerWidth < window.innerHeight) {
+  videos.css("width", (window.innerWidth - 200) + "px");
+} else {
+  videos.css("height", (window.innerHeight - 200) + "px");
+}
+
+function show(id) {
+  if (id == "rick-roll") {
+    rickRollModal.addClass("show");
+  } else {
+    ussrAnthemModal.addClass("show");
+  }
+}
+
+$(rrClose).on("click", function() {
+    close("rick-roll")
+});
+
+$(uaClose).on("click", function() {
+		close("ussr")
+});
+
+function close(id) {
+	if (id == "rick-roll") {
+    rickRollModal.removeClass("show");
+    rickRollModal.addClass("hide");
+  } else {
+    ussrAnthemModal.removeClass("show");
+    ussrAnthemModal.addClass("hide");
+  }
+  
+  videos.trigger('pause');
+
+  if (id == "rick-roll") {
+    setTimeout(function() {
+      rickRollModal.removeClass("hide")
+    }, 700);
+  } else {
+    setTimeout(function() {
+      ussrAnthemModal.removeClass("hide")
+    }, 700);
+  }
+}
