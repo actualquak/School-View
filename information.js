@@ -29,16 +29,16 @@ sideArticleColumn1 = `
 
 sideArticleColumn2 = `
 				<div id="sideArticleColumn1">
-  				<div class="sideArticle" id="geale" onclick="play('geale')">
+  				<div class="sideArticle" id="geale">
             `+buildVideo("MS. GEALE")+`
   				</div>
-          <div class="sideArticle" id="sport" onclick="play('sport')">
+          <div class="sideArticle" id="ussr-anthem-open">
     				`+buildVideo("SPORT")+`
   				</div>
-          <div class="sideArticle" id="woolley" onclick="play('woolley')">
+          <div class="sideArticle" id="woolley">
     				`+buildVideo("OLIVER WOOLLEY")+`
   				</div>
-          <div class="sideArticle" id="mrHarrison" onclick="play('mrHarrison')">
+          <div class="sideArticle" id="rick-roll-open">
     				`+buildVideo("THAT TEACHER")+`
   				</div>
 				</div>	
@@ -93,11 +93,6 @@ function buildVideo(title) {
             </table>`;
 
 	return videoElement;
-}
-
-function play(id) {
-	$('.sideArticle').css('background-size', '270px auto');
-	$('#'+id).toggleClass('videoExpand');
 }	
 
 // Content display
