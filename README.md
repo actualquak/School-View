@@ -23,8 +23,13 @@ You might find it weird that we're using a md file to present our project, but i
 ## Target Audiance and Design Features
 
 ### What is our target audiance?
+Our target audiance is boomers, I mean parents. Of course, our group would've loved to put trackers on the website to work out the user's personality to serve individually created content, but according to Mr. Harrison, we would'nt be allowed to do that. 😢
+
+![Pannellum Demo](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/parents.jfif "Pannellum Demo")
 
 ### How are we accomodating for our target audiance
+
+Our target audiance loves a good website. They need text-based navigation (People who haven't spent as much time on the internet can't understand the emoji and icon language), and like smooth animations (even though it makes it look like a PowerPoint). They also hate memes, especially if the user viewing the content is a Karen (Do not mention the manager for this type of boomer, I mean parent), thus meaning all the content we produce has to be respectful and the styles not outlandish.
 
 ## Tools used to accomplish task
 ### Pannellum
