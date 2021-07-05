@@ -25,7 +25,7 @@ You might find it weird that we're using a md file to present our project, but i
 ### What is our target audiance?
 Our target audiance is boomers, I mean parents. Of course, our group would've loved to put trackers on the website to work out the user's personality to serve individually created content, but according to Mr. Harrison, we would'nt be allowed to do that. 😢
 
-![Pannellum Demo](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/parents.jfif "Pannellum Demo")
+![Target Audiance](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/JQuery.PNG "Target Audiance")
 
 ### How are we accomodating for our target audiance
 
