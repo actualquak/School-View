@@ -59,12 +59,11 @@ This was a mistake. The web is a horrible place to develop, from CSS bugs to JS 
 
 ### JQuery
 JQuery is awesome. There are 2 main ways that it makes developing more efficient.
-- Code Abbreviations. As a lazy dev, before using JQuery, it hurt to have to write: `docuemnt.getElementById("about")` or `document.getElementsByClass("sideArticle")`
+- **Code Abbreviations** As a lazy dev, before using JQuery, it hurt to have to write: `docuemnt.getElementById("about")` or `document.getElementsByClass("sideArticle")`
 instead of `$("#about")` or `$(".sideArticle")`
-- Asynchronous Loading
-Basically, I can actually load json, something that is missing from js and that we sorely need.
+- **Asynchronous Loading** Basically, I can actually load json, something that is missing from js and that we sorely need. On our website, we needed to load in many data files for our panorama, and JavaScript (the logic language for programming) can't do this. Therefore we went to JQuery for our solution, and managed to make it work.
 
-![JQuery](about:blank "JQuery")
+![JQuery](chrome://history "JQuery")
 
 ## Features
 As you know, we didn't use a crappy website builder for this, we used the real deal. Here's the features we accomplished:
