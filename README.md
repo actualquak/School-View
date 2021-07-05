@@ -25,7 +25,7 @@ You might find it weird that we're using a md file to present our project, but i
 ### What is our target audiance?
 Our target audiance is boomers, I mean parents. Of course, our group would've loved to put trackers on the website to work out the user's personality to serve individually created content, but according to Mr. Harrison, we would'nt be allowed to do that. 😢
 
-![Target Audiance](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/JQuery.PNG "Target Audiance")
+![Target Audiance](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/parents.jfif "Target Audiance")
 
 ### How are we accomodating for our target audiance
 
@@ -63,7 +63,7 @@ JQuery is awesome. It is a fast, small, and feature-rich JavaScript library. It 
 instead of `$("#about")` or `$(".sideArticle")`
 - **Asynchronous Loading** Basically, I can actually load json, something that is missing from js and that we sorely need. On our website, we needed to load in many data files for our panorama, and JavaScript (the logic language for programming) can't do this. Therefore we went to JQuery for our solution, and managed to make it work.
 
-![JQuery](chrome://history "JQuery")
+![JQuery](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/JQuery.PNG "JQuery")
 
 ## Features
 As you know, we didn't use a crappy website builder for this, we used the real deal. Here's the features we accomplished:
