@@ -106,6 +106,8 @@ const rickRollModal = $("#rick-roll-modal");
 const ussrAnthemModal = $("#ussr-anthem-modal");
 const rrClose = $("#rick-roll-close");
 const uaClose = $("#ussr-anthem-close");
+const rrOpen = $("#rick-roll-open");
+const uaOpen = $("#ussr-anthem-open");
 const videos = $("video");
 
 if (window.innerWidth < window.innerHeight) {
@@ -122,13 +124,13 @@ function show(id) {
   }
 }
 
-$(rrClose).on("click", function() {
-    close("rick-roll")
-});
+// Open button register
+$(rrOpen).on("click", function() { show("rick-roll") });
+$(uaOpen).on("click", function() { show("ussr") });
 
-$(uaClose).on("click", function() {
-		close("ussr")
-});
+// Close button register
+$(rrClose).on("click", function() { close("rick-roll") });
+$(uaClose).on("click", function() { close("ussr") });
 
 function close(id) {
 	if (id == "rick-roll") {
