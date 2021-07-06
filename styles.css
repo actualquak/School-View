@@ -268,7 +268,7 @@ th {
   background-repeat: no-repeat;
   background-size: 270px auto;
   margin: 0px 15px 20px 0px;
-  padding: 5px;
+  padding: 0px 5px 0px 5px;
   width: 250px;
   background-color: black;
   transition: height 1s;
@@ -309,6 +309,12 @@ th {
   top: 50%;
   -ms-transform: translateY(30%);
   transform: translateY(30%);
+}
+
+.textVerticallyCentered3Lines {
+  top: 50%;
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
 }
 
 .playTitle {
