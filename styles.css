@@ -294,7 +294,7 @@ th {
 
 .linkButton {
   background-color: transparent;
-  font-size: 50pt;
+  font-size: 20pt;
   border: none;
   border-radius: 50px;
 }
@@ -312,6 +312,7 @@ th {
 }
 
 .textVerticallyCentered3Lines {
+  margin: 10px 0px 10px 0px;
   top: 50%;
   -ms-transform: translateY(0%);
   transform: translateY(0%);
