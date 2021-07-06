@@ -71,7 +71,9 @@ function buildDesktopUI() {
 }
 
 function buildContent(title, icon) {
-	if (title.length > 11) {
+if (title.length > 23) {
+	centered = "textVerticallyCentered3Lines";
+} else if (title.length > 11) {
   	centered = "textVerticallyCentered2Lines";
   } else {
   	centered = "textVerticallyCentered";
