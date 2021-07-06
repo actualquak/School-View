@@ -52,12 +52,12 @@ function buildPhoneUI() {
   $("#demo").css("width", (width - 50) + "px");
 }
 function buildTabletUI() {
-  $("#content").html("<th>" + featuredContent + "</th><th>" + sideArticleColumn1 + "</th>");
+  $("#content").html("<th>" + featuredContent + "</th><th id="infoColumn1">" + sideArticleColumn1 + "</th>");
   $("#featuredContent").css("width", (width - 330) + "px");
   $("#demo").css("width", (width - 330) + "px");
 }
 function buildDesktopUI() {
-  $("#content").html("<th>" + featuredContent + "</th><th>" + sideArticleColumn1 + "</th><th>" + sideArticleColumn2 + "</th>");
+  $("#content").html("<th>" + featuredContent + "</th><th id="infoColumn1">" + sideArticleColumn1 + "</th><th id="infoColumn2">" + sideArticleColumn2 + "</th>");
   $("#featuredContent").css("width", (width - 600) + "px");
   $("#demo").css("width", (width - 600) + "px");
 }
