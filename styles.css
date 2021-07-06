@@ -281,7 +281,7 @@ th {
   line-height: 18pt;
 }
 
-.fa-play-circle {
+.fa-play-circle, .fa-external-link-square {
   color: white;
 }
 
@@ -294,7 +294,7 @@ th {
 
 .linkButton {
   background-color: transparent;
-  font-size: 20pt;
+  font-size: 50pt;
   border: none;
   border-radius: 50px;
 }
