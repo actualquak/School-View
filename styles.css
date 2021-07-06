@@ -299,6 +299,10 @@ th {
   border-radius: 50px;
 }
 
+.topSpace {
+    top: 7px;
+}
+
 .textVerticallyCentered {
   top: 50%;
   -ms-transform: translateY(100%);
