@@ -81,20 +81,13 @@ if (title.length > 23) {
 	
 	if (icon == "play") { iconDisplayed = "fa fa-play-circle"; } else { iconDisplayed = "fa fa-external-link-square"; }
 
-	content = `<table>
-              <tr>
-               	<th>
-                 	<button class="`+icon+`Button">
-            				<i class="`+iconDisplayed+`"></i>
-                  </button>
-                </th>
-                <th>
-                	<div class="`+centered+`">
-                  	<p class="playTitle">`+title+`</p>
-                  </div>
-                </th>
-              </tr>
-            </table>`;
+	content = `<table><tr><th>
+	<button class="`+icon+`Button"> //button classes
+	<i class="`+iconDisplayed+`"></i> //icon class
+	</button></th><th>
+	<div class="`+centered+`"> //align text
+	<p class="playTitle">`+title+`</p> //title displayed
+	</div></th></tr></table>`;
 
 	return content;
 }	
