@@ -81,7 +81,7 @@ function buildContent(title, icon) {
                 </th>
                 <th>
                 	<div class="`+centered+`">
-                  	<p class="playTitle">`+title+`</p>
+                  	<p class="contentTitle">`+title+`</p>
                   </div>
                 </th>
               </tr>
