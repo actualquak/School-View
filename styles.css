@@ -391,9 +391,9 @@ th {
 
 /* Images */
 
-#demo {
+#featuredImage {
   height: 300px;
-  background-position: center center;
+  background-position: center 40%;
   background-repeat: no-repeat;
   background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-harrison.jpg');
 }
