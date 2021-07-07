@@ -4,7 +4,7 @@ height = window.innerHeight - 260;
 featuredContent = `
 					<div id="featuredContent">
             <div id="demo"></div>
-            <p id="infoTitle">'HE'S WEIRD'<br> 'BOASTFUL'</p>
+            <p id="infoTitle">'HE'S WEIRD'<br>WHO IS HE?</p>
 	    <p>Who is Mr. Harrison?</p>
           </div>
 `;
