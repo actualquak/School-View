@@ -393,7 +393,7 @@ th {
 
 #featuredImage {
   height: 300px;
-  background-position: center 40%;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/harrison.jpg');
 }
