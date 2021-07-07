@@ -5,6 +5,7 @@ featuredContent = `
 					<div id="featuredContent">
             <div id="demo"></div>
             <p id="infoTitle">'HE'S WEIRD'<br> 'BOASTFUL'</p>
+	    <p>Who is Mr. Harrison?</p>
           </div>
 `;
 sideArticleColumn1 = `
