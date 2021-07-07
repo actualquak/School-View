@@ -110,9 +110,10 @@ function show(id) {
 }
 
 // Build modals
-modals = [modal("ussr-anthem"), modal("rick-roll")];
+rrModal = modal("rick-roll");
+uaModal = modal("ussr-anthem");
 
-$("#modals").html(modals[0]+modals[1]);
+$("#modals").html(rrModal+uaModal);
 
 function modal(id) {
 	modal = `<div id="`+id+`-modal" class="modal">
