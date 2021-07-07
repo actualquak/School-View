@@ -7,18 +7,15 @@ function switchSections(to) {
       move("#about", "down", "middle");
     } else {
       move("#panoramaPage", "down", "middle");
-      $("#panoramaPage").hide();
     }  
   } else if (to == "#panoramaPage") {
     $("#panoramaPage").show();
     if (currentSection == "#about") {
       move("#panoramaPage", "down", "top");
       move("#about", "down", "middle");
-      $("#about").hide();
     } else {
       move("#panoramaPage", "up", "bottom");
       move("#information", "up", "middle");
-      $("#information").hide();
     }  
   } else {
     $("#about").show();
@@ -26,10 +23,8 @@ function switchSections(to) {
     if (currentSection == "#information") {
       $("#panoramaPage").hide();
       move("#information", "up", "middle");
-      $("#panoramaPage").hide();
     } else {
       move("#panoramaPage", "up", "middle");
-      $("#panoramaPage").hide();
     }  
   }  
   currentSection = to;
