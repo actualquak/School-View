@@ -1,7 +1,7 @@
 # School-View
 
 This is the GitHub repository for the New Town High School School View web application.
-It is combining old technologies to make a new technology: we are combining street view with a unique way of conveyning information. 
+It is combining old technologies to make a new technology: we are combining street view with a unique way of conveyning information.
 Really, it's nothing fancy: it's a school assignment, and we're developing slowly - no one on the project has created a web app with HTML, CSS and JavaScript before.
 We're deploying this on GitHub Pages, so have a look: https://frlegg.github.io/School-View
 
@@ -68,15 +68,15 @@ instead of `$("#about")` or `$(".sideArticle")`
 ## Features
 As you know, we didn't use a crappy website builder for this, we used the real deal. Here's the features we accomplished:
 ### Navigation
-The front-end loves to have cool animations, and why not use cool animations to provide smooth naviagtion across the different pages. We did this through linking in registering a button click in JavaScript, which would initiate a CSS animation and move everything into place. 
+The front-end loves to have cool animations, and why not use cool animations to provide smooth naviagtion across the different pages. We did this through linking in registering a button click in JavaScript, which would initiate a CSS animation and move everything into place.
 
 ### Information
 Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing.
 
 ![Information Section](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/information-section.png "Information Section")
 
-### Panorama 
-We of course used Pannellum for our 3D image viewer. It provided us with the compass, auto-loading and other features, but we had to add in the map. We tried to make this process as smooth as possible, thus meaning that Stanley had to tediously fill in JSON data files to perfect the expereince. Credit to Oliver for making his code open source so we could copy it, which helped our website because of it.
+### Panorama
+We used Pannellum for our 3D image viewer. It provided us with the compass, auto-loading and other features, but we had to add in the map. We tried to make this process as smooth as possible, thus meaning that Stanley had to tediously fill in JSON data files to perfect the expereince. Credit to Oliver for making his code open source so we could copy it, which helped our website because of it.
 
 ### About
-The about page was the eastist thing to accomplish about the entire website. All was needed was to link the socials with each developer. This wasn't hard: import Font Awesome icons, open a URL on click, make the URLs right. 
+The about page was the eastist thing to accomplish about the entire website. All was needed was to link the socials with each developer. This wasn't hard: import Font Awesome icons, open a URL on click, make the URLs right.
