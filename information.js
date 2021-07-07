@@ -110,6 +110,8 @@ function show(id) {
 }
 
 // Build modals
+$("#modals").html(modal("ussr-anthem")+modal("rick-roll"));
+
 function modal(id) {
 	modal = `<div id="`+id+`-modal" class="modal">
   <div class="modal-container">
@@ -124,8 +126,6 @@ function modal(id) {
 </div>`;
 	return modal;
 }
-
-$("#modals").html(modal("ussr-anthem")+modal("rick-roll"));
 
 // Open button register
 $(rrOpen).on("click", function() { show("rick-roll") });
