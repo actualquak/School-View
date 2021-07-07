@@ -4,7 +4,7 @@ height = window.innerHeight - 260;
 featuredContent = `
 					<div id="featuredContent">
             <div id="demo"></div>
-            <p class="featuredContent">FEATURED <br> CONTENT</p>
+            <p id="infoTitle">FEATURED <br> CONTENT</p>
           </div>
 `;
 sideArticleColumn1 = `
