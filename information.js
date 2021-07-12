@@ -128,7 +128,7 @@ function modal(id) {
 	return returnModal;
 }
 
-$("#modals").html(rrModal+uaModal);
+$("#information").append(rrModal+uaModal);
 
 // Open button register
 $(rrOpen).on("click", function() { show("rick-roll") });
