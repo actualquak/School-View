@@ -9,10 +9,10 @@ featuredContent = `
 `;
 sideArticleColumn1 = `
 				<div id="sideArticleColumn1">
-  				<div class="sideArticle" id="leaders">
+  				<div class="sideArticle" id="leaders-open">
     				<p class="title">`+buildContent("STUDENT LEADERS: THE LOW DOWN", "link")+`</p>
   				</div>
-          <div class="sideArticle" id="maths">
+          <div class="sideArticle" id="maths-open">
     				<p class="title">`+buildContent("FROM THE HEAD OF MATHEMATICS", "link")+`</p>
   				</div>
           <div class="sideArticle" id="blendedLearning">
