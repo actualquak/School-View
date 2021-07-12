@@ -328,7 +328,6 @@ th {
 
 .modal {
   opacity: 0;
-  visibility: visible;
   position: fixed;
   top: 0;
   left: 0;
