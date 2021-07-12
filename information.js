@@ -24,7 +24,7 @@ sideArticleColumn1 = `
 				</div>	
 `;
 sideArticleColumn2 = `
-				<div id="sideArticleColumn1">
+				<div id="sideArticleColumn2">
   				<div class="sideArticle" id="geale">
             `+buildContent("MS. GEALE", "play")+`
   				</div>
