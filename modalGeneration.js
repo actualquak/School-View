@@ -22,7 +22,7 @@ function videoModal(id) {
 function articleModal(id) {
 	idList = ["leaders", "maths"];
 	idIndex = idList.indexOf(id);
-	return modal(id, `<h1>`+articleTitles[idIndex]+`</h1><p>`+articleBody[idIndex]+`</p>`);
+	return modal(id, `<h1 class="title">`+articleTitles[idIndex]+`</h1><p>`+articleBody[idIndex]+`</p>`);
 } 
 
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
