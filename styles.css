@@ -328,6 +328,7 @@ th {
 
 .modal {
   opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -340,10 +341,12 @@ th {
 
 .modal.show {
   opacity: 1;
+  visibility: visible;
 }
 
 .modal.hide {
   opacity: 0;
+  visibility: visible;
 }
 
 .modal-container {
