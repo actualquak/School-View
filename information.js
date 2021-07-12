@@ -9,10 +9,10 @@ featuredContent = `
 `;
 sideArticleColumn1 = `
 				<div id="sideArticleColumn1">
-  				<div class="sideArticle" id="studentLeaders">
+  				<div class="sideArticle" id="leaders">
     				<p class="title">`+buildContent("STUDENT LEADERS: THE LOW DOWN", "link")+`</p>
   				</div>
-          <div class="sideArticle" id="mathematics">
+          <div class="sideArticle" id="maths">
     				<p class="title">`+buildContent("FROM THE HEAD OF MATHEMATICS", "link")+`</p>
   				</div>
           <div class="sideArticle" id="blendedLearning">
@@ -91,10 +91,19 @@ function buildContent(title, icon) {
 // Content display
 const rickRollModal = $("#rick-roll-modal");
 const ussrAnthemModal = $("#ussr-anthem-modal");
+const leadersModal = $("#leaders-modal");
+const mathsModal = $("#maths-modal");
+
 const rrClose = $("#rick-roll-close");
 const uaClose = $("#ussr-anthem-close");
+const slClose = $("#leaders-close");
+const mhClose = $("#maths-close");
+
 const rrOpen = $("#rick-roll-open");
 const uaOpen = $("#ussr-anthem-open");
+const slOpen = $("#leaders-open");
+const mhOpen = $("#maths-open");
+
 const videos = $("video");
 if (window.innerWidth < window.innerHeight) {
   videos.css("width", (window.innerWidth - 200) + "px");
@@ -110,28 +119,43 @@ function show(id) {
 }
 
 // Open button register
-$(rrOpen).on("click", function() { show("rick-roll") });
-$(uaOpen).on("click", function() { show("ussr-anthem") });
+$(rrOpen).on("click", function() { show("rr") });
+$(uaOpen).on("click", function() { show("ua") });
+$(slOpen).on("click", function() { show("sl") });
+$(mhOpen).on("click", function() { show("mh") });
+
 // Close button register
-$(rrClose).on("click", function() { close("rick-roll") });
-$(uaClose).on("click", function() { close("ussr-anthem") });
+$(rrClose).on("click", function() { close("rr") });
+$(uaClose).on("click", function() { close("ua") });
+$(slClose).on("click", function() { close("sl") });
+$(mhClose).on("click", function() { close("mh") });
+
 function close(id) {
-	if (id == "rick-roll") {
+	if (id == "rr") {
     rickRollModal.removeClass("show");
     rickRollModal.addClass("hide");
+  } else if (id == "mh") {
+  	mathsModal.removeClass("show");
+	mathsModal.addClass("hide");
+  } else if (id == "sl") {
+  	leadersModal.removeClass("show");
+	leadersModal.addClass("hide");
   } else {
     ussrAnthemModal.removeClass("show");
     ussrAnthemModal.addClass("hide");
   }
   
   videos.trigger('pause');
-  if (id == "rick-roll") {
-    setTimeout(function() {
-      rickRollModal.removeClass("hide")
+   setTimeout(function() {
+     	if (id == "rr") {
+      		rickRollModal.removeClass("hide")
+  	} else if (id == "mh") {
+		mathsModal.removeClass("hide")
+	} else if (id == "sl") {
+		leadersModal.removeClass("hide")
+	} else {
+      		ussrAnthemModal.removeClass("hide")
+  	}
     }, 700);
-  } else {
-    setTimeout(function() {
-      ussrAnthemModal.removeClass("hide")
-    }, 700);
-  }
+  
 }
