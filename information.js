@@ -111,8 +111,12 @@ if (window.innerWidth < window.innerHeight) {
   videos.css("height", (window.innerHeight - 200) + "px");
 }
 function show(id) {
-  if (id == "rick-roll") {
+  if (id == "rr") {
     rickRollModal.addClass("show");
+  } else if (id == "mh") {
+  	mathsModal.addClass("show");
+  } else if (id == "sl") {
+  	leadersModal.addClass("show");
   } else {
     ussrAnthemModal.addClass("show");
   }
