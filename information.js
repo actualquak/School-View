@@ -114,7 +114,7 @@ rrModal = modal("rick-roll");
 uaModal = modal("ussr-anthem");
 
 function modal(id) {
-	modal = `<div id="`+id+`-modal" class="modal">
+	returnModal = `<div id="`+id+`-modal" class="modal">
   <div class="modal-container">
     <div class="modal-inner">
       <video id="`+id+`" controls>
@@ -125,7 +125,7 @@ function modal(id) {
     </div>
   </div>
 </div>`;
-	return modal;
+	return returnModal;
 }
 
 $("#modals").html(rrModal+uaModal);
