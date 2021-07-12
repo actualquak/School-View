@@ -109,27 +109,6 @@ function show(id) {
   }
 }
 
-// Build modals
-rrModal = modal("rick-roll");
-uaModal = modal("ussr-anthem");
-
-function modal(id) {
-	returnModal = `<div id="`+id+`-modal" class="modal">
-  <div class="modal-container">
-    <div class="modal-inner">
-      <video id="`+id+`" controls>
-        <source src="https://static-content-hosting-de818.firebaseapp.com/School-View/`+id+`.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <button id="`+id+`-close" class="modal-close" type="button">&#10799;</button>
-    </div>
-  </div>
-</div>`;
-	return returnModal;
-}
-
-$("#information").append(rrModal+uaModal);
-
 // Open button register
 $(rrOpen).on("click", function() { show("rick-roll") });
 $(uaOpen).on("click", function() { show("ussr-anthem") });
