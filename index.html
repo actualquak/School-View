@@ -104,11 +104,8 @@
 	
 	<script>
 		// Build modals
-rrModal = modal("rick-roll");
-uaModal = modal("ussr-anthem");
-
 function modal(id) {
-	returnModal = `<div id="`+id+`-modal" class="modal">
+	return `<div id="`+id+`-modal" class="modal">
   <div class="modal-container">
     <div class="modal-inner">
       <video id="`+id+`" controls>
@@ -119,10 +116,9 @@ function modal(id) {
     </div>
   </div>
 </div>`;
-	return returnModal;
 }
 
-$("#information").append(rrModal+uaModal);
+$("#information").append(modal("rick-roll")+modal("ussr-anthem"));
 	</script>
 	
 	</div>
