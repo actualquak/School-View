@@ -87,22 +87,7 @@ function buildContent(title, icon) {
               </tr>
             </table>`;
 	return content;
-}	
-// Content display
-const rickRollModal = $("#rick-roll-modal");
-const ussrAnthemModal = $("#ussr-anthem-modal");
-const leadersModal = $("#leaders-modal");
-const mathsModal = $("#maths-modal");
-
-const rrClose = $("#rick-roll-close");
-const uaClose = $("#ussr-anthem-close");
-const slClose = $("#leaders-close");
-const mhClose = $("#maths-close");
-
-const rrOpen = $("#rick-roll-open");
-const uaOpen = $("#ussr-anthem-open");
-const slOpen = $("#leaders-open");
-const mhOpen = $("#maths-open");
+}
 
 const videos = $("video");
 
@@ -125,6 +110,16 @@ function close(id) {
      	$("#"+id+"-modal").removeClass("hide")
     }, 700);
 }
+
+const rrClose = $("#rick-roll-close");
+const uaClose = $("#ussr-anthem-close");
+const slClose = $("#leaders-close");
+const mhClose = $("#maths-close");
+
+const rrOpen = $("#rick-roll-open");
+const uaOpen = $("#ussr-anthem-open");
+const slOpen = $("#leaders-open");
+const mhOpen = $("#maths-open");
 
 // Open button register
 $(rrOpen).on("click", function() { show("rick-roll") });
