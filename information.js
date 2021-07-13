@@ -113,16 +113,16 @@ if (window.innerWidth < window.innerHeight) {
 }
 
 function show(id) {
-  $(id+"-modal").addClass("show");
+  $("#"+id+"-modal").addClass("show");
 }
 
 function close(id) {
-  $(id+"-modal").removeClass("show");
-  $(id+"-modal").addClass("hide");
+  $("#"+id+"-modal").removeClass("show");
+  $("#"+id+"-modal").addClass("hide");
   
   videos.trigger('pause');
    setTimeout(function() {
-     	$(id+"-modal").removeClass("hide")
+     	$("#"+id+"-modal").removeClass("hide")
     }, 700);
 }
 
