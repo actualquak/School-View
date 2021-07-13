@@ -105,61 +105,35 @@ const slOpen = $("#leaders-open");
 const mhOpen = $("#maths-open");
 
 const videos = $("video");
+
 if (window.innerWidth < window.innerHeight) {
   videos.css("width", (window.innerWidth - 200) + "px");
 } else {
   videos.css("height", (window.innerHeight - 200) + "px");
 }
+
 function show(id) {
-  if (id == "rr") {
-    rickRollModal.addClass("show");
-  } else if (id == "mh") {
-  	mathsModal.addClass("show");
-  } else if (id == "sl") {
-  	leadersModal.addClass("show");
-  } else {
-    ussrAnthemModal.addClass("show");
-  }
+  $(id+"-modal").addClass("show");
 }
 
-// Open button register
-$(rrOpen).on("click", function() { show("rr") });
-$(uaOpen).on("click", function() { show("ua") });
-$(slOpen).on("click", function() { show("sl") });
-$(mhOpen).on("click", function() { show("mh") });
-
-// Close button register
-$(rrClose).on("click", function() { close("rr") });
-$(uaClose).on("click", function() { close("ua") });
-$(slClose).on("click", function() { close("sl") });
-$(mhClose).on("click", function() { close("mh") });
-
 function close(id) {
-	if (id == "rr") {
-    rickRollModal.removeClass("show");
-    rickRollModal.addClass("hide");
-  } else if (id == "mh") {
-  	mathsModal.removeClass("show");
-	mathsModal.addClass("hide");
-  } else if (id == "sl") {
-  	leadersModal.removeClass("show");
-	leadersModal.addClass("hide");
-  } else {
-    ussrAnthemModal.removeClass("show");
-    ussrAnthemModal.addClass("hide");
-  }
+  $(id+"-modal").removeClass("show");
+  $(id+"-modal").addClass("hide");
   
   videos.trigger('pause');
    setTimeout(function() {
-     	if (id == "rr") {
-      		rickRollModal.removeClass("hide")
-  	} else if (id == "mh") {
-		mathsModal.removeClass("hide")
-	} else if (id == "sl") {
-		leadersModal.removeClass("hide")
-	} else {
-      		ussrAnthemModal.removeClass("hide")
-  	}
+     	$(id+"-modal").removeClass("hide")
     }, 700);
-  
 }
+
+// Open button register
+$(rrOpen).on("click", function() { show("rick-roll") });
+$(uaOpen).on("click", function() { show("ussr-anthem") });
+$(slOpen).on("click", function() { show("leaders") });
+$(mhOpen).on("click", function() { show("maths") });
+
+// Close button register
+$(rrClose).on("click", function() { close("rick-roll") });
+$(uaClose).on("click", function() { close("ussr-anthem") });
+$(slClose).on("click", function() { close("leaders") });
+$(mhClose).on("click", function() { close("maths") });
