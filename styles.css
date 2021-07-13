@@ -395,32 +395,32 @@ th {
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/harrison.jpg');
+  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/harrison.webp');
 }
 
 #leaders {
   background-position: top center;
-  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-oscar.png');
+  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-oscar.webp');
 }
 
 #maths {
   background-position: center;
-  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/maths-dark.jpg');
+  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/maths-dark.webp');
 }
 
 #blendedLearning {
   background-position: center;
-  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/blended-learning-dark.jpg');
+  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/blended-learning-dark.webp');
 }
 
 #mrHarrison {
   background-position: center 40%;
-  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-harrison.jpg');
+  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-harrison.webp');
 }
 
 #sport {
   background-position: center;
-  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-sport.jpg');
+  background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-sport.webp');
 }
 
 /* Animations */
