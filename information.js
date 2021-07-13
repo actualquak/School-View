@@ -75,7 +75,7 @@ function buildContent(title, icon) {
 	content = `<table>
               <tr>
                	<th>
-                 	<button class="`+icon+`Button">
+                 	<button class="`+icon+`Button" aria-label="Open`+title+`">
             				<i class="`+iconDisplayed+`"></i>
                   </button>
                 </th>
