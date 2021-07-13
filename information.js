@@ -98,10 +98,14 @@ if (window.innerWidth < window.innerHeight) {
 }
 
 function show(id) {
+  currentModal = id;
+	
   $("#"+id+"-modal").addClass("show");
 }
 
 function close(id) {
+  currentModal = null;
+	
   $("#"+id+"-modal").removeClass("show");
   $("#"+id+"-modal").addClass("hide");
   
@@ -111,24 +115,22 @@ function close(id) {
     }, 700);
 }
 
-const rrClose = $("#rick-roll-close");
-const uaClose = $("#ussr-anthem-close");
-const slClose = $("#leaders-close");
-const mhClose = $("#maths-close");
-
-const rrOpen = $("#rick-roll-open");
-const uaOpen = $("#ussr-anthem-open");
-const slOpen = $("#leaders-open");
-const mhOpen = $("#maths-open");
-
 // Open button register
-$(rrOpen).on("click", function() { show("rick-roll") });
-$(uaOpen).on("click", function() { show("ussr-anthem") });
-$(slOpen).on("click", function() { show("leaders") });
-$(mhOpen).on("click", function() { show("maths") });
+$("#rick-roll-open").on("click", function() { show("rick-roll") });
+$("#ussr-anthem-open").on("click", function() { show("ussr-anthem") });
+$("#leaders-open").on("click", function() { show("leaders") });
+$("#maths-open").on("click", function() { show("maths") });
 
 // Close button register
-$(rrClose).on("click", function() { close("rick-roll") });
-$(uaClose).on("click", function() { close("ussr-anthem") });
-$(slClose).on("click", function() { close("leaders") });
-$(mhClose).on("click", function() { close("maths") });
+$("#rick-roll-close").on("click", function() { close("rick-roll") });
+$("#ussr-anthem-close").on("click", function() { close("ussr-anthem") });
+$("#leaders-close").on("click", function() { close("leaders") });
+$("#maths-close").on("click", function() { close("maths") });
+
+// Detect esc key press
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        close(currentModal)
+    }
+};
