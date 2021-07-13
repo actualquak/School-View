@@ -3,7 +3,7 @@ articleTitles = ["STUDENT LEADERS", "MR PRATAP"];
 		
 		// Build modals
 function modal(id, filler) {
-	$(id+"-modal").css("padding", "20px");
+	$("#"+id+"-modal").css("padding", "20px");
 	
 	return `<div id="`+id+`-modal" class="modal">
   <div class="modal-container">
