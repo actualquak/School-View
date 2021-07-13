@@ -2,9 +2,7 @@ articleTitles = ["STUDENT LEADERS", "MR PRATAP"];
 		articleBody = ["Student leaders have an incredibly important role to play in school.", "Mr. Pratap is legendary"];
 		
 		// Build modals
-function modal(id, filler) {
-	$("#"+id+"-modal").css("padding", "20px");
-	
+function modal(id, filler) {	
 	return `<div id="`+id+`-modal" class="modal">
   <div class="modal-container">
     <div class="modal-inner">`+filler+`
@@ -22,6 +20,8 @@ function videoModal(id) {
 }
 		
 function articleModal(id) {
+	$("#"+id+"-modal").css("padding", "20px");
+	
 	idList = ["leaders", "maths"];
 	idIndex = idList.indexOf(id);
 	return modal(id, `<h1 class="title">`+articleTitles[idIndex]+`</h1><p>`+articleBody[idIndex]+`</p>`);
