@@ -62,13 +62,6 @@ function buildContent(title, icon) {
   return `<table><tr><th><button class="`+icon+`Button" aria-label="Open`+title+`"><i class="`+iconDisplayed+`"></i></button></th><th><div class="`+centered+`"><p class="contentTitle">`+title+`</p></div></th>/tr></table>`;
 }
 
-// Adapt video modal dimensions to screen dimensions
-if (window.innerWidth < window.innerHeight) {
-  $("video").css("width", (window.innerWidth - 200) + "px");
-} else {
-  $("video").css("height", (window.innerHeight - 200) + "px");
-}
-
 // Show modal
 function show(id) {
   currentModal = id;
