@@ -1,4 +1,8 @@
 json = {};
+function done() {
+ 	panorama = pannellum.viewer('panorama', json);
+	panorama.loadScene(getUrlParam("room", "DownCenNE"), 0, 0);
+}
 $.when(
 	$.ajax({
 		dataType: "json",
@@ -145,7 +149,6 @@ $.when(
 		url: "https://actualquak.github.io/School-View/json/Up-SW.json",
 		success: function(data) {json.scenes.UpSW = data;}
 	})
-).then(function() {
-	panorama = pannellum.viewer('panorama', json);
-	panorama.loadScene(getUrlParam("room", "DownCenNE"), 0, 0);
+).then(
+	done
 });});
