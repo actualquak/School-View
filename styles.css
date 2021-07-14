@@ -397,6 +397,10 @@ th {
     padding: 20px;
 }
 
+.article p {
+    color: white;
+}
+
 /* Images */
 
 #featuredImage {
