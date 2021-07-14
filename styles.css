@@ -213,6 +213,8 @@ h1 {
 #schoolMap {
     width: 100px;
     height: 50px;
+    bottom: 5px;
+    right: 58px;
     background-color: #f4f4f4;
     position: absolute;
     z-index: 1;
