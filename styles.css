@@ -218,7 +218,7 @@ h1 {
     position: absolute;
     border: none;
     border-radius: 30px;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Information Page */
