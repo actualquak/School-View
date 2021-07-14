@@ -75,7 +75,7 @@ function close(id) {
   $("#"+id+"-modal").removeClass("show");
   $("#"+id+"-modal").addClass("hide");
   
-  videos.trigger('pause');
+  $("video").trigger('pause');
  
   setTimeout(function() {
     $("#"+id+"-modal").removeClass("hide")
