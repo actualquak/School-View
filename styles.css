@@ -392,6 +392,11 @@ th {
   line-height: 50px;
 }
 
+.article {
+    width: 400px;
+    padding: 20px;
+}
+
 /* Images */
 
 #featuredImage {
