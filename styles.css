@@ -410,12 +410,12 @@ th {
   background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/harrison.webp');
 }
 
-#leaders {
+#leaders-open {
   background-position: top center;
   background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/dark-oscar.webp');
 }
 
-#maths {
+#maths-open {
   background-position: center;
   background-image: url('https://static-content-hosting-de818.firebaseapp.com/School-View/maths-dark.webp');
 }
