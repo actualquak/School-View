@@ -26,15 +26,5 @@ function articleModal(id) {
   return modal(id, `<div class="article"><h1 class="title">`+articleTitles[idIndex]+`</h1><p>`+articleBody[idIndex]+`</p></div>`);
 } 
 
-// Adapt article modal dimensions to screen dimensions 
-$(".article").css("height", (window.innerHeight - 200) + "px"); 
-
-// Adapt video modal dimensions to screen dimensions
-if (window.innerWidth < window.innerHeight) {
-  $("video").css("width", (window.innerWidth - 200) + "px");
-} else {
-  $("video").css("height", (window.innerHeight - 200) + "px");
-}
-
 // Add modals into html so that they can be called
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
