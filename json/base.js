@@ -619,4 +619,5 @@ panorama = pannellum.viewer("panorama", {
     }
   }
 }
-)
+);
+panorama.loadScene(getUrlParam("room", "DownCenNE"));
