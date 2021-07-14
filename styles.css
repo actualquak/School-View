@@ -212,10 +212,12 @@ h1 {
 
 #schoolMap {
     width: 100px;
+    height: 50px
     bottom: 5px;
-    right: 58px;
+    right: 60px;
     position: absolute;
     border: none;
+    border-radius: 30px;
     z-index: 1;
 }
 
