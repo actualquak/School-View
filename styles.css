@@ -215,6 +215,7 @@ h1 {
     height: 50px;
     bottom: 5px;
     right: 58px;
+    text-align: center;
     background-color: #f4f4f4;
     position: absolute;
     z-index: 1;
