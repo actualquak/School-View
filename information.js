@@ -59,7 +59,7 @@ function buildContent(title, icon) {
   // Set icon displayed
   if (icon == "play") { iconDisplayed = "fa fa-play-circle"; } else { iconDisplayed = "fa fa-external-link-square"; }
 	
-  return `<table><tr><th><button class="`+icon+`Button" aria-label="Open`+title+`"><i class="`+iconDisplayed+`"></i></button></th><th><div class="`+centered+`"><p class="contentTitle">`+title+`</p></div></th>/tr></table>`;
+  return `<table><tr><th><button class="`+icon+`Button" aria-label="Open`+title+`"><i class="`+iconDisplayed+`"></i></button></th><th><div class="`+centered+`"><p class="contentTitle">`+title+`</p></div></th></tr></table>`;
 }
 
 // Show modal
