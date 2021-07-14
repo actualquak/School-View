@@ -23,7 +23,7 @@ function getUrlParam(parameter, defaultvalue){
 };
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
-var viewer;
+var panorama;
 $.when(
 	$.ajax({
 		dataType: "json",
@@ -146,6 +146,6 @@ $.when(
 		success: function(data) {json.scenes.UpSW = data;}
 	})
 ).then(function() {
-	viewer = pannellum.viewer('panorama', json); 
-	viewer.loadScene(getUrlParam("room", "DownCenNE"), 0, 0);
+	panorama = pannellum.viewer('panorama', json);
+	panorama.loadScene(getUrlParam("room", "DownCenNE"), 0, 0);
 });});
