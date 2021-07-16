@@ -35,8 +35,9 @@ if (width < 700) {
 
 // Different UI layouts
 function buildSmallUI() {
-  $("#content").html("<th>" + featuredContent + sideArticleColumn1 + sideArticleColumn2 + "</th>"); // Display everything stacked on top of each other
+  $("#content").html("<th>" + featuredContent + "<div id='arrangeColumns'>" + sideArticleColumn1 + sideArticleColumn2 + "</div>" + "</th>"); // Display everything stacked on top of each other
   $("#featuredContent").css("width", (width - 50) + "px");
+  $(".sideArticle").css("width", (width - 50) + "px");
 }
 
 function buildMediumUI() {
