@@ -316,6 +316,10 @@ th {
   margin: 0px 0px 0px 4px;
 }
 
+#arrangeColumns {
+    margin: 30px 0px 0px 12px;
+}
+
 .modal {
   opacity: 0;
   visibility: hidden;
