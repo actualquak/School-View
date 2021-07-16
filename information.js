@@ -35,17 +35,17 @@ if (width < 700) {
 
 // Different UI layouts
 function buildSmallUI() {
-  $("#content").html(featuredContent); // Display only the featured content - not enough room for anything else
+  $("#content").html(featuredContent + "<th>" + sideArticleColumn1 + sideArticleColumn2 + "</th>"); // Display only the featured content - not enough room for anything else
   $("#featuredContent").css("width", (width - 50) + "px");
 }
 
 function buildMediumUI() {
-  $("#content").html("<th>" + featuredContent + "</th><th id='infoColumn1'>" + sideArticleColumn1 + "</th>"); // Display only the featured content and first column - not enough room for anything else
+  $("#content").html("<th>" + featuredContent + "</th><th id='infoColumn1'>" + sideArticleColumn1 + sideArticleColumn2 + "</th>"); // Put second column under first column to display all content without a spaghetti layout
   $("#featuredContent").css("width", (width - 330) + "px");
 }
 
 function buildLargeUI() {
-  $("#content").html("<th>" + featuredContent + "</th><th id='infoColumn1'>" + sideArticleColumn1 + "</th><th id='infoColumn2'>" + sideArticleColumn2 + "</th>"); // Display everything
+  $("#content").html("<th>" + featuredContent + "</th><th id='infoColumn1'>" + sideArticleColumn1 + "</th><th id='infoColumn2'>" + sideArticleColumn2 + "</th>"); // Display everything in a row
   $("#featuredContent").css("width", (width - 600) + "px");
 }
 
