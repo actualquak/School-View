@@ -17,7 +17,7 @@ function videoModal(id) {
     <source src="https://static-content-hosting-de818.firebaseapp.com/School-View/`+id+`.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <div class="extraVideoContent"></div>`);
+  <div class="extraVideoContent"><p>Extra video content goes here. To change the styles of this, find .extraVideoContent in the css file. For its position, add parameters like "top: 50px". This will push the div down from the top by 50px. The rest of the parameters are self-explanetory: width, height, background-color. Have fun!</p></div>`);
 }
 
 // Function returns article modal adaptive to parameters
