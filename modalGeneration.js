@@ -16,7 +16,8 @@ function videoModal(id) {
   return modal(id, `<video id="`+id+`" controls>
     <source src="https://static-content-hosting-de818.firebaseapp.com/School-View/`+id+`.mp4" type="video/mp4">
     Your browser does not support the video tag.
-  </video>`);
+  </video>
+  <div class="extraVideoContent"></div>`);
 }
 
 // Function returns article modal adaptive to parameters
