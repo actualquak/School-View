@@ -40,6 +40,7 @@ function buildSmallUI() {
   $("#content").html("<th>" + featuredContent + "<div id='arrangeColumns'>" + sideArticleColumn1 + sideArticleColumn2 + "</div>" + "</th>"); // Display everything stacked on top of each other
   $("#featuredContent").css("width", (width - 50) + "px");
   $(".sideArticle").css("width", (width - 47) + "px");
+  $(".sideArticle").css("background-size", (width - 47) + "px" + "auto");
 }
 
 function buildMediumUI() {
