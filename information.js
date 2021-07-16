@@ -1,3 +1,6 @@
+buildScreen();
+setModalSizes();
+
 // Width available for display
 width = window.innerWidth - 260;
 
@@ -25,12 +28,14 @@ sideArticleColumn2 = `
 `;
 
 // Build UI depending on screen size
-if (width < 700) {
-  buildSmallUI();
-} else if (width < 1000) {
-  buildMediumUI();
-} else {
-  buildLargeUI();
+function buildScreen() {
+  if (width < 700) {
+    buildSmallUI();
+  } else if (width < 1000) {
+    buildMediumUI();
+  } else {
+    buildLargeUI();
+  }
 }
 
 // Different UI layouts
@@ -62,15 +67,17 @@ function buildContent(title, icon) {
   return `<table><tr><th><button class="`+icon+`Button" aria-label="Open`+title+`"><i class="`+iconDisplayed+`"></i></button></th><th><div class="`+centered+`"><p class="contentTitle">`+title+`</p></div></th></tr></table>`;
 }
 
-// Adapt article modal dimensions to screen dimensions 
-$(".article").css("height", (window.innerHeight - 200) + "px"); 
-$(".article").css("width", (window.innerWidth - 200) + "px");
+function setModalSizes() {
+  // Adapt article modal dimensions to screen dimensions 
+  $(".article").css("height", (window.innerHeight - 200) + "px"); 
+  $(".article").css("width", (window.innerWidth - 200) + "px");
 
-// Adapt video modal dimensions to screen dimensions
-if (window.innerWidth < window.innerHeight) {
-  $("video").css("width", (window.innerWidth - 200) + "px");
-} else {
-  $("video").css("height", (window.innerHeight - 200) + "px");
+  // Adapt video modal dimensions to screen dimensions
+  if (window.innerWidth < window.innerHeight) {
+    $("video").css("width", (window.innerWidth - 200) + "px");
+  } else {
+    $("video").css("height", (window.innerHeight - 200) + "px");
+  }
 }
 
 // Show modal
@@ -114,3 +121,9 @@ document.onkeydown = function(evt) {
     	startPageUp(); // Start page goes up
     }
 };
+	
+// Rebuild screen on window resize
+$(window).resize(function() {
+  buildScreen();
+  setModalSizes();
+});
