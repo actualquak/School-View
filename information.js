@@ -35,7 +35,7 @@ if (width < 700) {
 
 // Different UI layouts
 function buildSmallUI() {
-  $("#content").html(featuredContent + "<th>" + sideArticleColumn1 + sideArticleColumn2 + "</th>"); // Display only the featured content - not enough room for anything else
+  $("#content").html(featuredContent + sideArticleColumn1 + sideArticleColumn2); // Display only the featured content - not enough room for anything else
   $("#featuredContent").css("width", (width - 50) + "px");
 }
 
