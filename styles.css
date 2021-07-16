@@ -256,7 +256,7 @@ th {
 
 .sideArticle {
   background-repeat: no-repeat;
-  background-size: 270px auto;
+  background-size: auto;
   margin: 0px 15px 20px 0px;
   padding: 0px 5px 0px 5px;
   width: 250px;
