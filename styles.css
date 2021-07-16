@@ -238,28 +238,12 @@ h1 {
   height: 20px;
 }
 
-#chips {
-  margin: 15px;
-}
-
 tr {
   vertical-align: top;
 }
 
 th {
   overflow: hidden;
-}
-
-.chip {
-  display: inline-block;
-  margin: 2.5px;
-  padding: 0 20px;
-  height: 40px;
-  font-size: 16px;
-  line-height: 8px;
-  border-radius: 25px;
-  background-color: #38B6FF;
-  border: none;
 }
 
 #featuredContent {
