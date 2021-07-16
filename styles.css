@@ -234,8 +234,8 @@ h1 {
     width: 100vw;
 }
 
-.spacer {
-  height: 20px;
+#spacer {
+  height: 30px;
 }
 
 tr {
