@@ -64,6 +64,7 @@ function buildContent(title, icon) {
 
 // Adapt article modal dimensions to screen dimensions 
 $(".article").css("height", (window.innerHeight - 200) + "px"); 
+$(".article").css("width", (window.innerWidth - 200) + "px");
 
 // Adapt video modal dimensions to screen dimensions
 if (window.innerWidth < window.innerHeight) {
