@@ -79,21 +79,6 @@ button {
   padding: 20px;
 }
 
-.comeOut {
-    animation-name: come-out;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes come-out {
-    from {
-        transform: translateX(calc(-100vh));
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
 /* Start Page */
 
 #startPage {
@@ -355,8 +340,8 @@ th {
   justify-content: center;
   align-items: center;
   height: inherit;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .modal-close {
@@ -480,6 +465,21 @@ th {
     }
     to {
         transform: translateY(calc(100vh));
+    }
+}
+
+.comeOut {
+    animation-name: come-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes come-out {
+    from {
+        transform: translateX(calc(-100vh));
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
