@@ -1,6 +1,3 @@
-buildScreen();
-setModalSizes();
-
 // Width available for display
 width = window.innerWidth - 260;
 
@@ -79,6 +76,10 @@ function setModalSizes() {
     $("video").css("height", (window.innerHeight - 200) + "px");
   }
 }
+
+// Build method
+buildScreen();
+setModalSizes();
 
 // Show modal
 function show(id) {
