@@ -27,7 +27,7 @@ panorama = pannellum.viewer("panorama", {
   "scenes": {
     "DownCenNE": {
       "hfov": 110,
-      "haov": 160,
+      "voffset": 160,
       "pitch": 0,
       "yaw": 0,
       "type": "equirectangular",
