@@ -29,7 +29,6 @@ panorama = pannellum.viewer("panorama", {
       "hfov": 110,
       "pitch": 0,
       "yaw": 0,
-      "pan": 0,
       "type": "equirectangular",
       "panorama": "https://actualquak.github.io/School-View/images/Down-CenNE.jpg",
       "hotSpots": [
