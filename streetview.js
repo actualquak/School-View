@@ -16,7 +16,13 @@ function getUrlParam(parameter, defaultvalue){
     return urlparameter;
 };
 
-panorama.loadScene(getUrlParam("room", "Stalin"))
+if (getUrlParam("room", "DownNE") == null) {
+  roomSpecified = "MidSE"
+} else {
+  roomSpecified = getUrlParam("room", "DownNE")
+} 
+
+panorama.loadScene(roomSpecified)
 
 link = "https://www.youtube.com/watch?v=HIcSWuKMwOw";
 panorama = pannellum.viewer("panorama", {
