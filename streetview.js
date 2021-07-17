@@ -418,7 +418,7 @@ panorama = pannellum.viewer("panorama", {
       "yaw": 0,
       "type": "equirectangular",
       "panorama": "https://actualquak.github.io/School-View/images/Mid-SE.jpg",
-      "previewTitle": "Going Up...",
+      "previewTitle": "Check out our information page. Be careful though: don't get rick-rolled!",
       "hotSpots": [
         {
           "pitch": -0.1,
