@@ -8,14 +8,16 @@ We're deploying this on GitHub Pages, so have a look: https://frlegg.github.io/S
 Someone else is deciding to use our idea, but without the animations and with PHP. His repository is here: https://github.com/epikgamer696969/school-website It's far better, and we envy his work.
 
 ## Features
-- About page - only contains developer socials currently
+- About page
 - Panorama - room navigation difficult, not all images uploaded
-- Information page - purely for looks right now
+- Information page
+- Get rick-rolled (not telling you how)
 ## Coming soon
-- Expand about page
-- Make information page better (https://jsfiddle.net/o40cgtp6/)
-- Actually make information
 - School Map (copying Oliver again)
+- More images 
+- Straightening images
+- Proper room navigation
+- More information
 
 # School View (The Presentation)
 You might find it weird that we're using a md file to present our project, but in the programming world, if you want to be introduced with the context of the product, you will always read an md file. This is ours.
