@@ -1,3 +1,4 @@
+# https://github.com/actualquak/Rails-School-Website/tree/master/FRANKLIN
 # School-View
 
 This is the GitHub repository for the New Town High School School View web application.
