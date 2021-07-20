@@ -362,8 +362,8 @@ panorama = pannellum.viewer("panorama", {
       "panorama": "https://actualquak.github.io/School-View/images/Mid-NE.jpg",
       "hotSpots": [
         {
-          "pitch": -0.1,
-          "yaw": 132.9,
+          "pitch": -44,
+          "yaw": -41.4,
           "type": "scene",
           "text": "DownNE",
           "sceneId": "DownNE",
@@ -372,8 +372,8 @@ panorama = pannellum.viewer("panorama", {
           "targetHfov": "same"
         },
         {
-          "pitch": -10.1,
-          "yaw": 132.9,
+          "pitch": -19.2,
+          "yaw": -75,
           "type": "scene",
           "text": "UpNE",
           "sceneId": "UpNE",
