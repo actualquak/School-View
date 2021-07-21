@@ -50,7 +50,11 @@ $("#panoramaPage").append(modal("map", `
 resizeMap();
 
 function resizeMap() {
-  $(".mapImage").css("width", "200px")
+  if (window.innerWidth < window.innerHeight) {
+    $(".mapImage").css("width", (window.innerWidth - 200) + "px");
+  } else {
+    $(".mapImage").css("height", (window.innerHeight - 200) + "px");
+  }
 }
 
 $("#map-modal-open").on("click", function() { show("map") });
@@ -74,3 +78,8 @@ function close(id) {
     $("#"+id+"-modal").removeClass("hide")
   }, 700);
 }
+
+// Rebuild screen on window resize
+$(window).resize(function() {
+  resizeMap();
+});
