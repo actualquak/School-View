@@ -32,11 +32,12 @@ $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+artic
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
+  <img src="`+currentLevel+`-level.jpg">
   <table>
     <tr>
       <th>
-        <button class="levels"><p>Lower Level</p></button>
-        <button class="levels"><p>Upper Level</p></button>
+        <button onclick=" currentLevel = 'lower'; " class="levels"><p>Lower Level</p></button>
+        <button onclick=" currentLevel = 'upper'; "class="levels"><p>Upper Level</p></button>
       </th>
     </tr>
   </table>
