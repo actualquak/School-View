@@ -1,25 +1,3 @@
-$("#map-modal-open").on("click", function() { show("map") });
-$("#map-close").on("click", function() { close("map") });
-
-function show(id) {
-  currentModal = id;
-  $("#"+id+"-modal").addClass("show");
-}
-
-// Close modal
-function close(id) {
-  currentModal = null;
-	
-  $("#"+id+"-modal").removeClass("show");
-  $("#"+id+"-modal").addClass("hide");
-  
-  $("video").trigger('pause');
- 
-  setTimeout(function() {
-    $("#"+id+"-modal").removeClass("hide")
-  }, 700);
-}
-
 json = {};
 
 function getUrlVars() {
