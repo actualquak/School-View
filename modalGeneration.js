@@ -30,16 +30,18 @@ function articleModal(id) {
 // Add modals into html so that they can be called
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
 
-currentLevel = 'lower';
+function currentLevel(id) {
+ $("#map-image").html('<img src="'+id+'-level.jpg">');
+}
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
-  <img src="`+currentLevel+`-level.jpg">
+  <div id="map-image"><img src="lower-level.jpg"></div>
   <table>
     <tr>
       <th>
-        <button onclick=" currentLevel = 'lower'; " class="levels"><p>Lower Level</p></button>
-        <button onclick=" currentLevel = 'upper'; "class="levels"><p>Upper Level</p></button>
+        <button onclick=" currentLevel('lower'); " class="levels"><p>Lower Level</p></button>
+        <button onclick=" currentLevel('upper'); "class="levels"><p>Upper Level</p></button>
       </th>
     </tr>
   </table>
