@@ -1,4 +1,5 @@
-$("#map-modal").on("click", function() { show("map"); });
+$("#map-modal-open").on("click", function() { show("map") });
+$("#map-close").on("click", function() { close("map") });
 
 function show(id) {
   currentModal = id;
