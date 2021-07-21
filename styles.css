@@ -224,6 +224,12 @@ h1 {
     z-index: 2;
 }
 
+.levels {
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+}
+
 /* Information Page */
 
 #information {
