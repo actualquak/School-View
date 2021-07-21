@@ -213,7 +213,7 @@ h1 {
     float: right;
 }    
 
-#schoolMap {
+#map-modal-open {
     width: 100px;
     height: 50px;
     bottom: 5px;
