@@ -31,12 +31,12 @@ function articleModal(id) {
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
 
 function currentLevel(id) {
- $("#map-image").html('<img src="'+id+'-level.jpg">');
+ $("#map-image-div").html('<img src="'+id+'-level.jpg">');
 }
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
-  <div id="map-image"><img src="lower-level.jpg"></div>
+  <div id="map-image-div"><img class="map-image" src="lower-level.jpg"></div>
   <table>
     <tr>
       <th>
