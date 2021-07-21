@@ -29,3 +29,5 @@ function articleModal(id) {
 
 // Add modals into html so that they can be called
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
+
+$("#panoramaPage").append(modal("map", "")); //filler being developed on 
