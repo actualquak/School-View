@@ -47,6 +47,12 @@ $("#panoramaPage").append(modal("map", `
   </table>
 `));
 
+resizeMap();
+
+function resizeMap() {
+  $(".mapImage").css("width", "200px")
+}
+
 $("#map-modal-open").on("click", function() { show("map") });
 $("#map-close").on("click", function() { close("map") });
 
