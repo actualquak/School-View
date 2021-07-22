@@ -32,6 +32,7 @@ $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+artic
 
 function currentLevel(id) {
  $("#map-image-div").html('<img src="'+id+'-level.jpg">');
+ resizeMap();
 }
 
 $("#panoramaPage").append(modal("map", `
