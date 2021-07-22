@@ -31,7 +31,7 @@ function articleModal(id) {
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
 
 function currentLevel(id) {
- $("#map-image-div").html('<img src="'+id+'-level.jpg">');
+ $("#map-image-div").html('<img class="map-image" src="'+id+'-level.jpg">');
  resizeMap();
 }
 
