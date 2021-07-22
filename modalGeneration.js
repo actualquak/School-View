@@ -52,7 +52,7 @@ resizeMap();
 
 function resizeMap() {
   if (window.innerWidth < window.innerHeight) {
-    $(".map-image").css("width", (window.innerWidth - 520) + "px");
+    $(".map-image").css("width", (window.innerWidth - 700) + "px");
   } else {
     $(".map-image").css("height", (window.innerHeight - 300) + "px");
   }
