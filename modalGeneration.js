@@ -51,9 +51,9 @@ resizeMap();
 
 function resizeMap() {
   if (window.innerWidth < window.innerHeight) {
-    $(".map-image").css("width", (window.innerWidth - 200) + "px");
+    $(".map-image").css("width", (window.innerWidth - 520) + "px");
   } else {
-    $(".map-image").css("height", (window.innerHeight - 200) + "px");
+    $(".map-image").css("height", (window.innerHeight - 300) + "px");
   }
 }
 
