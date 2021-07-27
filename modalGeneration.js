@@ -53,10 +53,10 @@ resizeMap();
 function resizeMap() {
   if (window.innerWidth < window.innerHeight) {
     h = (window.innerHeight - 300)
-    w = 500
+    w = h * ($(".map-image").width() / $(".map-image").height())
   } else {
     w = (window.innerWidth - 520)
-    h = 500
+    h = w * ($(".map-image").height() / $(".map-image").width())
   }
 }
 
