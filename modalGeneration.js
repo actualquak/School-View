@@ -1,3 +1,21 @@
+// Map data
+var lowerX = [70, 85, 85, 91.8, 91.65, 91.65];
+var lowerY = [35, 30, 50, 28.7, 21.76, 12.50];
+
+var upperX = [83, 76, 83, 77.9, 91.8, 81.6, 91.8, 91.8, 91.8];
+var upperY = [52.5, 29, 66, 23.4, 57, 56.8, 23.4, 12.6, 66.1];
+
+var lowerSpots = ["Down-QuadCen", "Down-QuadSE", "Down-QuadNE", "Down-CenE", "Down-NW", "Mid-NW"];
+var upperSpots = ["SciLab", "Up-Classroom", "CPULab", "Up-NCenE", "Up-SE", "Up-SCen", "Up-SE"];
+
+var lowerSc = 3;
+var upperSc = 0;
+
+var h;
+var w;
+
+var level;
+
 // Article data
 articleTitles = ["STUDENT LEADERS", "MR PRATAP"];
 articleBody = ["Student leaders have an incredibly important role to play in school.", "Mr. Pratap is legendary"];
@@ -48,7 +66,86 @@ $("#panoramaPage").append(modal("map", `
   </table>
 `));
 
-resizeMap();
+setCircles();
+changeLevels('lower')
+
+function setCircles() {
+	resizeMap();
+
+  var lowerCl = [];
+  var upperCl = [];
+
+  for (var i = 0; i < lowerX.length; i++) {
+    lowerCl.push(c(i, "lower"));
+  }
+
+  for (var i = 0; i < upperX.length; i++) {
+    upperCl.push(c(i, "upper"));
+  }
+
+  if (level == "lower") {
+    cl = lowerCl
+  } else {
+    cl = upperCl
+  }
+
+  $("#map-image-div").html(`
+	<img class="map-image" src="https://actualquak.github.io/School-View/` + level + `-level.jpg" height="` + h + `" width="` + w + `" >
+	<svg height="` + h + `" width="` + w + `">
+  	` + cl + `
+  	Sorry, your browser does not support inline SVG.  
+	</svg> 
+	`);
+}
+
+function c(i, fLevel) {
+  if (fLevel == "lower") {
+    x = lowerX[i];
+    y = lowerY[i];
+  } else {
+    x = upperX[i];
+    y = upperY[i];``
+  }
+
+  return '<circle class="circle' + i + fLevel + '" onclick="select(' + i + ')" cx="' + (x / 100) * w + '" cy="' + (y / 100) * h + '" r="4" fill="grey" stroke-width="2"/>';
+}
+
+function select(i) {
+  if (level == "lower") {
+    lowerSc = i;
+    xLength = lowerX.length
+  } else {
+    upperSc = i;
+    xLength = upperX.length
+  }
+
+  loadPanorama(i);
+
+  for (var j = 0; j < xLength; j++) {
+    $("circle.circle" + j + level).css("fill", "grey")
+    $("circle.circle" + j + level).css("stroke", "transparent")
+    $("circle.circle" + j + level).css("r", "4")
+  }
+
+  $("circle.circle" + i + level).css("fill", "red")
+  $("circle.circle" + i + level).css("r", "5")
+  $("circle.circle" + i + level).css("stroke", "black")
+}
+
+function loadPanorama(i) {
+  if (level == "lower") {
+    // panorama.loadScene(lowerSpots[i]);
+  } else {
+    // panorama.loadScene(upperSpots[i]);
+  }
+}
+
+function changeLevels(fLevel) {
+	level = fLevel; 
+  setCircles(); 
+  if (level == "lower") { select(lowerSc) }
+  else { select(upperSc) }
+}
 
 function resizeMap() {
   if (window.innerWidth < window.innerHeight) {
@@ -84,5 +181,7 @@ function close(id) {
 
 // Rebuild screen on window resize
 $(window).resize(function() {
-  resizeMap();
+  setCircles();
+  if (level == "lower") { select(lowerSc) }
+  else { select(upperSc) }
 });
