@@ -37,7 +37,7 @@ function currentLevel(id) {
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
-  <div id="map-image-div"><img class="map-image" src="lower-level.jpg"></div>
+  <div id="map-image-div"></div>
   <table>
     <tr>
       <th>
@@ -46,11 +46,6 @@ $("#panoramaPage").append(modal("map", `
       </th>
     </tr>
   </table>
-  <div id="map-spots">
-  	<svg>
-  		<circle cx="50" cy="50" r="5" stroke="black" stroke-width="3" fill="red" />
-	</svg>
-  </div>
 `));
 
 resizeMap();
