@@ -12,11 +12,9 @@ Someone else is deciding to use our idea, but without the animations and with PH
 - Panorama - room navigation difficult, not all images uploaded
 - Information page
 - Get rick-rolled (not telling you how)
+- Information page
 ## Coming soon
 - School Map (copying Oliver again)
-- More images 
-- Straightening images
-- Proper room navigation
 - More information
 
 # School View (The Presentation)
@@ -73,7 +71,7 @@ As you know, we didn't use a crappy website builder for this, we used the real d
 The front-end loves to have cool animations, and why not use cool animations to provide smooth naviagtion across the different pages. We did this through linking in registering a button click in JavaScript, which would initiate a CSS animation and move everything into place.
 
 ### Information
-Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing.
+Making videos and articles display on websites is easy: just use basic HTML. What was difficult here was how to provide a seamless animation between the dashboard and the information appearing, as well as making modals to display the actual information.
 
 ![Information Section](https://raw.githubusercontent.com/actualquak/School-View/main/README.md-images/information-section.png "Information Section")
 
