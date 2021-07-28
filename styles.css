@@ -231,16 +231,16 @@ h1 {
     margin: 5px;
 }
 
-.map-image {
-  position: relative;
-}
-
 svg {
   position: absolute;
   top: 50%;
   left: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+#map-image-div {
+    position: relative;
 }
 
 /* Information Page */
