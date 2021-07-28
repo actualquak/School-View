@@ -48,10 +48,8 @@ function articleModal(id) {
 // Add modals into html so that they can be called
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
 
-function currentLevel(id) {
- $("#map-image-div").html('<img class="map-image" src="'+id+'-level.jpg">');
- resizeMap();
-}
+setCircles();
+changeLevels('lower');
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
@@ -65,9 +63,6 @@ $("#panoramaPage").append(modal("map", `
     </tr>
   </table>
 `));
-
-setCircles();
-changeLevels('lower')
 
 function setCircles() {
 	resizeMap();
