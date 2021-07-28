@@ -65,7 +65,13 @@ $("#panoramaPage").append(modal("map", `
 `));
 
 function setCircles() {
-	resizeMap();
+  if (window.innerWidth < window.innerHeight) {
+    h = (window.innerHeight - 300)
+    w = h * ($(".map-image").width() / $(".map-image").height())
+  } else {
+    w = (window.innerWidth - 520)
+    h = w * ($(".map-image").height() / $(".map-image").width())
+  }
 
   var lowerCl = [];
   var upperCl = [];
@@ -140,16 +146,6 @@ function changeLevels(fLevel) {
   setCircles(); 
   if (level == "lower") { select(lowerSc) }
   else { select(upperSc) }
-}
-
-function resizeMap() {
-  if (window.innerWidth < window.innerHeight) {
-    h = (window.innerHeight - 300)
-    w = h * ($(".map-image").width() / $(".map-image").height())
-  } else {
-    w = (window.innerWidth - 520)
-    h = w * ($(".map-image").height() / $(".map-image").width())
-  }
 }
 
 $("#map-modal-open").on("click", function() { show("map") });
