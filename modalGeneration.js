@@ -59,8 +59,8 @@ $("#panoramaPage").append(modal("map", `
   <table>
     <tr>
       <th>
-        <button onclick=" currentLevel('lower'); " class="levels"><p>Lower Level</p></button>
-        <button onclick=" currentLevel('upper'); "class="levels"><p>Upper Level</p></button>
+        <button onclick=" changeLevels('lower'); " class="levels"><p>Lower Level</p></button>
+        <button onclick=" changeLevels('upper'); "class="levels"><p>Upper Level</p></button>
       </th>
     </tr>
   </table>
