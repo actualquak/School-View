@@ -61,8 +61,6 @@ $("#panoramaPage").append(modal("map", `
   </table>
 `));
 
-setCircles(); 
-setCircles();
 setCircles();
 if (level == "lower") { select(lowerSc) }
 else { select(upperSc) }
@@ -151,7 +149,7 @@ function changeLevels(fLevel) {
   else { select(upperSc) }
 }
 
-$("#map-modal-open").on("click", function() { show("map") });
+$("#map-modal-open").on("click", function() { show("map"); setCircles(); });
 $("#map-close").on("click", function() { close("map") });
 
 function show(id) {
