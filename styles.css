@@ -233,10 +233,6 @@ h1 {
 
 .map-image {
   position: relative;
-  top: 50vh;
-  left: 50%;
-
-  transform: translate(-50%, -150%);
 }
 
 svg {
