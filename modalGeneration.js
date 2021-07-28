@@ -136,9 +136,9 @@ function select(i) {
 
 function loadPanorama(i) {
   if (level == "lower") {
-    // panorama.loadScene(lowerSpots[i]);
+    panorama.loadScene(lowerSpots[i]);
   } else {
-    // panorama.loadScene(upperSpots[i]);
+    panorama.loadScene(upperSpots[i]);
   }
 }
 
