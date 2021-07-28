@@ -14,7 +14,7 @@ var upperSc = 0;
 var h;
 var w;
 
-var level;
+var level = "lower";
 
 // Article data
 articleTitles = ["STUDENT LEADERS", "MR PRATAP"];
@@ -48,8 +48,9 @@ function articleModal(id) {
 // Add modals into html so that they can be called
 $("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
 
-setCircles();
-changeLevels('lower');
+setCircles(); 
+if (level == "lower") { select(lowerSc) }
+else { select(upperSc) }
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
