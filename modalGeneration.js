@@ -149,7 +149,12 @@ function changeLevels(fLevel) {
   else { select(upperSc) }
 }
 
-$("#map-modal-open").on("click", function() { show("map"); setCircles(); });
+$("#map-modal-open").on("click", function() { 
+  show("map"); 
+  setCircles();
+  if (level == "lower") { select(lowerSc) }
+  else { select(upperSc) } 
+});
 $("#map-close").on("click", function() { close("map") });
 
 function show(id) {
