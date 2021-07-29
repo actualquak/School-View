@@ -108,12 +108,14 @@ $("#rick-roll-open").on("click", function() { show("rick-roll") });
 $("#ussr-anthem-open").on("click", function() { show("ussr-anthem") });
 $("#leaders-open").on("click", function() { show("leaders") });
 $("#maths-open").on("click", function() { show("maths") });
+$("#harrison-open").on("click", function() { show("harrison") });
 
 // Close button register
 $("#rick-roll-close").on("click", function() { close("rick-roll") });
 $("#ussr-anthem-close").on("click", function() { close("ussr-anthem") });
 $("#leaders-close").on("click", function() { close("leaders") });
 $("#maths-close").on("click", function() { close("maths") });
+$("#harrison-open").on("click", function() { close("harrison") });
 
 // Detect key press
 document.onkeydown = function(evt) {
