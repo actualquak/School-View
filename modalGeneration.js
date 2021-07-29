@@ -17,8 +17,8 @@ var w;
 var level = "lower";
 
 // Article data
-articleTitles = ["STUDENT LEADERS", "MR PRATAP"];
-articleBody = ["Student leaders have an incredibly important role to play in school.", "Mr. Pratap is legendary"];
+articleTitles = ["STUDENT LEADERS", "MR PRATAP", "MR HARRISON"];
+articleBody = ["Student leaders have an incredibly important role to play in school.", "Mr. Pratap is legendary", "Mr. Harrison isn't actually weird, he's really pretty cool."];
 
 // Function returns modal adaptive to parameters
 function modal(id, filler) {	
@@ -40,13 +40,13 @@ function videoModal(id) {
 
 // Function returns article modal adaptive to parameters
 function articleModal(id) {
-  idList = ["leaders", "maths"];
+  idList = ["leaders", "maths", "harrison"];
   idIndex = idList.indexOf(id);
   return modal(id, `<div class="article"><h1 class="title">`+articleTitles[idIndex]+`</h1><p>`+articleBody[idIndex]+`</p></div>`);
 } 
 
 // Add modals into html so that they can be called
-$("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths"));
+$("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths")+articleModal("harrison"));
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
