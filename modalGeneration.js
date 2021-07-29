@@ -5,8 +5,8 @@ var lowerY = [35, 30, 50, 28.7, 21.76, 12.50];
 var upperX = [83, 76, 83, 77.9, 91.8, 81.6, 91.8, 91.8, 91.8];
 var upperY = [52.5, 29, 66, 23.4, 57, 56.8, 23.4, 12.6, 66.1];
 
-var lowerSpots = ["Down-QuadCen", "Down-QuadSE", "Down-QuadNE", "Down-CenE", "Down-NW", "Mid-NW"];
-var upperSpots = ["SciLab", "Up-Classroom", "CPULab", "Up-NCenE", "Up-SE", "Up-SCen", "Up-SE", "Stalin"];
+var lowerSpots = ["Stalin", "Stalin", "Stalin", "Stalin", "Stalin", "Stalin"];
+var upperSpots = ["Stalin", "Stalin", "Stalin", "Stalin", "Stalin", "Stalin", "Stalin"];
 
 var lowerSc = 3;
 var upperSc = 0;
