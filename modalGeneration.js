@@ -32,7 +32,7 @@ function modal(id, filler) {
 // Function returns video modal adaptive to parameters
 function videoModal(id) {
   return modal(id, `<video id="`+id+`" controls>
-    <source src="https://static-content-hosting-de818.firebaseapp.com/School-View/`+id+`.mp4" type="video/mp4">
+    <source src="./School-View/`+id+`.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <div class="extraVideoContent"><p>Extra video content goes here. To change the styles of this, find .extraVideoContent in the css file. For its position, add parameters like "top: 50px". This will push the div down from the top by 50px. The rest of the parameters are self-explanetory: width, height, background-color. Have fun!</p></div>`);
@@ -46,7 +46,7 @@ function articleModal(id) {
 } 
 
 // Add modals into html so that they can be called
-$("#information").append(videoModal("rick-roll")+videoModal("ussr-anthem")+articleModal("leaders")+articleModal("maths")+articleModal("harrison"));
+$("#information").append(videoModal("demo")+articleModal("leaders")+articleModal("maths")+articleModal("harrison"));
 
 $("#panoramaPage").append(modal("map", `
   <h1 class="title">School Map</h1>
