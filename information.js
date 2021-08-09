@@ -20,7 +20,7 @@ sideArticleColumn2 = `
 		<div class="sideArticle" id="geale">`+buildContent("MS. GEALE", "play")+`</div>
         	<div class="sideArticle" id="ussr-anthem-open">`+buildContent("SPORT", "play")+`</div>
         	<div class="sideArticle" id="woolley">`+buildContent("OLIVER WOOLLEY", "play")+`</div>
-        	<div class="sideArticle" id="rick-roll-open">`+buildContent("THAT TEACHER", "play")+`</div>
+        	<div class="sideArticle" id="demo-open">`+buildContent("DEMO", "play")+`</div>
 	</div>	
 `;
 
@@ -104,14 +104,14 @@ function close(id) {
 }
 
 // Open button register
-$("#rick-roll-open").on("click", function() { show("rick-roll") });
+$("#demo-open").on("click", function() { show("demo") });
 $("#ussr-anthem-open").on("click", function() { show("ussr-anthem") });
 $("#leaders-open").on("click", function() { show("leaders") });
 $("#maths-open").on("click", function() { show("maths") });
 $("#harrison-open").on("click", function() { show("harrison") });
 
 // Close button register
-$("#rick-roll-close").on("click", function() { close("rick-roll") });
+$("#demo-close").on("click", function() { close("demo") });
 $("#ussr-anthem-close").on("click", function() { close("ussr-anthem") });
 $("#leaders-close").on("click", function() { close("leaders") });
 $("#maths-close").on("click", function() { close("maths") });
